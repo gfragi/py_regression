@@ -1,0 +1,5 @@
+#venv
+regenv/
+
+# Visual Studio Code #
+.vscode/*

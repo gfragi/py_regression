@@ -13,7 +13,7 @@ source ../regenv/bin/activate
 ```
 
 
-## Install sickit sscipy matapld
+## Install sickit scipy matplotlib
 ```bash
 pip install -U scikit-learn scipy matplotlib
 ```

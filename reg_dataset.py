@@ -4,6 +4,7 @@ from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import numpy as np
+import statsmodels.api as sm
 
 # Assign the url where the dataset reside 
 delaney_url = 'https://raw.githubusercontent.com/dataprofessor/data/master/delaney.csv'
@@ -93,3 +94,12 @@ plt.xlabel('Experimental LogS')
 plt.savefig('plots/plot_horizontal_logS.png')
 plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
+
+
+
+X = np.column_stack((x['MolLogP'], x['MolWt'], x['NumRotatableBonds'], x['AromaticProportion']))
+Y = y['logS']
+x2 = sm.add_constant(X)
+est = sm.OLS(Y, x2)
+est2 = est.fit
+print(est2.summary())

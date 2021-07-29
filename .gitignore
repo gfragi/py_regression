@@ -3,3 +3,6 @@ regenv/
 
 # Visual Studio Code #
 .vscode/*
+
+# plots
+plots/

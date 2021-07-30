@@ -65,7 +65,7 @@ AP = '%.2f AP' % model.coef_[3]
 
 print('LogS = ' + ' ' + yintercept + ' ' + LogP + ' ' + MW + ' + ' + RB + ' ' + AP)
 
-
+# Plots 
 plt.figure(figsize=(11, 5))
 
 # 1 row, 2 column, plot 1
@@ -93,13 +93,14 @@ plt.xlabel('Experimental LogS')
 
 plt.savefig('plots/plot_horizontal_logS.png')
 plt.savefig('plots/plot_horizontal_logS.pdf')
-plt.show()
+# plt.show()
 
 
-
-X = np.column_stack((x['MolLogP'], x['MolWt'], x['NumRotatableBonds'], x['AromaticProportion']))
-Y = y['logS']
+# Calculation for p value and other statistical 
+X = np.column_stack((delaney_descriptors_df['MolLogP'], delaney_descriptors_df['MolWt'], delaney_descriptors_df['NumRotatableBonds'], delaney_descriptors_df['AromaticProportion']))
+Y = delaney_descriptors_df['logS']
 x2 = sm.add_constant(X)
-est = sm.OLS(Y, x2)
-est2 = est.fit
-print(est2.summary())
+model_sm = sm.OLS(Y, x2)
+results= model_sm.fit()
+
+print(results.summary())

@@ -6,3 +6,6 @@ regenv/
 
 # plots
 plots/
+
+# test
+/random_test.py

@@ -1,0 +1,141 @@
+Provider,Price,CPU,RAM,STORAGE,Cluster_management_fee,Regional redundancy,Auto-scaling,Vendor_lock-in,Payment_option,Term_Length,Instance_Type,Hybrid&multi-cloud_support,Pay_per_pod_usage,Built-in_authentication,self-recovery_features,automate_backup_tasks,Monitoring&logging,Versioning&upgrades
+Google S1,0.26581,4,16,100,no,no,vertical,no,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S2,0.12233,4,16,100,no,no,vertical,no,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+Google S3,0.06305,4,16,100,no,no,horizontal,no,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S4,0.21959,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S5,0.41964,4,16,100,yes,yes,vertical,no,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S6,0.22034,4,16,100,yes,yes,vertical,no,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S7,0.08723,4,16,100,yes,yes,vertical,no,no upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S8,0.40966,4,16,100,yes,yes,vertical,no,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+Google S9,0.16861,8,16,100,no,no,vertical,no,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S10,0.26491,8,16,100,no,no,vertical,no,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+Google S11,0.04218,8,16,100,no,no,vertical,no,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S12,0.48961,8,16,100,no,no,vertical,no,no upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S13,0.37644,8,16,100,yes,yes,vertical,no,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S14,0.26178,8,16,100,yes,yes,vertical,no,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+Google S15,0.20643,8,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google S16,0.10858,8,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Google A1,0.29186,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+Google A2,0.46481,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+Google A3,0.10881,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,no,yes,yes,yes,no,no,yes
+Google A4,0.05338,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,no,yes,yes,yes,no,no,yes
+Amazon EKS1,0.42815,4,16,100,yes,no,both,no,partially upfront,No commitment,On Demand,yes,no,yes,yes,no,no,yes
+Amazon EKS2,0.40983,4,16,100,yes,no,both,no,All upfront,1 Year commitment,Spot,no,no,yes,yes,no,no,yes
+Amazon EKS3,0.08232,4,16,100,yes,no,both,no,no upfront,3 Year commitment,On Demand,no,no,yes,yes,no,no,yes
+Amazon EKS4,0.07069,4,16,100,yes,yes,both,yes,no upfront,No commitment,On Demand,no,no,yes,yes,no,no,yes
+Amazon EKS5,0.37885,4,16,100,no,yes,both,yes,partially upfront,1 Year commitment,On Demand,no,no,yes,no,no,no,yes
+Amazon EKS6,0.16968,4,16,100,no,yes,both,yes,All upfront,3 Year commitment,On Demand,no,no,yes,no,no,no,yes
+Amazon EKS7,0.09875,4,16,100,no,yes,both,no,partially upfront,No commitment,On Demand,no,no,yes,no,no,no,yes
+Amazon EKS8,0.34803,4,16,100,no,no,both,no,partially upfront,No commitment,Spot,no,no,yes,no,no,no,yes
+Amazon ECS1,0.11482,4,16,100,no,no,vertical,no,partially upfront,No commitment,ca,no,no,yes,yes,no,no,yes
+Amazon ECS2,0.20038,4,16,100,no,no,vertical,no,partially upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Amazon ECS3,0.39138,4,16,100,no,no,vertical,yes,partially upfront,3 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Amazon ECS4,0.48743,4,16,100,no,yes,vertical,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+IBM01,0.4279,4,16,100,no,yes,vertical,yes,partially upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+IBM02,0.38598,4,16,100,yes,yes,both,yes,partially upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+IBM03,0.29377,4,16,100,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+IBM04,0.19314,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+IBM05,0.11928,8,16,100,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+IBM06,0.04319,8,16,100,yes,yes,horizontal,no,All upfront,3 Year commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+IBM07,0.35508,8,16,100,no,no,horizontal,no,no upfront,No commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+IBM08,0.05402,8,16,100,no,no,horizontal,yes,no upfront,No commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+IBM09,0.29584,8,16,100,no,no,horizontal,yes,partially upfront,1 Year commitment,Spot,no,yes,yes,yes,yes,yes,yes
+IBM10,0.30697,8,16,100,no,no,horizontal,yes,All upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+IBM11,0.10417,8,16,100,no,yes,vertical,no,partially upfront,No commitment,Spot,yes,no,yes,yes,yes,yes,yes
+IBM12,0.36255,8,16,100,no,yes,vertical,no,partially upfront,1 Year commitment,Spot,no,no,yes,yes,no,no,yes
+IBM13,0.31605,4,16,100,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,yes,no,yes,yes,no,no,yes
+IBM14,0.22467,4,16,100,yes,yes,both,no,partially upfront,No commitment,Spot,yes,no,yes,no,no,no,yes
+IBM15,0.42707,4,16,100,yes,no,both,yes,partially upfront,No commitment,Spot,yes,no,yes,no,no,no,yes
+IBM16,0.40698,4,16,100,yes,no,both,yes,no upfront,No commitment,On Demand,yes,no,yes,no,no,no,yes
+Microsoft01,0.17636,4,16,100,no,no,horizontal,yes,partially upfront,1 Year commitment,Spot,yes,no,yes,no,no,no,yes
+Microsoft02,0.31621,4,16,100,no,no,horizontal,yes,All upfront,3 Year commitment,On Demand,yes,no,yes,yes,no,no,yes
+Microsoft03,0.25946,4,16,100,no,yes,vertical,no,no upfront,No commitment,Spot,yes,no,yes,yes,no,no,yes
+Microsoft04,0.41536,4,16,100,no,yes,vertical,no,no upfront,No commitment,On Demand,yes,no,yes,yes,no,no,yes
+Microsoft05,0.08354,4,16,100,yes,yes,both,no,partially upfront,No commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+Microsoft06,0.33756,4,16,100,yes,yes,both,no,All upfront,3 Year commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+Microsoft07,0.13393,4,16,100,yes,yes,both,no,partially upfront,No commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+Microsoft08,0.25172,4,16,100,yes,yes,both,yes,partially upfront,1 Year commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+Microsoft09,0.03073,4,16,100,yes,yes,horizontal,yes,partially upfront,3 Year commitment,Spot,yes,no,yes,yes,yes,yes,yes
+Microsoft10,0.3523,4,16,100,yes,yes,horizontal,yes,partially upfront,1 Year commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+Microsoft11,0.34166,4,16,100,yes,yes,vertical,no,partially upfront,3 Year commitment,Spot,no,yes,yes,yes,yes,yes,yes
+Microsoft12,0.33921,4,16,100,yes,yes,vertical,no,no upfront,No commitment,Spot,no,yes,yes,yes,yes,yes,yes
+Microsoft13,0.47272,4,16,100,yes,no,both,no,partially upfront,No commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+Microsoft14,0.44368,4,16,100,yes,no,both,no,All upfront,No commitment,Spot,no,yes,yes,yes,yes,yes,yes
+Microsoft15,0.27603,4,16,100,yes,no,both,yes,no upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Alibaba01,0.07143,4,16,100,yes,no,both,yes,no upfront,3 Year commitment,On Demand,no,no,yes,yes,no,no,yes
+Alibaba02,0.06003,8,16,100,no,yes,horizontal,yes,partially upfront,No commitment,Spot,no,no,yes,yes,no,no,yes
+Alibaba03,0.11994,8,16,100,no,yes,horizontal,yes,All upfront,No commitment,On Demand,no,no,yes,yes,no,no,yes
+Alibaba04,0.31066,8,16,100,no,yes,horizontal,yes,partially upfront,1 Year commitment,On Demand,no,no,yes,no,no,no,yes
+Alibaba05,0.11776,8,16,100,no,no,horizontal,no,partially upfront,3 Year commitment,On Demand,no,no,yes,no,no,no,yes
+Alibaba06,0.37125,8,16,100,no,no,horizontal,no,partially upfront,No commitment,On Demand,yes,no,yes,no,no,no,yes
+Alibaba07,0.03633,8,16,100,no,no,vertical,no,partially upfront,No commitment,Spot,no,no,yes,no,no,no,yes
+Alibaba08,0.37894,8,16,100,no,no,vertical,no,partially upfront,No commitment,On Demand,yes,no,yes,yes,no,no,yes
+Alibaba09,0.10176,8,16,100,no,no,both,yes,no upfront,1 Year commitment,Spot,yes,no,yes,yes,no,no,yes
+Alibaba10,0.29947,4,16,100,yes,no,both,yes,partially upfront,3 Year commitment,Spot,yes,no,yes,yes,no,no,yes
+Alibaba11,0.32677,4,16,100,yes,no,both,yes,All upfront,No commitment,On Demand,yes,no,yes,yes,no,no,yes
+Alibaba12,0.31306,4,16,100,yes,no,both,yes,no upfront,No commitment,Spot,yes,no,yes,yes,yes,yes,yes
+Alibaba13,0.38823,4,16,100,yes,yes,horizontal,yes,no upfront,No commitment,Spot,yes,no,yes,yes,yes,yes,yes
+Alibaba14,0.05491,4,16,100,yes,yes,horizontal,yes,partially upfront,1 Year commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+DigitalOcean01,0.49757,4,16,100,yes,yes,both,yes,All upfront,3 Year commitment,Spot,yes,no,yes,yes,yes,yes,yes
+DigitalOcean02,0.03424,4,16,100,yes,yes,both,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+DigitalOcean03,0.45771,4,16,100,no,no,both,yes,partially upfront,No commitment,Spot,no,yes,yes,yes,yes,yes,yes
+DigitalOcean04,0.40992,4,16,100,no,no,horizontal,no,partially upfront,1 Year commitment,Spot,no,yes,yes,yes,yes,yes,yes
+DigitalOcean05,0.37461,4,16,100,no,no,horizontal,no,partially upfront,3 Year commitment,On Demand,no,yes,yes,yes,yes,no,yes
+DigitalOcean06,0.06027,4,16,100,no,no,horizontal,no,partially upfront,No commitment,Spot,no,yes,yes,yes,yes,no,yes
+DigitalOcean07,0.42506,4,16,100,no,no,horizontal,no,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,no,yes
+DigitalOcean08,0.0735,4,16,100,yes,no,horizontal,no,partially upfront,No commitment,Spot,no,no,yes,yes,no,no,yes
+DigitalOcean09,0.07984,4,16,100,yes,no,vertical,no,partially upfront,1 Year commitment,Spot,no,no,yes,yes,no,no,yes
+DigitalOcean10,0.48657,4,16,100,yes,no,vertical,no,partially upfront,3 Year commitment,On Demand,no,no,yes,yes,no,no,yes
+DigitalOcean11,0.11922,4,16,100,yes,yes,both,no,partially upfront,No commitment,Spot,no,no,yes,no,no,no,yes
+DigitalOcean12,0.317,4,16,100,no,yes,both,yes,no upfront,No commitment,Spot,yes,no,yes,no,no,no,yes
+DigitalOcean13,0.15815,4,16,100,no,yes,both,yes,partially upfront,1 Year commitment,On Demand,yes,no,yes,no,no,no,yes
+DigitalOcean14,0.19223,4,16,100,no,yes,both,yes,All upfront,3 Year commitment,On Demand,yes,no,yes,no,no,no,yes
+Tencent01,0.04766,4,16,100,no,yes,horizontal,yes,no upfront,No commitment,On Demand,no,no,yes,yes,yes,no,yes
+Tencent02,0.13518,8,16,100,yes,yes,horizontal,yes,no upfront,No commitment,On Demand,no,no,yes,yes,yes,no,yes
+Tencent03,0.44605,8,16,100,yes,no,both,yes,partially upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Tencent04,0.41629,8,16,100,yes,no,both,no,All upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Tencent05,0.08837,8,16,100,yes,no,both,no,partially upfront,3 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Tencent06,0.24273,8,16,100,yes,no,horizontal,no,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Tencent07,0.23539,8,16,100,yes,yes,horizontal,no,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Tencent08,0.05016,8,16,100,yes,yes,horizontal,no,partially upfront,1 Year commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+Tencent09,0.03597,8,16,100,yes,yes,horizontal,yes,partially upfront,No commitment,Spot,yes,no,yes,yes,yes,yes,yes
+Tencent10,0.28887,4,16,100,yes,yes,horizontal,yes,no upfront,No commitment,On Demand,yes,yes,yes,yes,yes,yes,yes
+Tencent11,0.29274,4,16,100,yes,yes,vertical,yes,partially upfront,1 Year commitment,Spot,yes,yes,yes,yes,yes,yes,yes
+Tencent12,0.26168,4,16,100,yes,yes,vertical,yes,All upfront,3 Year commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+Tencent13,0.19915,4,16,100,yes,yes,both,yes,no upfront,No commitment,Spot,no,yes,yes,yes,yes,yes,yes
+Tencent14,0.48807,4,16,100,yes,yes,both,yes,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
+Tencent15,0.06072,4,16,100,yes,yes,both,yes,partially upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Tencent16,0.08581,4,16,100,yes,no,both,no,All upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+RedHat01,0.31768,4,16,100,yes,no,horizontal,no,partially upfront,3 Year commitment,Spot,no,no,yes,yes,no,yes,yes
+RedHat02,0.43878,4,16,100,no,no,horizontal,no,partially upfront,No commitment,On Demand,no,no,yes,no,no,no,yes
+RedHat03,0.31853,4,16,100,no,no,both,no,partially upfront,No commitment,On Demand,no,no,yes,no,no,no,yes
+RedHat04,0.41783,4,16,100,no,yes,both,yes,partially upfront,No commitment,On Demand,no,no,yes,no,no,no,yes
+RedHat05,0.38775,4,16,100,no,yes,both,yes,partially upfront,No commitment,On Demand,no,no,yes,no,no,no,yes
+RedHat06,0.0678,4,16,100,yes,yes,horizontal,yes,no upfront,1 Year commitment,Spot,no,no,yes,yes,no,yes,yes
+RedHat07,0.10137,4,16,100,yes,yes,horizontal,yes,partially upfront,3 Year commitment,Spot,yes,no,yes,yes,no,yes,yes
+RedHat08,0.4974,4,16,100,yes,yes,horizontal,yes,All upfront,No commitment,On Demand,yes,no,yes,yes,no,yes,yes
+RedHat09,0.3399,4,16,100,yes,yes,horizontal,yes,no upfront,No commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+RedHat10,0.0478,4,16,100,yes,yes,horizontal,yes,no upfront,1 Year commitment,On Demand,yes,no,yes,yes,yes,yes,yes
+RedHat11,0.28508,4,16,100,yes,yes,vertical,yes,partially upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+RedHat12,0.12291,4,16,100,yes,yes,vertical,yes,All upfront,3 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+RedHat13,0.46911,4,16,100,no,no,both,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+RedHat14,0.27002,8,16,100,no,no,both,no,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+RedHat15,0.42235,8,16,100,no,no,both,no,partially upfront,No commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+RedHat16,0.43888,8,16,100,no,no,both,no,partially upfront,No commitment,On Demand,no,yes,yes,yes,yes,yes,yes
+RedHat17,0.40122,8,16,100,no,yes,horizontal,no,partially upfront,1 Year commitment,Spot,no,yes,yes,yes,yes,yes,yes
+Mirantis01,0.31767,8,16,100,yes,yes,horizontal,yes,no upfront,3 Year commitment,Spot,no,yes,yes,yes,yes,yes,yes
+Mirantis02,0.11971,8,16,100,yes,yes,both,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis03,0.21209,8,16,100,yes,yes,both,yes,All upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis04,0.22359,8,16,100,yes,no,both,yes,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis05,0.27049,4,16,100,no,no,horizontal,no,no upfront,1 Year commitment,Spot,yes,no,yes,yes,yes,yes,yes
+Mirantis06,0.37073,4,16,100,no,no,horizontal,no,partially upfront,3 Year commitment,Spot,yes,no,yes,no,,,yes
+Mirantis07,0.42749,4,16,100,no,no,horizontal,no,All upfront,No commitment,On Demand,yes,no,yes,no,,,yes
+Mirantis08,0.47849,4,16,100,no,yes,horizontal,no,partially upfront,No commitment,On Demand,yes,no,yes,no,,,yes
+Mirantis09,0.36848,4,16,100,yes,yes,horizontal,yes,partially upfront,No commitment,On Demand,no,no,yes,no,,,yes
+Mirantis10,0.08406,4,16,100,yes,yes,vertical,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis11,0.18612,4,16,100,yes,yes,vertical,yes,no upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Mirantis12,0.32866,4,16,100,yes,no,both,yes,partially upfront,3 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
+Mirantis13,0.14312,4,16,100,yes,no,both,yes,All upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis14,0.0353,4,16,100,yes,no,both,yes,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis15,0.47056,4,16,100,yes,no,both,no,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
+Mirantis16,0.22762,4,16,100,no,yes,horizontal,no,partially upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes

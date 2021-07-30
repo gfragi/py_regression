@@ -1,4 +1,4 @@
-Provider,Price,CPU,RAM,STORAGE,Cluster_management_fee,Regional redundancy,Auto-scaling,Vendor_lock-in,Payment_option,Term_Length,Instance_Type,Hybrid&multi-cloud_support,Pay_per_pod_usage,Built-in_authentication,self-recovery_features,automate_backup_tasks,Monitoring&logging,Versioning&upgrades
+Provider,Price,CPU,RAM,STORAGE,Cluster_management_fee,Regional_redundancy,Auto-scaling,Vendor_lock-in,Payment_option,Term_Length,Instance_Type,Hybrid&multi-cloud_support,Pay_per_pod_usage,Built-in_authentication,self-recovery_features,automate_backup_tasks,Monitoring&logging,Versioning&upgrades
 Google S1,0.26581,4,16,100,no,no,vertical,no,no upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
 Google S2,0.12233,4,16,100,no,no,vertical,no,no upfront,No commitment,Spot,no,no,yes,yes,yes,yes,yes
 Google S3,0.06305,4,16,100,no,no,horizontal,no,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
@@ -27,7 +27,7 @@ Amazon EKS5,0.37885,4,16,100,no,yes,both,yes,partially upfront,1 Year commitment
 Amazon EKS6,0.16968,4,16,100,no,yes,both,yes,All upfront,3 Year commitment,On Demand,no,no,yes,no,no,no,yes
 Amazon EKS7,0.09875,4,16,100,no,yes,both,no,partially upfront,No commitment,On Demand,no,no,yes,no,no,no,yes
 Amazon EKS8,0.34803,4,16,100,no,no,both,no,partially upfront,No commitment,Spot,no,no,yes,no,no,no,yes
-Amazon ECS1,0.11482,4,16,100,no,no,vertical,no,partially upfront,No commitment,ca,no,no,yes,yes,no,no,yes
+Amazon ECS1,0.11482,4,16,100,no,no,vertical,no,partially upfront,No commitment,Spot,no,no,yes,yes,no,no,yes
 Amazon ECS2,0.20038,4,16,100,no,no,vertical,no,partially upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
 Amazon ECS3,0.39138,4,16,100,no,no,vertical,yes,partially upfront,3 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
 Amazon ECS4,0.48743,4,16,100,no,yes,vertical,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
@@ -128,10 +128,10 @@ Mirantis02,0.11971,8,16,100,yes,yes,both,yes,partially upfront,No commitment,On 
 Mirantis03,0.21209,8,16,100,yes,yes,both,yes,All upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
 Mirantis04,0.22359,8,16,100,yes,no,both,yes,no upfront,1 Year commitment,On Demand,no,no,yes,yes,yes,yes,yes
 Mirantis05,0.27049,4,16,100,no,no,horizontal,no,no upfront,1 Year commitment,Spot,yes,no,yes,yes,yes,yes,yes
-Mirantis06,0.37073,4,16,100,no,no,horizontal,no,partially upfront,3 Year commitment,Spot,yes,no,yes,no,,,yes
-Mirantis07,0.42749,4,16,100,no,no,horizontal,no,All upfront,No commitment,On Demand,yes,no,yes,no,,,yes
-Mirantis08,0.47849,4,16,100,no,yes,horizontal,no,partially upfront,No commitment,On Demand,yes,no,yes,no,,,yes
-Mirantis09,0.36848,4,16,100,yes,yes,horizontal,yes,partially upfront,No commitment,On Demand,no,no,yes,no,,,yes
+Mirantis06,0.37073,4,16,100,no,no,horizontal,no,partially upfront,3 Year commitment,Spot,yes,no,yes,no,yes,yes,yes
+Mirantis07,0.42749,4,16,100,no,no,horizontal,no,All upfront,No commitment,On Demand,yes,no,yes,no,yes,yes,yes
+Mirantis08,0.47849,4,16,100,no,yes,horizontal,no,partially upfront,No commitment,On Demand,yes,no,yes,no,yes,yes,yes
+Mirantis09,0.36848,4,16,100,yes,yes,horizontal,yes,partially upfront,No commitment,On Demand,no,no,yes,no,yes,yes,yes
 Mirantis10,0.08406,4,16,100,yes,yes,vertical,yes,partially upfront,No commitment,On Demand,no,no,yes,yes,yes,yes,yes
 Mirantis11,0.18612,4,16,100,yes,yes,vertical,yes,no upfront,1 Year commitment,Spot,no,no,yes,yes,yes,yes,yes
 Mirantis12,0.32866,4,16,100,yes,no,both,yes,partially upfront,3 Year commitment,Spot,no,no,yes,yes,yes,yes,yes

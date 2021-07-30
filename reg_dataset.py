@@ -9,7 +9,7 @@ import statsmodels.api as sm
 # Assign the url where the dataset reside 
 delaney_url = 'https://raw.githubusercontent.com/dataprofessor/data/master/delaney.csv'
 
-# Read the dataser and assign it to a variable
+# Read the dataset and assign it to a variable
 delaney_df = pd.read_csv(delaney_url)
 
 # Assign the url where the dataset reside 

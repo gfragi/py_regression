@@ -12,5 +12,7 @@ plots/
 
 # Any locked file
 ~.*.*
+.~lock.cn_provider_pricing_dummy.csv#
 .idea/
+__pycache__/
 

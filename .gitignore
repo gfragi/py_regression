@@ -9,3 +9,8 @@ plots/
 
 # test
 /random_test.py
+
+# Any locked file
+~.*.*
+.idea/
+

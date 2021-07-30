@@ -33,8 +33,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 model = linear_model.LinearRegression()
 model.fit(x_train, y_train)
 
-
-# Apply trained model to train dataset 
+# Apply trained model to train dataset
 y_pred_train = model.predict(x_train)
 
 print('Coefficients:', model.coef_)
@@ -44,8 +43,7 @@ print('Mean squared error (MSE): %.2f'
 print('Coefficient of determination (R^2): %.2f'
       % r2_score(y_train, y_pred_train))
 
-
-# Apply trained model to test dataset 
+# Apply trained model to test dataset
 y_pred_test = model.predict(x_test)
 
 print('Coefficients:', model.coef_)
@@ -55,15 +53,14 @@ print('Mean squared error (MSE): %.2f'
 print('Coefficient of determination (R^2): %.2f'
       % r2_score(y_test, y_pred_test))
 
-
 # Print the Regression equation
-yintercept = '%.2f' % model.intercept_
+y_intercept = '%.2f' % model.intercept_
 LogP = '%.2f LogP' % model.coef_[0]
 MW = '%.4f MW' % model.coef_[1]
 RB = '%.4f RB' % model.coef_[2]
 AP = '%.2f AP' % model.coef_[3]
 
-print('LogS = ' + ' ' + yintercept + ' ' + LogP + ' ' + MW + ' + ' + RB + ' ' + AP)
+print('LogS = ' + ' ' + y_intercept + ' ' + LogP + ' ' + MW + ' + ' + RB + ' ' + AP)
 
 # Plots 
 plt.figure(figsize=(11, 5))
@@ -75,10 +72,9 @@ plt.scatter(x=y_train, y=y_pred_train, c="#7CAE00", alpha=0.3)
 # Add trendline
 z = np.polyfit(y_train, y_pred_train, 1)
 p = np.poly1d(z)
-plt.plot(y_test,p(y_test),"#F8766D")
+plt.plot(y_test, p(y_test), "#F8766D")
 
 plt.ylabel('Predicted LogS')
-
 
 # 1 row, 2 column, plot 2
 plt.subplot(1, 2, 2)
@@ -86,7 +82,7 @@ plt.scatter(x=y_test, y=y_pred_test, c="#619CFF", alpha=0.3)
 
 z = np.polyfit(y_test, y_pred_test, 1)
 p = np.poly1d(z)
-plt.plot(y_test,p(y_test),"#F8766D")
+plt.plot(y_test, p(y_test), "#F8766D")
 
 plt.ylabel('Predicted LogS')
 plt.xlabel('Experimental LogS')
@@ -97,10 +93,11 @@ plt.savefig('plots/plot_horizontal_logS.pdf')
 
 
 # Calculation for p value and other statistical 
-X = np.column_stack((delaney_descriptors_df['MolLogP'], delaney_descriptors_df['MolWt'], delaney_descriptors_df['NumRotatableBonds'], delaney_descriptors_df['AromaticProportion']))
+X = np.column_stack((delaney_descriptors_df['MolLogP'], delaney_descriptors_df['MolWt'],
+                     delaney_descriptors_df['NumRotatableBonds'], delaney_descriptors_df['AromaticProportion']))
 Y = delaney_descriptors_df['logS']
 x2 = sm.add_constant(X)
 model_sm = sm.OLS(Y, x2)
-results= model_sm.fit()
+results = model_sm.fit()
 
 print(results.summary())

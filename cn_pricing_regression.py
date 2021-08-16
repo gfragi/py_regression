@@ -4,6 +4,7 @@ import warnings
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
+
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
@@ -13,8 +14,6 @@ from statsmodels.formula.api import ols
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
 # Load the csv & print columns' info
-# df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-
 df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
@@ -151,7 +150,7 @@ x = x_stage.drop('Provider', axis=1)
 
 print(x.info())
 
-# In evaluate the model performance split e the dataset into 2 partitions (80% - 20% ration)
+# Evaluate the model performance we split the dataset into 2 partitions (80% - 20% ration)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 # Apply linear regression to train set

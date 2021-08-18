@@ -110,6 +110,9 @@ status = pd.get_dummies(df[category_list])
 
 status.head()
 
+# 1st action after analyzing the initial results: Drop the following columns-features as it has only yes(=1) on each row.
+df = df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1)
+
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
 df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
@@ -212,9 +215,7 @@ plt.show()
 # Calculation for p value and other
 X = np.column_stack((df['CPU'], df['RAM'], df['STORAGE'], df['Cluster_management_fee'],
                      df['Regional_redundancy'], df['Vendor_lock-in'], df['Disk_type'], df['Hybrid_multicloud_support'],
-                     df['Pay_per_pod_usage'], df['Built-in_authentication'], df['self-recovery_features'],
-                     df['automate_backup_tasks'],
-                     df['Versioning&upgrades'], df['Autoscaling_both'], df['Autoscaling_horizontal'],
+                     df['Pay_per_pod_usage'],  df['Autoscaling_both'], df['Autoscaling_horizontal'],
                      df['Term_Length_1 Year commitment'], df['Term_Length_2 Year commitment'],
                      df['Term_Length_3 Year commitment'], df['Term_Length_No commitment'],
                      df['Payment_option_All upfront'],
@@ -231,6 +232,3 @@ model_sm = sm.OLS(Y, x2)
 results = model_sm.fit()
 
 print(results.summary())
-
-
-

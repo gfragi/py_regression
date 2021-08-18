@@ -16,8 +16,21 @@ plots/
 .idea/
 __pycache__/
 
-simple_linear_reg.py
-reg_dataset.py
-multi_linear_reg.py
-pol_reg.py
+# If you are using PyCharm #
+.idea/
+*.iws /out/
 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+../simple_linear_reg.py
+../reg_dataset.py
+../multi_linear_reg.py
+../pol_reg.py

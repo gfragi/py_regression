@@ -234,7 +234,7 @@ Amazon EKS31,0.66388,0.64,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,All upfront
 Amazon EKS32,3.00888,2.985,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,no upfront,No commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
 Amazon EKS33,1.90488,1.881,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,no upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
 Amazon EKS34,1.81388,1.79,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,partially upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
-Amazon EKS35,1.77888,1.755,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,All upfront,1 Year commitment,Dedicated,SSD,free,no,no,                         ,yes,yes,yes,yes
+Amazon EKS35,1.77888,1.755,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,All upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
 Amazon EKS36,1.31388,1.29,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,no upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
 Amazon EKS37,1.21788,1.194,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,partially upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
 Amazon EKS38,1.14588,1.122,0.01388,0.01,0,0,32,64,400,yes,yes,both,no,All upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes

@@ -582,7 +582,6 @@ Digital Ocean K17,0.47619,0.47619,0,0,0,0,8,64,200,no,no,horizontal,no,no upfron
 Digital Ocean K18,0.44,0.44,0,0,0,0,8,64,200,no,no,horizontal,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital Ocean K19,0.95238,0.95238,0,0,0,0,16,128,400,no,no,horizontal,no,no upfront,No commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital Ocean K20,0.88,0.88,0,0,0,0,16,128,400,no,no,horizontal,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
-Tencent KE1,0.78,0.77,0.01,0,0,0,16,32,100,no,yes,both,no,no upfront,2 Year commitment,On Demand,Standard,free,no,no,Asia,yes,yes,yes,yes
 Tencent KE2,1.16,1.15,0.01,0,0,0,16,64,100,no,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Asia,yes,yes,yes,yes
 Tencent KE3,0.39,0.38,0.01,0,0,0,8,16,100,no,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Asia,yes,yes,yes,yes
 Tencent KE4,0.59,0.58,0.01,0,0,0,8,32,100,no,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Asia,yes,yes,yes,yes

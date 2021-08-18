@@ -16,3 +16,8 @@ plots/
 .idea/
 __pycache__/
 
+simple_linear_reg.py
+reg_dataset.py
+multi_linear_reg.py
+pol_reg.py
+

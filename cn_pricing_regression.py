@@ -31,17 +31,6 @@ print('Data highlights: \n', df.describe())
 # Check for null values
 print(df.isnull().sum() * 100 / df.shape[0])
 
-# # Outlier Analysis for numeric variables
-# fig, axs = plt.subplots(1, 4, figsize=(15, 6))
-# fig.suptitle('Outlier analysis for numeric variables', fontsize=18)
-# plt1 = sns.boxplot(df['Price'], ax=axs[0])
-# plt2 = sns.boxplot(df['CPU'], ax=axs[1])
-# plt3 = sns.boxplot(df['RAM'], ax=axs[2])
-# plt4 = sns.boxplot(df['STORAGE'], ax=axs[3])
-#
-# plt.tight_layout()
-# plt.show()
-
 # Visualize numeric variables
 ax = sns.pairplot(df)
 ax.fig.suptitle('Visualize numeric variables')
@@ -103,8 +92,9 @@ status = pd.get_dummies(df[category_list])
 
 status.head()
 
-# 1st action after analyzing the initial results: Drop the following columns-features as it has only yes(=1) on each row.
-df = df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1)
+# Drop the columns-features.
+df = df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
+             axis=1)
 
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
@@ -112,24 +102,6 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 df.head()
-#
-# Rescale the features
-# rescale the variables so that they have a comparable scale. If we don't have comparable scales, then some of the
-# coefficients as obtained by fitting the regression model might be very large or very small as compared to the other
-# coefficients. Use standardization or normalization so that the units of the coefficients obtained are all on the same scale
-# We can  use Min-Max scaling or Standardization
-# scaler = StandardScaler()
-
-scaler = MinMaxScaler()
-
-# Apply scaler to all the numeric columns
-num_vars = ['Price', 'CPU', 'RAM', 'STORAGE']
-
-df[num_vars] = scaler.fit_transform(df[num_vars])
-df.head()
-
-print('Describe the dataframe after rescaling \n')
-print(df.describe())
 
 # Check the correlation coefficients to see which variables are highly correlated
 corr = df.corr()
@@ -205,10 +177,12 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-# Calculation for p value and other
+### Paste here the dropped features/columns for future use
+
+# Calculation for p value and other statistic values with OLS (=Ordinary Least Squares)
 X = np.column_stack((df['CPU'], df['RAM'], df['STORAGE'], df['Cluster_management_fee'],
                      df['Regional_redundancy'], df['Vendor_lock-in'], df['Disk_type'], df['Hybrid_multicloud_support'],
-                     df['Pay_per_pod_usage'],  df['Autoscaling_both'], df['Autoscaling_horizontal'],
+                     df['Pay_per_pod_usage'], df['Autoscaling_both'], df['Autoscaling_horizontal'],
                      df['Term_Length_1 Year commitment'],
                      df['Term_Length_3 Year commitment'], df['Term_Length_No commitment'],
                      df['Payment_option_All upfront'],

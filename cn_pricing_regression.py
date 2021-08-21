@@ -1,3 +1,4 @@
+# ============== Import libraries =========
 import numpy as np
 import pandas as pd
 import warnings
@@ -7,11 +8,12 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from statsmodels.formula.api import ols
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LinearRegression
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
+# ============= Load the Data ============================================================
 # Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
 
@@ -31,6 +33,7 @@ print('Data highlights: \n', df.describe())
 # Check for null values
 print(df.isnull().sum() * 100 / df.shape[0])
 
+# =========== Visualize the Data ======================================
 # Visualize numeric variables
 ax = sns.pairplot(df)
 ax.fig.suptitle('Visualize numeric variables')
@@ -71,10 +74,16 @@ plt.figure(figsize=(10, 5))
 sns.boxplot(x='Payment_option', y='Price', hue='Vendor_lock-in', data=df)
 plt.show()
 
+
+# =========== Data preparation =================
+# Drop the columns-features.
+df = df.drop(
+    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE'],
+    axis=1)
+
 # Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Built-in_authentication',
-                        'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades']
+                        'Hybrid_multicloud_support', 'Pay_per_pod_usage']
 
 
 # Defining the map function
@@ -92,9 +101,6 @@ status = pd.get_dummies(df[category_list])
 
 status.head()
 
-# Drop the columns-features.
-df = df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
-             axis=1)
 
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
@@ -102,6 +108,8 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 df.head()
+
+# ================ Correlation ===========================
 
 # Check the correlation coefficients to see which variables are highly correlated
 corr = df.corr()
@@ -118,6 +126,7 @@ x = x_stage.drop('Provider', axis=1)
 
 print(x.info())
 
+# ================ Model Evaluation ===========================
 # In evaluate the model performance split e the dataset into 2 partitions (80% - 20% ration)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
@@ -131,9 +140,9 @@ y_pred_train = model.predict(x_train)
 print('======== TRAIN dataset - 80% ===========')
 print('Coefficients:', model.coef_)
 print('Intercept:', model.intercept_)
-print('Mean squared error (MSE): %.2f'
+print('Mean squared error (MSE): %.3f'
       % mean_squared_error(y_train, y_pred_train))
-print('Coefficient of determination (R^2): %.2f'
+print('Coefficient of determination (R^2): %.3f'
       % r2_score(y_train, y_pred_train))
 
 # Apply trained model to test dataset
@@ -142,9 +151,9 @@ y_pred_test = model.predict(x_test)
 print('========= TEST dataset - 20% ===========')
 print('Coefficients:', model.coef_)
 print('Intercept:', model.intercept_)
-print('Mean squared error (MSE): %.2f'
+print('Mean squared error (MSE): %.3f'
       % mean_squared_error(y_test, y_pred_test))
-print('Coefficient of determination (R^2): %.2f'
+print('Coefficient of determination (R^2): %.3f'
       % r2_score(y_test, y_pred_test))
 
 # Plots
@@ -177,25 +186,24 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-### Paste here the dropped features/columns for future use
+# ================== RFE for regression =====================
+lm = LinearRegression()
+lm.fit(x_train, y_train)
 
-# Calculation for p value and other statistic values with OLS (=Ordinary Least Squares)
-X = np.column_stack((df['CPU'], df['RAM'], df['STORAGE'], df['Cluster_management_fee'],
-                     df['Regional_redundancy'], df['Vendor_lock-in'], df['Disk_type'], df['Hybrid_multicloud_support'],
-                     df['Pay_per_pod_usage'], df['Autoscaling_both'], df['Autoscaling_horizontal'],
-                     df['Term_Length_1 Year commitment'],
-                     df['Term_Length_3 Year commitment'], df['Term_Length_No commitment'],
-                     df['Payment_option_All upfront'],
-                     df['Payment_option_no upfront'], df['OS_Linux'], df['OS_Windows'], df['OS_free'],
-                     df['Payment_option_partially upfront'], df['Instance_Type_Dedicated'],
-                     df['Instance_Type_On Demand'],
-                     df['Instance_Type_Spot'], df['Region_Asia'], df['Region_Europe'], df['Region_US'],
-                     df['Region_Australia'], df['Region_Africa'],
-                     df['Region_South America']))
+rfe = RFE(lm, 6)  # running RFE
+rfe = rfe.fit(x_train, y_train)
 
-Y = df['Price']  # scaler = MinMaxScaler()
-x2 = sm.add_constant(X)
-model_sm = sm.OLS(Y, x2)
+list(zip(x_train.columns, rfe.support_, rfe.ranking_))
+
+col = x_train.columns[rfe.support_]
+print(col)
+
+print(x_train.columns[~rfe.support_])
+
+# ============ Detailed calculation for statistic metrics with OLS (Ordinary Least Squares) ==============
+
+x = sm.add_constant(x)
+model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())

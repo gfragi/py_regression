@@ -16,14 +16,13 @@ warnings.filterwarnings('ignore')  # it is used for some minor warnings in seabo
 # ============= Load the Data ============================================================
 # Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-
 df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support'], axis=1)
 
 # Convert the price unit to $/month from $/hour
-df['Price'] = df['Price'] * 730
+df['Price'] = df['Price']
 print(df['Price'])
 
 print('rows x columns:', df.shape)
@@ -78,7 +77,7 @@ plt.show()
 # =========== Data preparation =================
 # Drop the columns-features.
 df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE'],
+    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
     axis=1)
 
 # Categorical variables to map

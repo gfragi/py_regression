@@ -125,24 +125,68 @@ x = x_stage.drop('Provider', axis=1)
 
 print(x.info())
 
-####### Positive Correlation ########
+####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
 # 1–0.8 → Very strong
 # 0.799–0.6 → Strong
 # 0.599–0.4 → Moderate
 # 0.399–0.2 → Weak
 # 0.199–0 → Very Weak
 
-# regression plot using seaborn
+# regression plot using seaborn - Very strong
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.CPU, y=df.Price, color='blue', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['CPU'])
+plt.title('Relationship between Price and CPU', size=20)
+plt.xlabel('CPU(Cores)', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+# regression plot using seaborn - Strong
 fig = plt.figure(figsize=(10, 7))
 sns.regplot(x=df.RAM, y=df.Price, color='blue', marker='o')
 
 # legend, title, and labels.
 plt.legend(labels=['RAM'])
-plt.title('Relationship between Price and RAM', size=24)
+plt.title('Relationship between Price and RAM', size=20)
 plt.xlabel('RAM(GB)', size=18)
 plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+# regression plot using seaborn - Weak
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.Hybrid_multicloud_support, y=df.Price, color='blue', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['Hybrid_multicloud_support'])
+plt.title('Relationship between Price and Hybrid_multicloud_support', size=20)
+plt.xlabel('Hybrid_multicloud_support', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
 
 
+# regression plot using seaborn - Very Weak
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.Regional_redundancy, y=df.Price, color='blue', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['Regional_redundancy'])
+plt.title('Relationship between Price and Regional_redundancy', size=20)
+plt.xlabel('Regional_redundancy', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+# regression plot using seaborn - Negative
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.Cluster_management_fee, y=df.Price, color='blue', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['Regional_redundancy'])
+plt.title('Relationship between Price and Cluster_management_fee', size=20)
+plt.xlabel('Cluster_management_fee', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
 
 
 # ================ Model Evaluation ===========================

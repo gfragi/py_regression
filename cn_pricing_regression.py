@@ -125,6 +125,26 @@ x = x_stage.drop('Provider', axis=1)
 
 print(x.info())
 
+####### Positive Correlation ########
+# 1–0.8 → Very strong
+# 0.799–0.6 → Strong
+# 0.599–0.4 → Moderate
+# 0.399–0.2 → Weak
+# 0.199–0 → Very Weak
+
+# regression plot using seaborn
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.RAM, y=df.Price, color='blue', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['RAM'])
+plt.title('Relationship between Price and RAM', size=24)
+plt.xlabel('RAM(GB)', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+
+
+
+
 # ================ Model Evaluation ===========================
 # In evaluate the model performance split e the dataset into 2 partitions (80% - 20% ration)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)

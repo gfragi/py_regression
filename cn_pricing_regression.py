@@ -44,30 +44,54 @@ plt.show()
 # Visualize categorical variables
 fig = plt.figure(figsize=(20, 28))
 fig.suptitle('Outlier analysis for categorical variables', fontsize=32)
+
 plt.subplot(5, 3, 1)
 sns.boxplot(x='Cluster_management_fee', y='Price', data=df)
+sns.swarmplot(x='Cluster_management_fee', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 2)
 sns.boxplot(x='Regional_redundancy', y='Price', data=df)
+sns.swarmplot(x='Regional_redundancy', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 3)
 sns.boxplot(x='Autoscaling', y='Price', data=df)
+sns.swarmplot(x='Autoscaling', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 4)
 sns.boxplot(x='Vendor_lock-in', y='Price', data=df)
+sns.swarmplot(x='Vendor_lock-in', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 5)
 sns.boxplot(x='Payment_option', y='Price', data=df)
+sns.swarmplot(x='Payment_option', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 6)
 sns.boxplot(x='Term_Length', y='Price', data=df)
+sns.swarmplot(x='Term_Length', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 7)
 sns.boxplot(x='Instance_Type', y='Price', data=df)
+sns.swarmplot(x='Instance_Type', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 8)
 sns.boxplot(x='Disk_type', y='Price', data=df)
+sns.swarmplot(x='Disk_type', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 9)
 sns.boxplot(x='OS', y='Price', data=df)
+sns.swarmplot(x='OS', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 10)
 sns.boxplot(x='Hybrid_multicloud_support', y='Price', data=df)
+sns.swarmplot(x='Hybrid_multicloud_support', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 11)
 sns.boxplot(x='Pay_per_pod_usage', y='Price', data=df)
+sns.swarmplot(x='Pay_per_pod_usage', y='Price', data=df, color=".25")
+
 plt.subplot(5, 3, 12)
 sns.boxplot(x='Region', y='Price', data=df)
+sns.swarmplot(x='Region', y='Price', data=df, color=".25")
 plt.show()
 
 # Visualize categorical features in parallel, we could add more
@@ -112,7 +136,7 @@ df.head()
 # ================ Correlation ===========================
 
 #%% Check the correlation coefficients to see which variables are highly correlated
-correlation_method: str = 'spearman'
+correlation_method: str = 'kendall'
 
 corr = df.corr(method=correlation_method)
 mask = np.triu(np.ones_like(corr, dtype=bool))
@@ -293,7 +317,7 @@ print(col)
 
 print(x_train.columns[~rfe.support_])
 
-#%% ============ Detailed calculation for statistic metrics with OLS (Ordinary Least Squares) ==============
+#%% ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
 x = sm.add_constant(x)
 model_sm = sm.OLS(y, x)

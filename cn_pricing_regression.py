@@ -21,7 +21,7 @@ df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support'], axis=1)
 
 # Convert the price unit to $/month from $/hour
-df['Price'] = df['Price']
+# df['Price'] = df['Price']
 # print(df['Price'])
 
 # print('rows x columns:', df.shape)
@@ -101,7 +101,7 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 
 # Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Vendor_lock-in', 'Disk_type', 'Hybrid_multicloud_support',
-                        'Pay_per_pod_usage', 'Built-in_authentication', 'self-recovery_features',
+                        'Pay_per_pod_usage', 'Built-in_authentication', 'self-recovery_features', 'Regional_redundancy',
                         'automate_backup_tasks', 'Versioning&upgrades']
 
 
@@ -128,11 +128,16 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 # Drop options
 #%% Drop the columns-features.
 
-df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE',
-         'Regional_redundancy', 'Payment_option_no upfront', 'OS_Windows', 'Autoscaling_horizontal', 'Autoscaling_both',
-         'Region_Australia', 'Region_Africa', 'Payment_option_All upfront', 'Vendor_lock-in', 'Payment_option_partially upfront',
-         'Pay_per_pod_usage', 'Term_Length_1 Year commitment', 'Disk_type', 'OS_Linux', 'Region_Asia', 'Region_US',
-         'Region_South America', 'Instance_Type_On Demand', 'Term_Length_3 Year commitment', 'Instance_Type_Spot', 'OS_free'], axis=1, inplace=True)
+# df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE',
+#          'Regional_redundancy', 'Payment_option_no upfront', 'OS_Windows', 'Autoscaling_horizontal', 'Autoscaling_both',
+#          'Region_Australia', 'Region_Africa', 'Payment_option_All upfront', 'Payment_option_partially upfront',
+#          'Pay_per_pod_usage', 'Term_Length_1 Year commitment', 'Disk_type', 'OS_Linux', 'Region_Asia', 'Region_US',
+#          'Region_South America', 'Instance_Type_On Demand', 'Term_Length_3 Year commitment', 'Instance_Type_Spot', 'OS_free'], axis=1, inplace=True)
+
+
+df = df[['Provider', 'Price', 'CPU', 'RAM', 'STORAGE', 'Cluster_management_fee', 'Vendor_lock-in', 'Disk_type',
+         'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy']]
+
 
 # ===================== Correlation ===========================
 

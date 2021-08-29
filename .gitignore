@@ -6,6 +6,7 @@ regenv/
 
 # plots
 plots/
+Results/
 
 # test
 /random_test.py
@@ -34,3 +35,4 @@ venv.bak/
 ../reg_dataset.py
 ../multi_linear_reg.py
 ../pol_reg.py
+

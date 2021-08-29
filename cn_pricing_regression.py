@@ -23,9 +23,9 @@ df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support'], axis=1)
 
-# Convert the price unit to $/month from $/hour
-df['Price'] = df['Price']
-print(df['Price'])
+# # Convert the price unit to $/month from $/hour
+# df['Price'] = df['Price']
+# print(df['Price'])
 
 print('rows x columns:', df.shape)
 print('Columns info:', df.info())
@@ -95,26 +95,23 @@ sns.swarmplot(x='Pay_per_pod_usage', y='Price', data=df, color=".25")
 plt.subplot(fig_rows, fig_cols,  12)
 sns.boxplot(x='Region', y='Price', data=df)
 sns.swarmplot(x='Region', y='Price', data=df, color=".25")
-plt.show()
 
 plt.subplot(fig_rows, fig_cols,  13)
 sns.boxplot(x='Built-in_authentication', y='Price', data=df)
 sns.swarmplot(x='Built-in_authentication', y='Price', data=df, color=".25")
-plt.show()
 
 plt.subplot(fig_rows, fig_cols,  14)
 sns.boxplot(x='Versioning&upgrades', y='Price', data=df)
 sns.swarmplot(x='Versioning&upgrades', y='Price', data=df, color=".25")
-plt.show()
 
 plt.subplot(fig_rows, fig_cols, 15)
 sns.boxplot(x='automate_backup_tasks', y='Price', data=df)
 sns.swarmplot(x='automate_backup_tasks', y='Price', data=df, color=".25")
-plt.show()
 
 plt.subplot(fig_rows, fig_cols,  16)
 sns.boxplot(x='self-recovery_features', y='Price', data=df)
 sns.swarmplot(x='self-recovery_features', y='Price', data=df, color=".25")
+
 plt.show()
 
 # Visualize categorical features in parallel, we could add more
@@ -154,7 +151,7 @@ df.head()
 # ================ Correlation ===========================
 
 #%% Check the correlation coefficients to see which variables are highly correlated
-correlation_method: str = 'kendall'
+correlation_method: str = 'pearson'
 
 corr = df.corr(method=correlation_method)
 mask = np.triu(np.ones_like(corr, dtype=bool))
@@ -273,22 +270,22 @@ model.fit(x_train, y_train)
 y_pred_train = model.predict(x_train)
 
 print('======== TRAIN dataset - 80% ===========')
-print('Coefficients:', model.coef_)
+print('Coefficients:\n', model.coef_)
 print('Intercept:', model.intercept_)
 print('Mean squared error (MSE): %.3f'
       % mean_squared_error(y_train, y_pred_train))
-print('Coefficient of determination (R^2): %.3f'
+print('Coefficient of determination (R^2): %.3f\n'
       % r2_score(y_train, y_pred_train))
 
 #%% Apply trained model to test dataset
 y_pred_test = model.predict(x_test)
 
 print('========= TEST dataset - 20% ===========')
-print('Coefficients:', model.coef_)
+print('Coefficients:\n', model.coef_)
 print('Intercept:', model.intercept_)
 print('Mean squared error (MSE): %.3f'
       % mean_squared_error(y_test, y_pred_test))
-print('Coefficient of determination (R^2): %.3f'
+print('Coefficient of determination (R^2): %.3f\n'
       % r2_score(y_test, y_pred_test))
 
 #%% Evaluation Plots

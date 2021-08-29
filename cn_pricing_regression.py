@@ -8,7 +8,7 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
@@ -314,3 +314,11 @@ model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())
+
+# =================== Calculate VIF Factors =====================
+# For each X, calculate VIF and save in dataframe
+
+vif = pd.DataFrame()
+vif["VIF Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
+vif["features"] = x.columns
+vif.round(1)

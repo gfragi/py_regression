@@ -98,14 +98,11 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 # plt.show()
 
 # =========== Data preparation =================
-#%% Drop the columns-features.
-df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
-    axis=1)
 
 # Categorical variables to map
-category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage']
+category_list_binary = ['Cluster_management_fee', 'Vendor_lock-in', 'Disk_type', 'Hybrid_multicloud_support',
+                        'Pay_per_pod_usage', 'Built-in_authentication', 'self-recovery_features',
+                        'automate_backup_tasks', 'Versioning&upgrades']
 
 
 # Defining the map function
@@ -128,7 +125,13 @@ df = pd.concat([df, status], axis=1)
 df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
-# df.head()
+# Drop options
+#%% Drop the columns-features.
+
+df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE',
+         'Regional_redundancy', 'Payment_option_no upfront', 'OS_Windows', 'Autoscaling_horizontal', 'Autoscaling_both',
+         'Region_Australia', 'Region_Africa', 'Payment_option_All upfront', 'Vendor_lock-in', 'Payment_option_partially upfront',
+         'Pay_per_pod_usage', 'Term_Length_1 Year commitment'], axis=1, inplace=True)
 
 # ===================== Correlation ===========================
 

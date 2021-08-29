@@ -41,57 +41,80 @@ ax.fig.suptitle('Visualize numeric variables')
 plt.plot(color='green')
 plt.show()
 
+fig_rows = 6
+fig_cols = 3
+
 # Visualize categorical variables
 fig = plt.figure(figsize=(20, 28))
 fig.suptitle('Outlier analysis for categorical variables', fontsize=32)
 
-plt.subplot(5, 3, 1)
+plt.subplot(fig_rows, fig_cols, 1)
 sns.boxplot(x='Cluster_management_fee', y='Price', data=df)
 sns.swarmplot(x='Cluster_management_fee', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 2)
+plt.subplot(fig_rows, fig_cols,  2)
 sns.boxplot(x='Regional_redundancy', y='Price', data=df)
 sns.swarmplot(x='Regional_redundancy', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 3)
+plt.subplot(fig_rows, fig_cols,  3)
 sns.boxplot(x='Autoscaling', y='Price', data=df)
 sns.swarmplot(x='Autoscaling', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 4)
+plt.subplot(fig_rows, fig_cols,  4)
 sns.boxplot(x='Vendor_lock-in', y='Price', data=df)
 sns.swarmplot(x='Vendor_lock-in', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 5)
+plt.subplot(fig_rows, fig_cols,  5)
 sns.boxplot(x='Payment_option', y='Price', data=df)
 sns.swarmplot(x='Payment_option', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 6)
+plt.subplot(fig_rows, fig_cols,  6)
 sns.boxplot(x='Term_Length', y='Price', data=df)
 sns.swarmplot(x='Term_Length', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 7)
+plt.subplot(fig_rows, fig_cols,  7)
 sns.boxplot(x='Instance_Type', y='Price', data=df)
 sns.swarmplot(x='Instance_Type', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 8)
+plt.subplot(fig_rows, fig_cols,  8)
 sns.boxplot(x='Disk_type', y='Price', data=df)
 sns.swarmplot(x='Disk_type', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 9)
+plt.subplot(fig_rows, fig_cols,  9)
 sns.boxplot(x='OS', y='Price', data=df)
 sns.swarmplot(x='OS', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 10)
+plt.subplot(fig_rows, fig_cols,  10)
 sns.boxplot(x='Hybrid_multicloud_support', y='Price', data=df)
 sns.swarmplot(x='Hybrid_multicloud_support', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 11)
+plt.subplot(fig_rows, fig_cols, 11)
 sns.boxplot(x='Pay_per_pod_usage', y='Price', data=df)
 sns.swarmplot(x='Pay_per_pod_usage', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 12)
+plt.subplot(fig_rows, fig_cols,  12)
 sns.boxplot(x='Region', y='Price', data=df)
 sns.swarmplot(x='Region', y='Price', data=df, color=".25")
+plt.show()
+
+plt.subplot(fig_rows, fig_cols,  13)
+sns.boxplot(x='Built-in_authentication', y='Price', data=df)
+sns.swarmplot(x='Built-in_authentication', y='Price', data=df, color=".25")
+plt.show()
+
+plt.subplot(fig_rows, fig_cols,  14)
+sns.boxplot(x='Versioning&upgrades', y='Price', data=df)
+sns.swarmplot(x='Versioning&upgrades', y='Price', data=df, color=".25")
+plt.show()
+
+plt.subplot(fig_rows, fig_cols, 15)
+sns.boxplot(x='automate_backup_tasks', y='Price', data=df)
+sns.swarmplot(x='automate_backup_tasks', y='Price', data=df, color=".25")
+plt.show()
+
+plt.subplot(fig_rows, fig_cols,  16)
+sns.boxplot(x='self-recovery_features', y='Price', data=df)
+sns.swarmplot(x='self-recovery_features', y='Price', data=df, color=".25")
 plt.show()
 
 # Visualize categorical features in parallel, we could add more
@@ -101,14 +124,9 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 plt.show()
 
 # =========== Data preparation =================
-#%% Drop the columns-features.
-df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
-    axis=1)
-
-# Categorical variables to map
+#%% Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage']
+                        'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades']
 
 
 # Defining the map function

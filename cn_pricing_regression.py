@@ -8,10 +8,7 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.feature_selection import RFE
-from sklearn.linear_model import LinearRegression
-from pygit2 import Repository
-from statsmodels.regression.linear_model import OLSResults
+
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
@@ -25,7 +22,7 @@ df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'H
 
 # Convert the price unit to $/month from $/hour
 df['Price'] = df['Price']
-print(df['Price'])
+# print(df['Price'])
 
 # print('rows x columns:', df.shape)
 # print('Columns info:', df.info())
@@ -39,7 +36,7 @@ print(df['Price'])
 ax = sns.pairplot(df)
 ax.fig.suptitle('Visualize numeric variables')
 plt.plot(color='green')
-plt.show()
+# plt.show()
 
 # Visualize categorical variables
 fig = plt.figure(figsize=(20, 28))
@@ -92,13 +89,13 @@ sns.swarmplot(x='Pay_per_pod_usage', y='Price', data=df, color=".25")
 plt.subplot(5, 3, 12)
 sns.boxplot(x='Region', y='Price', data=df)
 sns.swarmplot(x='Region', y='Price', data=df, color=".25")
-plt.show()
+# plt.show()
 
 # Visualize categorical features in parallel, we could add more
 #%%
 plt.figure(figsize=(10, 5))
 sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0.5)
-plt.show()
+# plt.show()
 
 # =========== Data preparation =================
 #%% Drop the columns-features.
@@ -144,7 +141,8 @@ cmap = sns.diverging_palette(230, 20, as_cmap=True)
 f, ax = plt.subplots(figsize=(32, 16))
 heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
 heatmap.set_title(f"Triangle Correlation Heatmap - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-plt.show()
+plt.savefig('plots/heatmap_triangle.png')
+# plt.show()
 
 y = df.Price
 x_stage = df.drop('Price', axis=1)
@@ -158,7 +156,9 @@ plt.figure(figsize=(12, 15))
 heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1, vmax=1, annot=True,
                       cmap='BrBG')
 heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-plt.show()
+plt.savefig('plots/heatmap_only_price.png')
+# plt.show()
+
 
 ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
 # 1–0.8 → Very strong

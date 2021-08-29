@@ -136,7 +136,7 @@ df.head()
 # ================ Correlation ===========================
 
 #%% Check the correlation coefficients to see which variables are highly correlated
-correlation_method: str = 'kendall'
+correlation_method: str = 'pearson'
 
 corr = df.corr(method=correlation_method)
 mask = np.triu(np.ones_like(corr, dtype=bool))
@@ -319,8 +319,8 @@ print(x_train.columns[~rfe.support_])
 
 #%% ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
-x = sm.add_constant(x)
-model_sm = sm.OLS(y, x)
+x = sm.add_constant(x_train)
+model_sm = sm.OLS(y_train, x)
 results = model_sm.fit()
 
 print(results.summary())

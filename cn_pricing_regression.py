@@ -100,11 +100,11 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 # =========== Data preparation =================
 #%% Drop the columns-features.
 df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
+    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE', 'Regional_redundancy', 'Vendor_lock-in', 'Payment_option' ],
     axis=1)
 
 # Categorical variables to map
-category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
+category_list_binary = ['Cluster_management_fee', 'Disk_type',
                         'Hybrid_multicloud_support', 'Pay_per_pod_usage']
 
 
@@ -118,14 +118,14 @@ df[category_list_binary] = df[category_list_binary].apply(binary_map)
 df.head()
 
 # Map Categorical variables with 3 options
-category_list = ['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region']
+category_list = ['Autoscaling', 'Term_Length','OS', 'Instance_Type', 'Region']
 status = pd.get_dummies(df[category_list])
 
 status.head()
 
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
-df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
+df.drop(['Autoscaling', 'Term_Length', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # df.head()

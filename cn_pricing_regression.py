@@ -100,7 +100,7 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 # =========== Data preparation =================
 #%% Drop the columns-features.
 df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
+    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE'],
     axis=1)
 
 # Categorical variables to map
@@ -141,7 +141,7 @@ cmap = sns.diverging_palette(230, 20, as_cmap=True)
 f, ax = plt.subplots(figsize=(32, 16))
 heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
 heatmap.set_title(f"Triangle Correlation Heatmap - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-plt.savefig('plots/heatmap_triangle.png')
+# plt.savefig('plots/heatmap_triangle.png')
 # plt.show()
 
 y = df.Price
@@ -156,7 +156,7 @@ plt.figure(figsize=(12, 15))
 heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1, vmax=1, annot=True,
                       cmap='BrBG')
 heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-plt.savefig('plots/heatmap_only_price.png')
+# plt.savefig('plots/heatmap_only_price.png')
 # plt.show()
 
 

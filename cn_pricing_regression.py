@@ -254,23 +254,23 @@ model.fit(x_train, y_train)
 #%% Apply trained model to train dataset
 y_pred_train = model.predict(x_train)
 
-print('======== TRAIN dataset - 80% ===========')
-print('Coefficients:', model.coef_)
+print('\n======== TRAIN dataset - 80% ===========')
+print('Coefficients:\n', model.coef_)
 print('Intercept:', model.intercept_)
 print('Mean squared error (MSE): %.3f'
       % mean_squared_error(y_train, y_pred_train))
-print('Coefficient of determination (R^2): %.3f'
+print('Coefficient of determination (R^2): %.3f\n'
       % r2_score(y_train, y_pred_train))
 
 #%% Apply trained model to test dataset
 y_pred_test = model.predict(x_test)
 
-print('========= TEST dataset - 20% ===========')
-print('Coefficients:', model.coef_)
+print('\n========= TEST dataset - 20% ===========')
+print('Coefficients:\n', model.coef_)
 print('Intercept:', model.intercept_)
 print('Mean squared error (MSE): %.3f'
       % mean_squared_error(y_test, y_pred_test))
-print('Coefficient of determination (R^2): %.3f'
+print('Coefficient of determination (R^2): %.3f\n'
       % r2_score(y_test, y_pred_test))
 
 #%% Evaluation Plots
@@ -303,27 +303,24 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-#%% ================== RFE for regression =====================
-lm = LinearRegression()
-lm.fit(x_train, y_train)
-
-rfe = RFE(lm, 6)  # running RFE
-rfe = rfe.fit(x_train, y_train)
-
-list(zip(x_train.columns, rfe.support_, rfe.ranking_))
-
-col = x_train.columns[rfe.support_]
-print(col)
-
-print(x_train.columns[~rfe.support_])
+# #%% ================== RFE for regression =====================
+# lm = LinearRegression()
+# lm.fit(x_train, y_train)
+#
+# rfe = RFE(lm, 6)  # running RFE
+# rfe = rfe.fit(x_train, y_train)
+#
+# list(zip(x_train.columns, rfe.support_, rfe.ranking_))
+#
+# col = x_train.columns[rfe.support_]
+# print(col)
+#
+# print(x_train.columns[~rfe.support_])
 
 #%% ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
-x = sm.add_constant(x_train)
-model_sm = sm.OLS(y_train, x)
+x = sm.add_constant(x)
+model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())
-
-# branch_name = open(Repository('.').head.shorthand, 'w')
-# OLSResults.save(open(Repository('.').head.shorthand, 'w'), remove_data=False)

@@ -6,6 +6,7 @@ regenv/
 
 # plots
 plots/
+Results/
 
 # test
 /random_test.py

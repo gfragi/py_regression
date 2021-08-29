@@ -8,12 +8,12 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
 # ============= Load the Data ============================================================
-#%% Load the csv & print columns' info
+# %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
 df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 
@@ -32,7 +32,7 @@ df['Price'] = df['Price']
 # print(df.isnull().sum() * 100 / df.shape[0])
 
 # =========== Visualize the Data ======================================
-#%% Visualize numeric variables
+# %% Visualize numeric variables
 ax = sns.pairplot(df)
 ax.fig.suptitle('Visualize numeric variables')
 plt.plot(color='green')
@@ -92,18 +92,19 @@ sns.swarmplot(x='Region', y='Price', data=df, color=".25")
 # plt.show()
 
 # Visualize categorical features in parallel, we could add more
-#%%
+# %%
 plt.figure(figsize=(10, 5))
 sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0.5)
 # plt.show()
 
 # =========== Data preparation =================
-#%% Drop the columns-features.
+# %% Drop the columns-features.
 
 
 # Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage','Built-in_authentication', 'self-recovery_features',
+                        'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Built-in_authentication',
+                        'self-recovery_features',
                         'automate_backup_tasks', 'Versioning&upgrades']
 
 
@@ -127,7 +128,6 @@ df = pd.concat([df, status], axis=1)
 df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
-
 # Drop features and options
 df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
         inplace=True)
@@ -136,7 +136,7 @@ df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_t
 
 # ===================== Correlation ===========================
 
-#%% Check the correlation coefficients to see which variables are highly correlated
+# %% Check the correlation coefficients to see which variables are highly correlated
 correlation_method: str = 'pearson'
 
 corr = df.corr(method=correlation_method)
@@ -154,10 +154,11 @@ x = x_stage.drop('Provider', axis=1)
 
 # print(x.info())
 
-#%% Features Correlating with Price
+# %% Features Correlating with Price
 
 plt.figure(figsize=(12, 15))
-heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1, vmax=1, annot=True,
+heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1,
+                      vmax=1, annot=True,
                       cmap='BrBG')
 heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
 plt.savefig('plots/heatmap_only_price.png')
@@ -248,7 +249,7 @@ plt.savefig('plots/heatmap_only_price.png')
 # plt.show()
 
 # ================ Model Evaluation ===========================
-#%% Evaluate the model performance, split the the dataset into 2 partitions (80% - 20% ration)
+# %% Evaluate the model performance, split the the dataset into 2 partitions (80% - 20% ration)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 # Apply linear regression to train set
@@ -314,3 +315,11 @@ model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())
+
+# =================== Calculate VIF Factors =====================
+# For each X, calculate VIF and save in dataframe
+
+vif = pd.DataFrame()
+vif["VIF Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
+vif["features"] = x.columns
+vif.round(1)

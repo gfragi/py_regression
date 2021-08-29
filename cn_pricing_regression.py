@@ -131,7 +131,8 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE',
          'Regional_redundancy', 'Payment_option_no upfront', 'OS_Windows', 'Autoscaling_horizontal', 'Autoscaling_both',
          'Region_Australia', 'Region_Africa', 'Payment_option_All upfront', 'Vendor_lock-in', 'Payment_option_partially upfront',
-         'Pay_per_pod_usage', 'Term_Length_1 Year commitment'], axis=1, inplace=True)
+         'Pay_per_pod_usage', 'Term_Length_1 Year commitment', 'Disk_type', 'OS_Linux', 'Region_Asia', 'Region_US',
+         'Region_South America', 'Instance_Type_On Demand', 'Term_Length_3 Year commitment', 'Instance_Type_Spot', 'OS_free'], axis=1, inplace=True)
 
 # ===================== Correlation ===========================
 

@@ -103,7 +103,7 @@ plt.show()
 # =========== Data preparation =================
 #%% Drop the columns-features.
 df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
+    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE'],
     axis=1)
 
 # Categorical variables to map
@@ -133,7 +133,7 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 
 df.head()
 
-# ================ Correlation ===========================
+# ===================== Correlation ===========================
 
 #%% Check the correlation coefficients to see which variables are highly correlated
 correlation_method: str = 'pearson'
@@ -251,7 +251,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 model = linear_model.LinearRegression()
 model.fit(x_train, y_train)
 
-#%% Apply trained model to train dataset
+# Apply trained model to train dataset
 y_pred_train = model.predict(x_train)
 
 print('\n======== TRAIN dataset - 80% ===========')
@@ -262,7 +262,7 @@ print('Mean squared error (MSE): %.3f'
 print('Coefficient of determination (R^2): %.3f\n'
       % r2_score(y_train, y_pred_train))
 
-#%% Apply trained model to test dataset
+# Apply trained model to test dataset
 y_pred_test = model.predict(x_test)
 
 print('\n========= TEST dataset - 20% ===========')
@@ -273,7 +273,7 @@ print('Mean squared error (MSE): %.3f'
 print('Coefficient of determination (R^2): %.3f\n'
       % r2_score(y_test, y_pred_test))
 
-#%% Evaluation Plots
+# Evaluation Plots
 plt.figure(figsize=(11, 5))
 
 # 1 row, 2 column, plot 1
@@ -303,21 +303,7 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-# #%% ================== RFE for regression =====================
-# lm = LinearRegression()
-# lm.fit(x_train, y_train)
-#
-# rfe = RFE(lm, 6)  # running RFE
-# rfe = rfe.fit(x_train, y_train)
-#
-# list(zip(x_train.columns, rfe.support_, rfe.ranking_))
-#
-# col = x_train.columns[rfe.support_]
-# print(col)
-#
-# print(x_train.columns[~rfe.support_])
-
-#%% ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
+# ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
 x = sm.add_constant(x)
 model_sm = sm.OLS(y, x)

@@ -102,11 +102,11 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 df = df.drop(
     ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',
      'STORAGE', 'Regional_redundancy', 'Vendor_lock-in', 'Payment_option',
-     'Region'],
+     'Region', 'Disk_type'],
     axis=1)
 
 # Categorical variables to map
-category_list_binary = ['Cluster_management_fee', 'Disk_type',
+category_list_binary = ['Cluster_management_fee',
                         'Hybrid_multicloud_support', 'Pay_per_pod_usage']
 
 

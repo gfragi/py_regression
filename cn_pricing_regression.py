@@ -103,7 +103,7 @@ plt.show()
 # =========== Data preparation =================
 #%% Drop the columns-features.
 df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE', 'RAM'],
+    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades', 'STORAGE', 'RAM', 'CPU'],
     axis=1)
 
 # Categorical variables to map

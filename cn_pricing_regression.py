@@ -5,7 +5,6 @@ import warnings
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
-
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
@@ -16,13 +15,9 @@ from statsmodels.regression.linear_model import OLSResults
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
-<<<<<<< HEAD
-# Load the csv & print columns' info
-=======
 # ============= Load the Data ============================================================
 #%% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
->>>>>>> origin/PYREG2
 df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
@@ -157,9 +152,6 @@ x = x_stage.drop('Provider', axis=1)
 
 print(x.info())
 
-<<<<<<< HEAD
-# Evaluate the model performance we split the dataset into 2 partitions (80% - 20% ration)
-=======
 #%% Features Correlating with Price
 
 plt.figure(figsize=(12, 15))
@@ -253,7 +245,6 @@ plt.show()
 
 # ================ Model Evaluation ===========================
 #%% Evaluate the model performance, split the the dataset into 2 partitions (80% - 20% ration)
->>>>>>> origin/PYREG2
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 # Apply linear regression to train set
@@ -312,27 +303,6 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-<<<<<<< HEAD
-# Calculation for p value and other
-X = np.column_stack((df['CPU'], df['RAM'], df['STORAGE'], df['Cluster_management_fee'],
-                     df['Regional_redundancy'], df['Vendor_lock-in'], df['Disk_type'], df['Hybrid_multicloud_support'],
-                     df['Pay_per_pod_usage'], df['Built-in_authentication'], df['self-recovery_features'],
-                     df['automate_backup_tasks'],
-                     df['Versioning&upgrades'], df['Autoscaling_both'], df['Autoscaling_horizontal'],
-                     df['Term_Length_1 Year commitment'], df['Term_Length_2 Year commitment'],
-                     df['Term_Length_3 Year commitment'], df['Term_Length_No commitment'],
-                     df['Payment_option_All upfront'],
-                     df['Payment_option_no upfront'], df['OS_Linux'], df['OS_Windows'], df['OS_free'],
-                     df['Payment_option_partially upfront'], df['Instance_Type_Dedicated'],
-                     df['Instance_Type_On Demand'],
-                     df['Instance_Type_Spot'], df['Region_Asia'], df['Region_Europe'], df['Region_US'],
-                     df['Region_Australia'], df['Region_Africa'],
-                     df['Region_South America']))
-
-Y = df['Price']  # scaler = MinMaxScaler()
-x2 = sm.add_constant(X)
-model_sm = sm.OLS(Y, x2)
-=======
 #%% ================== RFE for regression =====================
 lm = LinearRegression()
 lm.fit(x_train, y_train)
@@ -351,7 +321,6 @@ print(x_train.columns[~rfe.support_])
 
 x = sm.add_constant(x)
 model_sm = sm.OLS(y, x)
->>>>>>> origin/PYREG2
 results = model_sm.fit()
 
 print(results.summary())

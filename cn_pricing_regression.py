@@ -8,10 +8,7 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.feature_selection import RFE
-from sklearn.linear_model import LinearRegression
-from pygit2 import Repository
-from statsmodels.regression.linear_model import OLSResults
+
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
@@ -23,9 +20,6 @@ df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support'], axis=1)
 
-# # Convert the price unit to $/month from $/hour
-# df['Price'] = df['Price']
-# print(df['Price'])
 
 print('rows x columns:', df.shape)
 print('Columns info:', df.info())
@@ -123,7 +117,8 @@ plt.show()
 # =========== Data preparation =================
 #%% Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades']
+                        'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Built-in_authentication',
+                        'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades']
 
 
 # Defining the map function
@@ -318,19 +313,6 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-#%% ================== RFE for regression =====================
-lm = LinearRegression()
-lm.fit(x_train, y_train)
-
-rfe = RFE(lm, 6)  # running RFE
-rfe = rfe.fit(x_train, y_train)
-
-list(zip(x_train.columns, rfe.support_, rfe.ranking_))
-
-col = x_train.columns[rfe.support_]
-print(col)
-
-print(x_train.columns[~rfe.support_])
 
 #%% ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
@@ -340,5 +322,4 @@ results = model_sm.fit()
 
 print(results.summary())
 
-# branch_name = open(Repository('.').head.shorthand, 'w')
-# OLSResults.save(open(Repository('.').head.shorthand, 'w'), remove_data=False)
+

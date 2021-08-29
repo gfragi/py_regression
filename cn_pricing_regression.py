@@ -99,13 +99,12 @@ sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0
 
 # =========== Data preparation =================
 #%% Drop the columns-features.
-df = df.drop(
-    ['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'],
-    axis=1)
+
 
 # Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage']
+                        'Hybrid_multicloud_support', 'Pay_per_pod_usage','Built-in_authentication', 'self-recovery_features',
+                        'automate_backup_tasks', 'Versioning&upgrades']
 
 
 # Defining the map function
@@ -127,6 +126,11 @@ status.head()
 df = pd.concat([df, status], axis=1)
 df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
+
+
+# Drop features and options
+df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
+        inplace=True)
 
 # df.head()
 

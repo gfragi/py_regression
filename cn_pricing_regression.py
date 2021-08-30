@@ -309,7 +309,7 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-visualizer = ResidualsPlot(model, hist=True, qqplot=False)
+visualizer = ResidualsPlot(model, hist=False, qqplot=True)
 visualizer.fit(x_train, y_train)
 visualizer.score(x_test, y_test)
 visualizer.show()
@@ -323,7 +323,7 @@ results = model_sm.fit()
 print(results.summary())
 
 # =================== Calculate VIF Factors =====================
-# For each X, calculate VIF and save in dataframe
+# For each X, calculate VIF and save in dataframe. variance inflation factor
 
 vif = pd.DataFrame()
 vif["VIF Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]

@@ -136,7 +136,7 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 #          'Region_South America', 'Instance_Type_On Demand', 'Term_Length_3 Year commitment', 'Instance_Type_Spot', 'OS_free'], axis=1, inplace=True)
 
 
-df = df[['Provider', 'Price', 'CPU', 'RAM', 'STORAGE', 'Cluster_management_fee', 'Vendor_lock-in', 'Disk_type',
+df = df[['Provider', 'Price', 'CPU', 'RAM', 'STORAGE', 'Cluster_management_fee', 'Disk_type',
          'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy']]
 
 

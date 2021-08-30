@@ -9,6 +9,7 @@ from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from statsmodels.stats.outliers_influence import variance_inflation_factor
+from yellowbrick.regressor import ResidualsPlot
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
@@ -307,6 +308,11 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.png')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
+
+visualizer = ResidualsPlot(model, hist=True, qqplot=False)
+visualizer.fit(x_train, y_train)
+visualizer.score(x_test, y_test)
+visualizer.show()
 
 # ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 

@@ -137,7 +137,7 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 
 
 df = df[['Provider', 'Price', 'CPU', 'RAM', 'Cluster_management_fee',
-         'Hybrid_multicloud_support', 'Regional_redundancy',
+         'Hybrid_multicloud_support', 'Regional_redundancy', 'Disk_type',
          'Term_Length_No commitment', 'Instance_Type_Dedicated']]
 
 

@@ -136,8 +136,9 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 #          'Region_South America', 'Instance_Type_On Demand', 'Term_Length_3 Year commitment', 'Instance_Type_Spot', 'OS_free'], axis=1, inplace=True)
 
 
-df = df[['Provider', 'Price', 'CPU', 'RAM', 'Cluster_management_fee', 'Disk_type',
-         'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy']]
+df = df[['Provider', 'Price', 'CPU', 'RAM', 'Cluster_management_fee',
+         'Hybrid_multicloud_support',
+         'Term_Length_No commitment', 'Instance_Type_Dedicated']]
 
 
 # ===================== Correlation ===========================
@@ -328,7 +329,7 @@ results = model_sm.fit()
 print(results.summary())
 
 # =================== Calculate VIF Factors =====================
-# For each X, calculate VIF and save in dataframe
+# For each x, calculate VIF and save in dataframe
 
 vif = pd.DataFrame()
 vif["VIF Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]

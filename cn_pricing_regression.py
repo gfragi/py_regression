@@ -137,17 +137,17 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',
-         'Payment_option_All upfront', 'Payment_option_partially upfront', 'Payment_option_no upfront', 'Instance_Type_On Demand',
-         'Region_South America', 'Disk_type', 'Term_Length_1 Year commitment', 'Term_Length_3 Year commitment',
-         'Term_Length_No commitment',
-         'Regional_redundancy', 'Instance_Type_Spot', 'OS_free', 'OS_Windows', 'Vendor_lock-in',
-         ], axis=1, inplace=True)
+# df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',
+#          'Payment_option_All upfront', 'Payment_option_partially upfront', 'Payment_option_no upfront', 'Instance_Type_On Demand',
+#          'Region_South America', 'Disk_type', 'Term_Length_1 Year commitment', 'Term_Length_3 Year commitment',
+#          'Term_Length_No commitment',
+#          'Regional_redundancy', 'Instance_Type_Spot', 'OS_free', 'OS_Windows', 'Vendor_lock-in',
+#          ], axis=1, inplace=True)
 
 # Keep only the following columns
-# df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM',
-#          'Pay_per_pod_usage', 'OS_Linux',
-#          'Instance_Type_Dedicated', 'Region_Asia', 'Region_Europe', 'Region_US']]
+df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM',
+         'Pay_per_pod_usage', 'OS_Linux',
+         'Instance_Type_Dedicated', 'Region_Asia', 'Region_Europe', 'Region_US']]
 # df.head()
 
 # ===================== Correlation ===========================

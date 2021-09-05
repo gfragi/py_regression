@@ -137,10 +137,11 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
-        inplace=True)
+df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',
+         'Payment_option_All upfront', 'Payment_option_partially upfront', 'Instance_Type_On Demand',
+         'Region_South America', 'Disk_type'], axis=1, inplace=True)
 
-# Kepp only the following columns
+# Keep only the following columns
 # df = df[['Provider', 'Price', ]]
 # df.head()
 

@@ -16,7 +16,7 @@ warnings.filterwarnings('ignore')  # it is used for some minor warnings in seabo
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('cn_pricing_per_provider_network.csv')  # real data
+df = pd.read_csv('cn_pricing_per_provider_excl_IBM_excl_outliers.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support', 'external_egress_price',
@@ -137,7 +137,7 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
+df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',], axis=1,
         inplace=True)
 
 # df.head()
@@ -170,6 +170,16 @@ heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(
                       cmap='BrBG')
 heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
 plt.savefig('plots/heatmap_only_price.png')
+plt.show()
+
+# %% Features Correlating with Cluster Management fee
+
+plt.figure(figsize=(12, 15))
+heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_management_fee']].sort_values(by='Cluster_management_fee', ascending=False), vmin=-1,
+                      vmax=1, annot=True,
+                      cmap='BrBG')
+heatmap.set_title(f"Features Correlating with Cluster_management_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
+plt.savefig('plots/heatmap_only_Cluster_management_fee.png')
 plt.show()
 
 # %% ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c

@@ -146,7 +146,6 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 
 # Keep only the following columns
 df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM',
-         'Pay_per_pod_usage', 'OS_Linux',
          'Instance_Type_Dedicated', 'Region_Asia', 'Region_Europe', 'Region_US']]
 # df.head()
 
@@ -180,15 +179,15 @@ heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fon
 plt.savefig('plots/heatmap_only_price.png')
 plt.show()
 
-# %% Features Correlating with Cluster Management fee
-
-plt.figure(figsize=(12, 15))
-heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_management_fee']].sort_values(by='Cluster_management_fee', ascending=False), vmin=-1,
-                      vmax=1, annot=True,
-                      cmap='BrBG')
-heatmap.set_title(f"Features Correlating with Cluster_management_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-plt.savefig('plots/heatmap_only_Cluster_management_fee.png')
-plt.show()
+# # %% Features Correlating with Cluster Management fee
+#
+# plt.figure(figsize=(12, 15))
+# heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_management_fee']].sort_values(by='Cluster_management_fee', ascending=False), vmin=-1,
+#                       vmax=1, annot=True,
+#                       cmap='BrBG')
+# heatmap.set_title(f"Features Correlating with Cluster_management_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
+# plt.savefig('plots/heatmap_only_Cluster_management_fee.png')
+# plt.show()
 
 # %% ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
 # 1–0.8 → Very strong

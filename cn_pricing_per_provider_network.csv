@@ -102,20 +102,10 @@ Amazon,RH13,2.04339,0.4692,0.01041,0.03,0,0.342,0.0273973,1.1644,1000,10000,8,16
 Amazon,RH14,1.78219,0.322,0.01041,0.03,0,0.228,0.0273973,1.1644,1000,10000,8,32,300,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
 Amazon,RH15,3.03764,1.2862,0.01666,0.03,0,0.513,0.0273973,1.1644,1000,10000,12,48,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
 Amazon,RH16,2.38568,0.806,0.0159,0.03,0,0.342,0.0273973,1.1644,1000,10000,12,48,500,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH17,3.02448,1.1028,0.0159,0.03,0,0.684,0.0273973,1.1644,10000,10000,16,128,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH18,2.02868,0.335,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH19,8.80391,1.4996,0.0159,0.03,0,1.368,0.2739726,5.6164,10000,50000,32,64,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH20,7.58031,0.732,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH21,3.03688,1.2862,0.0159,0.03,0,0.513,0.0273973,1.1644,10000,10000,12,48,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH22,0.66162,0.2776,0.0159,0.03,0,0.171,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH23,0.48102,0.154,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH24,1.57968,,0.0159,0.03,0,0.342,0.0273973,1.1644,10000,10000,12,48,500,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH25,1.57968,,0.0159,0.03,0,0.342,0.0273973,1.1644,10000,10000,12,48,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH26,2.56528,0.6436,0.0159,0.03,0,0.684,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH27,2.14768,0.454,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH28,2.12568,0.432,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH29,2.01668,0.323,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Amazon,RH30,2.04568,0.352,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH31,9.01831,1.714,0.0159,0.03,0,1.368,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH32,7.98631,1.138,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Amazon,RH33,7.93831,1.09,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
@@ -266,8 +256,6 @@ Digital,Ocean,0.61318,0.47619,0,0,0,0,0,0.137,1000,10000,16,32,200,no,yes,horizo
 Digital,Ocean,0.58099,0.444,0,0,0,0,0,0.137,1000,10000,16,32,200,no,yes,horizontal,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital,Ocean,0.6727,0.53571,0,0,0,0,0,0.137,1000,10000,16,32,800,no,yes,horizontal,no,no upfront,No commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital,Ocean,0.63699,0.5,0,0,0,0,0,0.137,1000,10000,16,32,800,no,yes,horizontal,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
-Digital,Ocean,1.75636,1.07143,0,0,0,0,0,0.6849,10000,50000,32,64,800,no,yes,horizontal,no,no upfront,No commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
-Digital,Ocean,1.68493,1,0,0,0,0,0,0.6849,10000,50000,32,64,800,no,yes,horizontal,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital,Ocean,0.2518,0.2381,0,0,0,0,0,0.0137,100,1000,4,32,100,no,yes,horizontal,no,no upfront,No commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital,Ocean,0.2337,0.22,0,0,0,0,0,0.0137,100,1000,4,32,100,no,yes,horizontal,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
 Digital,Ocean,0.61318,0.47619,0,0,0,0,0,0.137,1000,10000,8,64,200,no,yes,horizontal,no,no upfront,No commitment,On Demand,SSD,free,no,no,US,yes,yes,yes,yes
@@ -658,12 +646,6 @@ Microsoft,RH33,1.65992,0.3355,0.099,0,0,0,0.0273973,1.198,1000,10000,8,32,300,no
 Microsoft,RH34,2.55236,0.87,0.0125,0,0,0,0.0273973,1.6425,1000,10000,8,32,300,no,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Microsoft,RH35,2.22826,0.5459,0.0125,0,0,0,0.0273973,1.6425,1000,10000,8,32,300,no,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
 Microsoft,RH36,2.03356,0.3512,0.0125,0,0,0,0.0273973,1.6425,1000,10000,8,32,300,no,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
-Microsoft,RH37,0.79605,0.425,0.1216,0,0,0,0.0027397,0.2467,100,1000,4,16,300,no,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,yes,no,Africa,yes,yes,yes,yes
-Microsoft,RH38,0.63115,0.2601,0.1216,0,0,0,0.0027397,0.2467,100,1000,4,16,300,no,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,yes,no,Africa,yes,yes,yes,yes
-Microsoft,RH39,0.53995,0.1689,0.1216,0,0,0,0.0027397,0.2467,100,1000,4,16,300,no,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,yes,no,Africa,yes,yes,yes,yes
 Microsoft,RH40,0.62042,0.489,0.0095,0,0,0,0.0027397,0.1192,100,1000,4,16,300,no,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
 Microsoft,RH41,0.41472,0.2833,0.0095,0,0,0,0.0027397,0.1192,100,1000,4,16,300,no,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
 Microsoft,RH42,0.32702,0.1956,0.0095,0,0,0,0.0027397,0.1192,100,1000,4,16,300,no,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
-Microsoft,RH43,0.7077,0.421,0.1204,0,0,0,0.0027397,0.1636,100,1000,4,16,300,no,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,yes,no,Australia,yes,yes,yes,yes
-Microsoft,RH44,0.5582,0.2715,0.1204,0,0,0,0.0027397,0.1636,100,1000,4,16,300,no,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,yes,no,Australia,yes,yes,yes,yes
-Microsoft,RH45,0.4673,0.1806,0.1204,0,0,0,0.0027397,0.1636,100,1000,4,16,300,no,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,yes,no,Australia,yes,yes,yes,yes

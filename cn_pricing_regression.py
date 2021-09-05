@@ -16,7 +16,7 @@ warnings.filterwarnings('ignore')  # it is used for some minor warnings in seabo
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('cn_pricing_per_provider_excl_IBM_excl_outliers.csv')  # real data
+df = pd.read_csv('cn_pricing_per_provider_network.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support', 'external_egress_price',
@@ -102,11 +102,11 @@ sns.boxplot(x='external_egress', y='Price', data=df)
 # sns.swarmplot(x='external_egress', y='Price', data=df, color=".25")
 plt.show()
 
-# %% Visualize categorical features in parallel, we could add more
-
-plt.figure(figsize=(10, 5))
-sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0.5)
-plt.show()
+# # %% Visualize categorical features in parallel, we could add more
+#
+# plt.figure(figsize=(10, 5))
+# sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0.5)
+# plt.show()
 
 # %% =========== Data preparation =================
 
@@ -137,9 +137,11 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',], axis=1,
+df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
         inplace=True)
 
+# Kepp only the following columns
+# df = df[['Provider', 'Price', ]]
 # df.head()
 
 # ===================== Correlation ===========================

@@ -138,11 +138,16 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 
 # Drop features and options
 df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',
-         'Payment_option_All upfront', 'Payment_option_partially upfront', 'Instance_Type_On Demand',
-         'Region_South America', 'Disk_type',], axis=1, inplace=True)
+         'Payment_option_All upfront', 'Payment_option_partially upfront', 'Payment_option_no upfront', 'Instance_Type_On Demand',
+         'Region_South America', 'Disk_type', 'Term_Length_1 Year commitment', 'Term_Length_3 Year commitment',
+         'Term_Length_No commitment',
+         'Regional_redundancy', 'Instance_Type_Spot', 'OS_free', 'OS_Windows', 'Vendor_lock-in',
+         ], axis=1, inplace=True)
 
 # Keep only the following columns
-# df = df[['Provider', 'Price', ]]
+# df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM',
+#          'Pay_per_pod_usage', 'OS_Linux',
+#          'Instance_Type_Dedicated', 'Region_Asia', 'Region_Europe', 'Region_US']]
 # df.head()
 
 # ===================== Correlation ===========================
@@ -192,102 +197,102 @@ plt.show()
 # 0.399–0.2 → Weak
 # 0.199–0 → Very Weak
 
-# regression plot using seaborn - Very strong
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.external_egress, y=df.Price, color='#619CFF', marker='o')
-
+# # regression plot using seaborn - Very strong
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.external_egress, y=df.Price, color='#619CFF', marker='o')
+#
+# # # legend, title, and labels.
+# plt.legend(labels=['external_egress'])
+# plt.title('Relationship between Price and external_egress', size=20)
+# plt.xlabel('GB/month)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.internal_egress, y=df.Price, color='#619CFF', marker='o')
+#
+# # # legend, title, and labels.
+# plt.legend(labels=['internal_egress'])
+# plt.title('Relationship between Price and internal_egress', size=20)
+# plt.xlabel('GB/month)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
+#
+# # # legend, title, and labels.
+# plt.legend(labels=['CPU'])
+# plt.title('Relationship between Price and CPU', size=20)
+# plt.xlabel('CPU(Cores)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.STORAGE, y=df.Price, color='#619CFF', marker='o')
+#
 # # legend, title, and labels.
-plt.legend(labels=['external_egress'])
-plt.title('Relationship between Price and external_egress', size=20)
-plt.xlabel('GB/month)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.internal_egress, y=df.Price, color='#619CFF', marker='o')
-
+# plt.legend(labels=['Storage'])
+# plt.title('Relationship between Price and Storage', size=20)
+# plt.xlabel('Storage(GB)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# # regression plot using seaborn - Strong
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.RAM, y=df.Price, color='#619CFF', marker='o')
+#
 # # legend, title, and labels.
-plt.legend(labels=['internal_egress'])
-plt.title('Relationship between Price and internal_egress', size=20)
-plt.xlabel('GB/month)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
-
+# plt.legend(labels=['RAM'])
+# plt.title('Relationship between Price and RAM', size=20)
+# plt.xlabel('RAM(GB)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# #%% regression plot using seaborn - Weak
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Hybrid_multicloud_support, y=df.Price, color='#619CFF', marker='o')
+#
 # # legend, title, and labels.
-plt.legend(labels=['CPU'])
-plt.title('Relationship between Price and CPU', size=20)
-plt.xlabel('CPU(Cores)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.STORAGE, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Storage'])
-plt.title('Relationship between Price and Storage', size=20)
-plt.xlabel('Storage(GB)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-# regression plot using seaborn - Strong
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.RAM, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['RAM'])
-plt.title('Relationship between Price and RAM', size=20)
-plt.xlabel('RAM(GB)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-#%% regression plot using seaborn - Weak
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Hybrid_multicloud_support, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Hybrid_multicloud_support'])
-plt.title('Relationship between Price and Hybrid_multicloud_support', size=20)
-plt.xlabel('Hybrid_multicloud_support', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Hybrid_multicloud_support, y=df.OS_Linux, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Hybrid_multicloud_support'])
-plt.title('Relationship between OS_Linux and Hybrid_multicloud_support', size=20)
-plt.xlabel('Hybrid_multicloud_support', size=18)
-plt.ylabel('OS_linux', size=18)
-plt.show()
-
-#%% regression plot using seaborn - Very Weak
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Regional_redundancy, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Regional_redundancy'])
-plt.title('Relationship between Price and Regional_redundancy', size=20)
-plt.xlabel('Regional_redundancy', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-#%% regression plot using seaborn - Negative
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Cluster_management_fee, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Cluster_management_fee'])
-plt.title('Relationship between Price and Cluster_management_fee', size=20)
-plt.xlabel('Cluster_management_fee', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
+# plt.legend(labels=['Hybrid_multicloud_support'])
+# plt.title('Relationship between Price and Hybrid_multicloud_support', size=20)
+# plt.xlabel('Hybrid_multicloud_support', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Hybrid_multicloud_support, y=df.OS_Linux, color='#619CFF', marker='o')
+#
+# # legend, title, and labels.
+# plt.legend(labels=['Hybrid_multicloud_support'])
+# plt.title('Relationship between OS_Linux and Hybrid_multicloud_support', size=20)
+# plt.xlabel('Hybrid_multicloud_support', size=18)
+# plt.ylabel('OS_linux', size=18)
+# plt.show()
+#
+# #%% regression plot using seaborn - Very Weak
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Regional_redundancy, y=df.Price, color='#619CFF', marker='o')
+#
+# # legend, title, and labels.
+# plt.legend(labels=['Regional_redundancy'])
+# plt.title('Relationship between Price and Regional_redundancy', size=20)
+# plt.xlabel('Regional_redundancy', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# #%% regression plot using seaborn - Negative
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Cluster_management_fee, y=df.Price, color='#619CFF', marker='o')
+#
+# # legend, title, and labels.
+# plt.legend(labels=['Cluster_management_fee'])
+# plt.title('Relationship between Price and Cluster_management_fee', size=20)
+# plt.xlabel('Cluster_management_fee', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
 
 # ================ Model Evaluation ===========================
 # %% Evaluate the model performance, split the the dataset into 2 partitions (80% - 20% ration)

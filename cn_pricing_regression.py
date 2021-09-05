@@ -139,7 +139,7 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 # Drop features and options
 df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades',
          'Payment_option_All upfront', 'Payment_option_partially upfront', 'Instance_Type_On Demand',
-         'Region_South America', 'Disk_type'], axis=1, inplace=True)
+         'Region_South America', 'Disk_type',], axis=1, inplace=True)
 
 # Keep only the following columns
 # df = df[['Provider', 'Price', ]]

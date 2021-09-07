@@ -8,6 +8,7 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from yellowbrick.regressor import ResidualsPlot
 
@@ -16,7 +17,7 @@ warnings.filterwarnings('ignore')  # it is used for some minor warnings in seabo
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('cn_pricing_per_provider_network.csv')  # real data
+df = pd.read_csv('cn_pricing_per_provider_upd2.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support', 'external_egress_price',
@@ -92,9 +93,9 @@ plt.subplot(5, 3, 12)
 sns.boxplot(x='Region', y='Price', data=df)
 # sns.swarmplot(x='Region', y='Price', data=df, color=".25")
 
-plt.subplot(5, 3, 13)
-sns.boxplot(x='internal_egress', y='Price', data=df)
-# sns.swarmplot(x='internal_egress', y='Price', data=df, color=".25")
+# plt.subplot(5, 3, 13)
+# sns.boxplot(x='internal_egress', y='Price', data=df)
+# # sns.swarmplot(x='internal_egress', y='Price', data=df, color=".25")
 
 
 plt.subplot(5, 3, 14)
@@ -137,16 +138,25 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
-        inplace=True)
+# df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
+#         inplace=True)
 
-# Kepp only the following columns
-# df = df[['Provider', 'Price', ]]
+# Keep only the following columns
+df = df[['Provider', 'Price', 'external_egress', 'CPU', 'STORAGE', 'Cluster_management_fee',
+         'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage']]
 # df.head()
 
-# ===================== Correlation ===========================
+#%% Rescale the features
+scaler = MinMaxScaler()
+# Apply scaler to all the numeric columns
+num_vars = ['Price', 'CPU', 'STORAGE', 'external_egress']
+df[num_vars] = scaler.fit_transform(df[num_vars])
+df.head()
+print('Describe the dataframe after rescaling \n')
+print(df.describe())
 
-# %% Check the correlation coefficients to see which variables are highly correlated
+#%% ===================== Correlation ===========================
+# Check the correlation coefficients to see which variables are highly correlated
 correlation_method: str = 'pearson'
 
 corr = df.corr(method=correlation_method)
@@ -174,15 +184,15 @@ heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fon
 plt.savefig('plots/heatmap_only_price.png')
 plt.show()
 
-# %% Features Correlating with Cluster Management fee
-
-plt.figure(figsize=(12, 15))
-heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_management_fee']].sort_values(by='Cluster_management_fee', ascending=False), vmin=-1,
-                      vmax=1, annot=True,
-                      cmap='BrBG')
-heatmap.set_title(f"Features Correlating with Cluster_management_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-plt.savefig('plots/heatmap_only_Cluster_management_fee.png')
-plt.show()
+# # %% Features Correlating with Cluster Management fee
+#
+# plt.figure(figsize=(12, 15))
+# heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_management_fee']].sort_values(by='Cluster_management_fee', ascending=False), vmin=-1,
+#                       vmax=1, annot=True,
+#                       cmap='BrBG')
+# heatmap.set_title(f"Features Correlating with Cluster_management_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
+# plt.savefig('plots/heatmap_only_Cluster_management_fee.png')
+# plt.show()
 
 # %% ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
 # 1–0.8 → Very strong
@@ -191,102 +201,102 @@ plt.show()
 # 0.399–0.2 → Weak
 # 0.199–0 → Very Weak
 
-# regression plot using seaborn - Very strong
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.external_egress, y=df.Price, color='#619CFF', marker='o')
-
+# # regression plot using seaborn - Very strong
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.external_egress, y=df.Price, color='#619CFF', marker='o')
+#
+# # # legend, title, and labels.
+# plt.legend(labels=['external_egress'])
+# plt.title('Relationship between Price and external_egress', size=20)
+# plt.xlabel('GB/month)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.internal_egress, y=df.Price, color='#619CFF', marker='o')
+#
+# # # legend, title, and labels.
+# plt.legend(labels=['internal_egress'])
+# plt.title('Relationship between Price and internal_egress', size=20)
+# plt.xlabel('GB/month)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
+#
+# # # legend, title, and labels.
+# plt.legend(labels=['CPU'])
+# plt.title('Relationship between Price and CPU', size=20)
+# plt.xlabel('CPU(Cores)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.STORAGE, y=df.Price, color='#619CFF', marker='o')
+#
 # # legend, title, and labels.
-plt.legend(labels=['external_egress'])
-plt.title('Relationship between Price and external_egress', size=20)
-plt.xlabel('GB/month)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.internal_egress, y=df.Price, color='#619CFF', marker='o')
-
+# plt.legend(labels=['Storage'])
+# plt.title('Relationship between Price and Storage', size=20)
+# plt.xlabel('Storage(GB)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# # regression plot using seaborn - Strong
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.RAM, y=df.Price, color='#619CFF', marker='o')
+#
 # # legend, title, and labels.
-plt.legend(labels=['internal_egress'])
-plt.title('Relationship between Price and internal_egress', size=20)
-plt.xlabel('GB/month)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
-
+# plt.legend(labels=['RAM'])
+# plt.title('Relationship between Price and RAM', size=20)
+# plt.xlabel('RAM(GB)', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# #%% regression plot using seaborn - Weak
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Hybrid_multicloud_support, y=df.Price, color='#619CFF', marker='o')
+#
 # # legend, title, and labels.
-plt.legend(labels=['CPU'])
-plt.title('Relationship between Price and CPU', size=20)
-plt.xlabel('CPU(Cores)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.STORAGE, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Storage'])
-plt.title('Relationship between Price and Storage', size=20)
-plt.xlabel('Storage(GB)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-# regression plot using seaborn - Strong
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.RAM, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['RAM'])
-plt.title('Relationship between Price and RAM', size=20)
-plt.xlabel('RAM(GB)', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-#%% regression plot using seaborn - Weak
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Hybrid_multicloud_support, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Hybrid_multicloud_support'])
-plt.title('Relationship between Price and Hybrid_multicloud_support', size=20)
-plt.xlabel('Hybrid_multicloud_support', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Hybrid_multicloud_support, y=df.OS_Linux, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Hybrid_multicloud_support'])
-plt.title('Relationship between OS_Linux and Hybrid_multicloud_support', size=20)
-plt.xlabel('Hybrid_multicloud_support', size=18)
-plt.ylabel('OS_linux', size=18)
-plt.show()
-
-#%% regression plot using seaborn - Very Weak
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Regional_redundancy, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Regional_redundancy'])
-plt.title('Relationship between Price and Regional_redundancy', size=20)
-plt.xlabel('Regional_redundancy', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
-
-#%% regression plot using seaborn - Negative
-fig = plt.figure(figsize=(10, 7))
-sns.regplot(x=df.Cluster_management_fee, y=df.Price, color='#619CFF', marker='o')
-
-# legend, title, and labels.
-plt.legend(labels=['Cluster_management_fee'])
-plt.title('Relationship between Price and Cluster_management_fee', size=20)
-plt.xlabel('Cluster_management_fee', size=18)
-plt.ylabel('Price ($/hour)', size=18)
-plt.show()
+# plt.legend(labels=['Hybrid_multicloud_support'])
+# plt.title('Relationship between Price and Hybrid_multicloud_support', size=20)
+# plt.xlabel('Hybrid_multicloud_support', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+#
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Hybrid_multicloud_support, y=df.OS_Linux, color='#619CFF', marker='o')
+#
+# # legend, title, and labels.
+# plt.legend(labels=['Hybrid_multicloud_support'])
+# plt.title('Relationship between OS_Linux and Hybrid_multicloud_support', size=20)
+# plt.xlabel('Hybrid_multicloud_support', size=18)
+# plt.ylabel('OS_linux', size=18)
+# plt.show()
+#
+# #%% regression plot using seaborn - Very Weak
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Regional_redundancy, y=df.Price, color='#619CFF', marker='o')
+#
+# # legend, title, and labels.
+# plt.legend(labels=['Regional_redundancy'])
+# plt.title('Relationship between Price and Regional_redundancy', size=20)
+# plt.xlabel('Regional_redundancy', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
+#
+# #%% regression plot using seaborn - Negative
+# fig = plt.figure(figsize=(10, 7))
+# sns.regplot(x=df.Cluster_management_fee, y=df.Price, color='#619CFF', marker='o')
+#
+# # legend, title, and labels.
+# plt.legend(labels=['Cluster_management_fee'])
+# plt.title('Relationship between Price and Cluster_management_fee', size=20)
+# plt.xlabel('Cluster_management_fee', size=18)
+# plt.ylabel('Price ($/hour)', size=18)
+# plt.show()
 
 # ================ Model Evaluation ===========================
 # %% Evaluate the model performance, split the the dataset into 2 partitions (80% - 20% ration)

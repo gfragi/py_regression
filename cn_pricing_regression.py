@@ -8,7 +8,7 @@ import statsmodels.api as sm
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from yellowbrick.regressor import ResidualsPlot
 
@@ -137,19 +137,19 @@ df = pd.concat([df, status], axis=1)
 df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
-# Drop features and options
+# # Drop features and options
 # df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
 #         inplace=True)
 
 # Keep only the following columns
-df = df[['Provider', 'Price', 'external_egress', 'CPU', 'STORAGE', 'Cluster_management_fee',
-         'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage']]
+df = df[['Provider', 'Price', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Cluster_management_fee',
+         'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy', 'Vendor_lock-in']]
 # df.head()
 
-#%% Rescale the features
-scaler = MinMaxScaler()
+#%% Rescale the features StandardScaler() or MinMaxScaler()
+scaler = StandardScaler()
 # Apply scaler to all the numeric columns
-num_vars = ['Price', 'CPU', 'STORAGE', 'external_egress']
+num_vars = ['Price', 'CPU', 'external_egress', 'RAM', 'STORAGE']
 df[num_vars] = scaler.fit_transform(df[num_vars])
 df.head()
 print('Describe the dataframe after rescaling \n')
@@ -173,6 +173,14 @@ x_stage = df.drop('Price', axis=1)
 x = x_stage.drop('Provider', axis=1)
 
 # print(x.info())
+
+# =================== Calculate VIF Factors =====================
+# For each X, calculate VIF and save in dataframe. variance inflation factor
+
+vif = pd.DataFrame()
+vif["VIF Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
+vif["features"] = x.columns
+vif.round(1)
 
 # %% Features Correlating with Price
 
@@ -371,10 +379,3 @@ results = model_sm.fit()
 
 print(results.summary())
 
-# =================== Calculate VIF Factors =====================
-# For each X, calculate VIF and save in dataframe. variance inflation factor
-
-vif = pd.DataFrame()
-vif["VIF Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
-vif["features"] = x.columns
-vif.round(1)

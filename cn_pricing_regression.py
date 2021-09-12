@@ -12,6 +12,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from yellowbrick.regressor import ResidualsPlot
 
+
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
 # ============= Load the Data ============================================================
@@ -142,7 +143,7 @@ df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 
 #         inplace=True)
 
 # Keep only the following columns
-df = df[['Provider', 'Price', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Cluster_management_fee',
+df = df[['Provider', 'Price', 'external_egress', 'CPU', 'RAM', 'STORAGE',  'Cluster_management_fee',
          'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy', 'Vendor_lock-in']]
 # df.head()
 
@@ -378,4 +379,12 @@ model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())
+#%%
+sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
+plt.show()
+
+coeff = results.params
+coeff = coeff.iloc[(coeff.abs()*-1.0).argsort()]
+sns.barplot(coeff.values, coeff.index, orient='h');
+plt.show()
 

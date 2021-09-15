@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from yellowbrick.regressor import ResidualsPlot
+from scipy import stats
 
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
@@ -383,8 +384,14 @@ print(results.summary())
 sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
 plt.show()
 
+# ======================== Tornado diagram ======================================
 coeff = results.params
 coeff = coeff.iloc[(coeff.abs()*-1.0).argsort()]
-sns.barplot(coeff.values, coeff.index, orient='h');
+sns.barplot(coeff.values, coeff.index, orient='h')
 plt.show()
+
+#%%
+sns.distplot(results.resid, fit=stats.norm)
+plt.show()
+
 

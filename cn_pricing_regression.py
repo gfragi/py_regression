@@ -5,6 +5,7 @@ import warnings
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
+from pandas.core.dtypes.common import is_numeric_dtype, is_string_dtype
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
@@ -13,13 +14,12 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 from yellowbrick.regressor import ResidualsPlot
 from scipy import stats
 
-
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('cn_pricing_per_provider_upd2.csv')  # real data
+df = pd.read_csv('cn_pricing_per_provider_upd3.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support', 'external_egress_price',
@@ -37,6 +37,19 @@ print('Data highlights: \n', df.describe())
 print(df.isnull().sum() * 100 / df.shape[0])
 
 # =========== Visualize the Data ======================================
+num_list = []
+cat_list = []
+
+for column in df:
+    plt.figure(column, figsize=(5, 5))
+    plt.title(column)
+    if is_numeric_dtype(df[column]):
+        df[column].plot(kind='hist')
+        num_list.append(column)
+    elif is_string_dtype(df[column]):
+        df[column].value_counts().plot(kind='bar')
+        cat_list.append(column)
+
 # %% Visualize numeric variables
 ax = sns.pairplot(df)
 ax.fig.suptitle('Visualize numeric variables')
@@ -96,8 +109,8 @@ sns.boxplot(x='Region', y='Price', data=df)
 # sns.swarmplot(x='Region', y='Price', data=df, color=".25")
 
 # plt.subplot(5, 3, 13)
-# sns.boxplot(x='internal_egress', y='Price', data=df)
-# # sns.swarmplot(x='internal_egress', y='Price', data=df, color=".25")
+sns.boxplot(x='internal_egress', y='Price', data=df)
+# sns.swarmplot(x='internal_egress', y='Price', data=df, color=".25")
 
 
 plt.subplot(5, 3, 14)
@@ -115,8 +128,7 @@ plt.show()
 
 # Categorical variables to map
 category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Built-in_authentication',
-                        'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades']
+                        'Hybrid_multicloud_support', 'Pay_per_pod_usage']
 
 
 # Defining the map function
@@ -139,25 +151,25 @@ df = pd.concat([df, status], axis=1)
 df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
-# # Drop features and options
-# df.drop(['Built-in_authentication', 'self-recovery_features', 'automate_backup_tasks', 'Versioning&upgrades'], axis=1,
-#         inplace=True)
+# Drop features and options
 
-# Keep only the following columns
-df = df[['Provider', 'Price', 'external_egress', 'CPU', 'RAM', 'STORAGE',  'Cluster_management_fee',
-         'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy', 'Vendor_lock-in']]
-# df.head()
+# df = df[['Provider', 'Price', 'external_egress', 'CPU', 'RAM', 'STORAGE',  'Cluster_management_fee',
+#          'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy', 'Vendor_lock-in']]
+df.head()
+
 
 #%% Rescale the features StandardScaler() or MinMaxScaler()
 scaler = StandardScaler()
+
 # Apply scaler to all the numeric columns
-num_vars = ['Price', 'CPU', 'external_egress', 'RAM', 'STORAGE']
+num_vars = ['Price', 'CPU', 'external_egress', 'RAM', 'STORAGE', 'internal_egress']
 df[num_vars] = scaler.fit_transform(df[num_vars])
 df.head()
 print('Describe the dataframe after rescaling \n')
 print(df.describe())
 
-#%% ===================== Correlation ===========================
+
+# %% ===================== Correlation ===========================
 # Check the correlation coefficients to see which variables are highly correlated
 correlation_method: str = 'pearson'
 
@@ -380,18 +392,21 @@ model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())
-#%%
+# %%
 sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
 plt.show()
 
 # ======================== Tornado diagram ======================================
 coeff = results.params
-coeff = coeff.iloc[(coeff.abs()*-1.0).argsort()]
+coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 sns.barplot(coeff.values, coeff.index, orient='h')
 plt.show()
 
-#%%
+# %%
 sns.distplot(results.resid, fit=stats.norm)
 plt.show()
-
+#
+# print('rows x columns:', df.shape)
+# print('Columns info:', df.info())
+# print('Data highlights: \n', df.describe())
 

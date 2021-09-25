@@ -36,19 +36,23 @@ print('Data highlights: \n', df.describe())
 # Check for null values
 print(df.isnull().sum() * 100 / df.shape[0])
 
-# =========== Visualize the Data ======================================
+#%% =========== Visualize the Data ======================================
+df.drop(['Internal_traffic'], axis=1, inplace=True)
+
 num_list = []
 cat_list = []
 
 for column in df:
-    plt.figure(column, figsize=(5, 5))
+    plt.figure(column, figsize=(8, 5))
     plt.title(column)
     if is_numeric_dtype(df[column]):
         df[column].plot(kind='hist')
         num_list.append(column)
     elif is_string_dtype(df[column]):
-        df[column].value_counts().plot(kind='bar')
+        df[column].value_counts().plot(kind='barh', color='#43FF76')
         cat_list.append(column)
+    plt.xlabel('Observations')
+    plt.show()
 
 # %% Visualize numeric variables
 ax = sns.pairplot(df)
@@ -61,8 +65,8 @@ fig = plt.figure(figsize=(28, 20))
 fig.suptitle('Outlier analysis for categorical variables', fontsize=32)
 
 plt.subplot(5, 3, 1)
-sns.boxplot(x='Cluster_management_fee', y='Price', data=df)
-# sns.swarmplot(x='Cluster_management_fee', y='Price', data=df, color=".25")
+sns.boxplot(x='Cluster_mgmt_fee', y='Price', data=df)
+# sns.swarmplot(x='Cluster_mgmt_fee', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 2)
 sns.boxplot(x='Regional_redundancy', y='Price', data=df)
@@ -73,16 +77,16 @@ sns.boxplot(x='Autoscaling', y='Price', data=df)
 # sns.swarmplot(x='Autoscaling', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 4)
-sns.boxplot(x='Vendor_lock-in', y='Price', data=df)
-# sns.swarmplot(x='Vendor_lock-in', y='Price', data=df, color=".25")
+sns.boxplot(x='Vendor_agnostic', y='Price', data=df)
+# sns.swarmplot(x='Vendor_agnostic', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 5)
-sns.boxplot(x='Payment_option', y='Price', data=df)
-# sns.swarmplot(x='Payment_option', y='Price', data=df, color=".25")
+sns.boxplot(x='Payment', y='Price', data=df)
+# sns.swarmplot(x='Payment', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 6)
-sns.boxplot(x='Term_Length', y='Price', data=df)
-# sns.swarmplot(x='Term_Length', y='Price', data=df, color=".25")
+sns.boxplot(x='Term_length_commitment', y='Price', data=df)
+# sns.swarmplot(x='Term_length_commitment', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 7)
 sns.boxplot(x='Instance_Type', y='Price', data=df)
@@ -93,81 +97,97 @@ sns.boxplot(x='Disk_type', y='Price', data=df)
 # sns.swarmplot(x='Disk_type', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 9)
-sns.boxplot(x='OS', y='Price', data=df)
-# sns.swarmplot(x='OS', y='Price', data=df, color=".25")
+sns.boxplot(x='Operating System', y='Price', data=df)
+# sns.swarmplot(x='Operating System', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 10)
-sns.boxplot(x='Hybrid_multicloud_support', y='Price', data=df)
-# sns.swarmplot(x='Hybrid_multicloud_support', y='Price', data=df, color=".25")
+sns.boxplot(x='Multicloud_support', y='Price', data=df)
+# sns.swarmplot(x='Multicloud_support', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 11)
-sns.boxplot(x='Pay_per_pod_usage', y='Price', data=df)
-# sns.swarmplot(x='Pay_per_pod_usage', y='Price', data=df, color=".25")
+sns.boxplot(x='Pay_per_container', y='Price', data=df)
+# sns.swarmplot(x='Pay_per_container', y='Price', data=df, color=".25")
 
 plt.subplot(5, 3, 12)
 sns.boxplot(x='Region', y='Price', data=df)
 # sns.swarmplot(x='Region', y='Price', data=df, color=".25")
 
 # plt.subplot(5, 3, 13)
-sns.boxplot(x='internal_egress', y='Price', data=df)
-# sns.swarmplot(x='internal_egress', y='Price', data=df, color=".25")
+# sns.boxplot(x='Internal_traffic', y='Price', data=df)
+# sns.swarmplot(x='Internal_traffic', y='Price', data=df, color=".25")
 
 
 plt.subplot(5, 3, 14)
-sns.boxplot(x='external_egress', y='Price', data=df)
-# sns.swarmplot(x='external_egress', y='Price', data=df, color=".25")
+sns.boxplot(x='External_traffic', y='Price', data=df)
+# sns.swarmplot(x='External_traffic', y='Price', data=df, color=".25")
 plt.show()
 
 # # %% Visualize categorical features in parallel, we could add more
 #
 # plt.figure(figsize=(10, 5))
-# sns.boxplot(x='Hybrid_multicloud_support', y='Price', hue='OS', data=df, width=0.5)
+# sns.boxplot(x='Multicloud_support', y='Price', hue='Operating System', data=df, width=0.5)
 # plt.show()
+
+
+# # pairplot with hue
+# for i in range(0,len(cat_list)):
+#     hue_cat = cat_list[i]
+#     sns.pairplot(df, hue=hue_cat)
+
 
 # %% =========== Data preparation =================
 
 # Categorical variables to map
-category_list_binary = ['Cluster_management_fee', 'Regional_redundancy', 'Vendor_lock-in', 'Disk_type',
-                        'Hybrid_multicloud_support', 'Pay_per_pod_usage']
+category_list_binary = ['Cluster_mgmt_fee', 'Regional_redundancy', 'Vendor_agnostic', 'Disk_type',
+                        'Multicloud_support', 'Pay_per_container']
 
 
 # Defining the map function
 def binary_map(k):
-    return k.map({'yes': 1, 'no': 0, 'Standard': 0, 'SSD': 1})
+    return k.map({'yes': 1, 'no': 0, 'HDD': 0, 'SSD': 1})
 
 
 # Applying the function to df
 df[category_list_binary] = df[category_list_binary].apply(binary_map)
 df.head()
 
-# Map Categorical variables with 3 options
-category_list = ['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region']
+# Map Categorical variables with 3 observations
+category_list = ['Autoscaling', 'Term_length_commitment', 'Payment', 'Operating System', 'Instance_Type', 'Region']
 status = pd.get_dummies(df[category_list])
 
 status.head()
 
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
-df.drop(['Autoscaling', 'Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
+df.drop(['Autoscaling', 'Term_length_commitment', 'Payment', 'Operating System', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
+#
+df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
+         'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Vendor_agnostic']]
+# df.head()
 
-# df = df[['Provider', 'Price', 'external_egress', 'CPU', 'RAM', 'STORAGE',  'Cluster_management_fee',
-#          'Disk_type', 'Hybrid_multicloud_support', 'Pay_per_pod_usage', 'Regional_redundancy', 'Vendor_lock-in']]
-df.head()
 
+#%% log transformation
+num_list_log = ['Price', 'External_traffic', 'CPU', 'RAM', 'Storage']
 
-#%% Rescale the features StandardScaler() or MinMaxScaler()
-scaler = StandardScaler()
+df[num_list_log] = np.log10(df[num_list]+1)
+df[num_list].replace([num_list_log], inplace=True)
 
-# Apply scaler to all the numeric columns
-num_vars = ['Price', 'CPU', 'external_egress', 'RAM', 'STORAGE', 'internal_egress']
-df[num_vars] = scaler.fit_transform(df[num_vars])
-df.head()
-print('Describe the dataframe after rescaling \n')
-print(df.describe())
+# num_list = []
+# cat_list = []
 
+# for column in df:
+#     plt.figure(column, figsize=(5, 5))
+#     plt.title(column)
+#     if is_numeric_dtype(df[column]):
+#         df[column].plot(kind='hist', color='green')
+#         num_list.append(column)
+#     elif is_string_dtype(df[column]):
+#         df[column].value_counts().plot(kind='bar', color='green')
+#         cat_list.append(column)
+#     plt.show()
 
 # %% ===================== Correlation ===========================
 # Check the correlation coefficients to see which variables are highly correlated
@@ -176,9 +196,9 @@ correlation_method: str = 'pearson'
 corr = df.corr(method=correlation_method)
 mask = np.triu(np.ones_like(corr, dtype=bool))
 cmap = sns.diverging_palette(230, 20, as_cmap=True)
-f, ax = plt.subplots(figsize=(32, 16))
+f, ax = plt.subplots(figsize=(38, 20))
 heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
-heatmap.set_title(f"Triangle Correlation Heatmap - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
+heatmap.set_title(f"Triangle Correlation Heatmap", fontdict={'fontsize': 24}, pad=1)
 plt.savefig('plots/heatmap_triangle.png')
 plt.show()
 
@@ -202,18 +222,18 @@ plt.figure(figsize=(12, 15))
 heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1,
                       vmax=1, annot=True,
                       cmap='BrBG')
-heatmap.set_title(f"Features Correlating with Price - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
+heatmap.set_title(f"Features Correlating with Price", fontdict={'fontsize': 18}, pad=16)
 plt.savefig('plots/heatmap_only_price.png')
 plt.show()
 
 # # %% Features Correlating with Cluster Management fee
 #
 # plt.figure(figsize=(12, 15))
-# heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_management_fee']].sort_values(by='Cluster_management_fee', ascending=False), vmin=-1,
+# heatmap = sns.heatmap(df.corr(method=correlation_method)[['Cluster_mgmt_fee']].sort_values(by='Cluster_mgmt_fee', ascending=False), vmin=-1,
 #                       vmax=1, annot=True,
 #                       cmap='BrBG')
-# heatmap.set_title(f"Features Correlating with Cluster_management_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
-# plt.savefig('plots/heatmap_only_Cluster_management_fee.png')
+# heatmap.set_title(f"Features Correlating with Cluster_mgmt_fee - {correlation_method}", fontdict={'fontsize': 18}, pad=16)
+# plt.savefig('plots/heatmap_only_Cluster_mgmt_fee.png')
 # plt.show()
 
 # %% ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
@@ -225,22 +245,22 @@ plt.show()
 
 # # regression plot using seaborn - Very strong
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.external_egress, y=df.Price, color='#619CFF', marker='o')
+# sns.regplot(x=df.External_traffic, y=df.Price, color='#619CFF', marker='o')
 #
 # # # legend, title, and labels.
-# plt.legend(labels=['external_egress'])
-# plt.title('Relationship between Price and external_egress', size=20)
+# plt.legend(labels=['External_traffic'])
+# plt.title('Relationship between Price and External_traffic', size=20)
 # plt.xlabel('GB/month)', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
 #
 #
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.internal_egress, y=df.Price, color='#619CFF', marker='o')
+# sns.regplot(x=df.Internal_traffic, y=df.Price, color='#619CFF', marker='o')
 #
 # # # legend, title, and labels.
-# plt.legend(labels=['internal_egress'])
-# plt.title('Relationship between Price and internal_egress', size=20)
+# plt.legend(labels=['Internal_traffic'])
+# plt.title('Relationship between Price and Internal_traffic', size=20)
 # plt.xlabel('GB/month)', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
@@ -256,7 +276,7 @@ plt.show()
 # plt.show()
 #
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.STORAGE, y=df.Price, color='#619CFF', marker='o')
+# sns.regplot(x=df.Storage, y=df.Price, color='#619CFF', marker='o')
 #
 # # legend, title, and labels.
 # plt.legend(labels=['Storage'])
@@ -278,24 +298,24 @@ plt.show()
 #
 # #%% regression plot using seaborn - Weak
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Hybrid_multicloud_support, y=df.Price, color='#619CFF', marker='o')
+# sns.regplot(x=df.Multicloud_support, y=df.Price, color='#619CFF', marker='o')
 #
 # # legend, title, and labels.
-# plt.legend(labels=['Hybrid_multicloud_support'])
-# plt.title('Relationship between Price and Hybrid_multicloud_support', size=20)
-# plt.xlabel('Hybrid_multicloud_support', size=18)
+# plt.legend(labels=['Multicloud_support'])
+# plt.title('Relationship between Price and Multicloud_support', size=20)
+# plt.xlabel('Multicloud_support', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
 #
 #
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Hybrid_multicloud_support, y=df.OS_Linux, color='#619CFF', marker='o')
+# sns.regplot(x=df.Multicloud_support, y=df.Operating System_Linux, color='#619CFF', marker='o')
 #
 # # legend, title, and labels.
-# plt.legend(labels=['Hybrid_multicloud_support'])
-# plt.title('Relationship between OS_Linux and Hybrid_multicloud_support', size=20)
-# plt.xlabel('Hybrid_multicloud_support', size=18)
-# plt.ylabel('OS_linux', size=18)
+# plt.legend(labels=['Multicloud_support'])
+# plt.title('Relationship between Operating System_Linux and Multicloud_support', size=20)
+# plt.xlabel('Multicloud_support', size=18)
+# plt.ylabel('Operating System_linux', size=18)
 # plt.show()
 #
 # #%% regression plot using seaborn - Very Weak
@@ -311,12 +331,12 @@ plt.show()
 #
 # #%% regression plot using seaborn - Negative
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Cluster_management_fee, y=df.Price, color='#619CFF', marker='o')
+# sns.regplot(x=df.Cluster_mgmt_fee, y=df.Price, color='#619CFF', marker='o')
 #
 # # legend, title, and labels.
-# plt.legend(labels=['Cluster_management_fee'])
-# plt.title('Relationship between Price and Cluster_management_fee', size=20)
-# plt.xlabel('Cluster_management_fee', size=18)
+# plt.legend(labels=['Cluster_mgmt_fee'])
+# plt.title('Relationship between Price and Cluster_mgmt_fee', size=20)
+# plt.xlabel('Cluster_mgmt_fee', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
 

@@ -1,0 +1,231 @@
+Provider,product,Price,CPU_RAM_Price,Storage_Price,Cluster_fee,licensed_OS,Hybrid_support,internal_egress_price,external_egress_price,internal_egress,external_egress,CPU,RAM,STORAGE,Cluster_management_fee,Regional_redundancy,Autoscaling,Vendor_lock-in,Payment_option,Term_Length,Instance_Type,Disk_type,OS,Hybrid_multicloud_support,Pay_per_pod_usage,Region,Built-in_authentication,self-recovery_features,automate_backup_tasks,Versioning&upgrades
+Amazon,EKS1,0.31253,0.0768,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS2,0.28373,0.048,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS3,0.28173,0.046,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS4,0.28073,0.045,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS5,0.26873,0.033,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS6,0.26673,0.031,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS7,0.26473,0.029,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS8,0.28949,0.05376,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,No commitment,Spot,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS9,0.35933,0.1236,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS10,0.32225,0.08652,0.0097,0.1,0,0,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS11,0.34528,0.088,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS12,0.34228,0.085,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS13,0.34128,0.084,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS14,0.32628,0.069,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS15,0.32328,0.066,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS16,0.32128,0.064,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS17,0.39408,0.1368,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS18,0.35304,0.09576,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS19,0.36528,0.108,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS20,0.36328,0.106,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS21,0.36228,0.105,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS22,0.34628,0.089,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS23,0.34428,0.087,0.03125,0.1,0,0,0.0027397,0.1233,100,1000,2,8,1000,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS24,0.32891,0.089,0.01388,0.1,0,0,0.0027397,0.1233,100,1000,2,8,400,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,EKS25,6.66917,1.4868,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS26,6.16737,0.985,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS27,5.89837,0.716,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS28,6.12637,0.944,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS29,6.11037,0.928,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,All upfront,1 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS30,5.85537,0.673,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS31,5.82237,0.64,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,All upfront,3 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,EKS32,8.16737,2.985,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,no upfront,No commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS33,7.06337,1.881,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,no upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS34,6.97237,1.79,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,partially upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS35,6.93737,1.755,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,All upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS36,6.47237,1.29,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,no upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS37,6.37637,1.194,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,partially upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS38,6.30437,1.122,0.01388,0.1,0,0,0.2739726,4.7945,10000,50000,32,64,400,yes,yes,both,no,All upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS39,4.45966,3.154,0.01388,0.1,0,0,0.0273973,1.1644,1000,10000,8,32,400,yes,yes,both,no,no upfront,No commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,EKS40,2.72866,1.423,0.01388,0.1,0,0,0.0273973,1.1644,1000,10000,8,32,400,yes,yes,both,no,All upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,ECS1,2.09103,0.868,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS2,1.88503,0.662,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,All upfront,1 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS3,1.79103,0.568,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,partially upfront,3 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS4,1.57023,0.3472,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS5,1.66803,0.445,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,no upfront,1 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS6,1.65303,0.43,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,partially upfront,1 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS7,1.54103,0.318,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,All upfront,3 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS8,1.56903,0.346,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,no upfront,3 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS9,1.51703,0.294,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,All upfront,1 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS10,1.41103,0.188,0.03125,0,0,0,0.0273973,1.1644,1000,10000,8,32,1000,no,yes,both,yes,partially upfront,3 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,ECS11,0.30699,0.1364,0.00347,0,0,0,0.0027397,0.1644,100,1000,2,8,100,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS12,0.24682,0.0728,0.0069,0,0,0,0.0027397,0.1644,100,1000,2,4,200,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS13,0.57553,0.398,0.01041,0,0,0,0.0027397,0.1644,100,1000,4,8,300,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS14,0.47212,0.2912,0.0138,0,0,0,0.0027397,0.1644,100,1000,4,16,400,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS15,2.80044,1.592,0.01666,0,0,0,0.0273973,1.1644,1000,10000,16,32,500,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS16,2.99168,1.768,0.0319,0,0,0,0.0273973,1.1644,1000,10000,16,64,1000,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS17,3.02725,1.832,0.00347,0,0,0,0.0273973,1.1644,1000,10000,16,128,100,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS18,8.90531,3.008,0.0069,0,0,0,0.2739726,5.6164,10000,50000,32,64,200,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS19,9.36021,3.456,0.0138,0,0,0,0.2739726,5.6164,10000,50000,32,128,500,no,yes,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,ECS20,7.95321,2.0309,0.0319,0,0,0,0.2739726,5.6164,10000,50000,32,128,1000,no,yes,both,yes,no upfront,No commitment,Spot,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH1,3.06168,1.3172,0.0097,0.03,0,0.513,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH2,2.10548,0.646,0.0097,0.03,0,0.228,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH3,2.06648,0.607,0.0097,0.03,0,0.228,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH4,2.03848,0.579,0.0097,0.03,0,0.228,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH5,2.08348,0.624,0.0097,0.03,0,0.228,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,All upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH6,2.44848,0.875,0.0097,0.03,0,0.342,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH7,2.41248,0.839,0.0097,0.03,0,0.342,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH8,2.39848,0.825,0.0097,0.03,0,0.342,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH9,2.15648,0.697,0.0097,0.03,0,0.228,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,no upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH10,2.11448,0.655,0.0097,0.03,0,0.228,0.0273973,1.1644,1000,10000,12,48,300,yes,yes,both,no,partially upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH11,0.47744,0.14,0.01041,0.03,0,0.171,0.0027397,0.1233,100,1000,2,8,300,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH12,0.44144,0.161,0.01041,0.03,0,0.114,0.0027397,0.1233,100,1000,4,16,300,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH13,2.04339,0.4692,0.01041,0.03,0,0.342,0.0273973,1.1644,1000,10000,8,16,300,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH14,1.78219,0.322,0.01041,0.03,0,0.228,0.0273973,1.1644,1000,10000,8,32,300,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH15,3.03764,1.2862,0.01666,0.03,0,0.513,0.0273973,1.1644,1000,10000,12,48,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH16,2.38568,0.806,0.0159,0.03,0,0.342,0.0273973,1.1644,1000,10000,12,48,500,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH17,3.02448,1.1028,0.0159,0.03,0,0.684,0.0273973,1.1644,10000,10000,16,128,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH18,2.02868,0.335,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH19,8.80391,1.4996,0.0159,0.03,0,1.368,0.2739726,5.6164,10000,50000,32,64,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH20,7.58031,0.732,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH21,3.03688,1.2862,0.0159,0.03,0,0.513,0.0273973,1.1644,10000,10000,12,48,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH22,0.66162,0.2776,0.0159,0.03,0,0.171,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH23,0.48102,0.154,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH24,1.57968,,0.0159,0.03,0,0.342,0.0273973,1.1644,10000,10000,12,48,500,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH25,1.57968,,0.0159,0.03,0,0.342,0.0273973,1.1644,10000,10000,12,48,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH26,2.56528,0.6436,0.0159,0.03,0,0.684,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH27,2.14768,0.454,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH28,2.12568,0.432,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH29,2.01668,0.323,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH30,2.04568,0.352,0.0159,0.03,0,0.456,0.0273973,1.1644,10000,10000,16,32,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH31,9.01831,1.714,0.0159,0.03,0,1.368,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH32,7.98631,1.138,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH33,7.93831,1.09,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH34,7.91931,1.071,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH35,7.66931,0.821,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH36,7.61831,0.77,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH37,9.11431,1.81,0.0159,0.03,0,1.368,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH38,7.67631,0.828,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,All upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH39,7.71431,0.866,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,partially upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH40,7.76531,0.917,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH41,8.08231,1.234,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,no upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH42,8.03431,1.186,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,partially upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH43,8.01531,1.167,0.0159,0.03,0,0.912,0.2739726,5.6164,10000,50000,32,128,500,yes,yes,both,no,All upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH44,0.52402,0.197,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH45,0.51802,0.191,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH46,0.51502,0.188,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH47,0.47402,0.147,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH48,0.46902,0.142,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH49,0.55102,0.167,0.0159,0.03,0,0.171,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH50,0.61882,0.2918,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,No commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH51,0.53702,0.21,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,no upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH52,0.53102,0.204,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,partially upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH53,0.52802,0.201,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,All upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH54,0.48202,0.155,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,All upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH55,0.48702,0.16,0.0159,0.03,0,0.114,0.0027397,0.1644,100,1000,4,16,500,yes,yes,both,no,partially upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH56,0.30979,0.0768,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH57,0.28099,0.048,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH58,0.27899,0.046,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH59,0.27799,0.045,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH60,0.26599,0.033,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH61,0.26399,0.031,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH62,0.26199,0.029,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH63,0.28675,0.05376,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,no upfront,No commitment,Spot,Standard,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH64,0.35659,0.1236,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH65,0.31951,0.08652,0.0097,0.1,0,0,0,0.1233,100,500,2,8,300,yes,no,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH66,0.34254,0.088,0.03125,0.1,0,0,0,0.1233,100,500,2,8,1000,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH67,0.33954,0.085,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH68,0.33854,0.084,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH69,0.32354,0.069,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH70,0.32054,0.066,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH71,0.31854,0.064,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH72,0.39134,0.1368,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH73,0.3503,0.09576,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH74,0.36254,0.108,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH75,0.36054,0.106,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH76,0.35954,0.105,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH77,0.34354,0.089,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH78,0.34154,0.087,0.03125,0.1,0,0,0,0.1233,100,1000,2,8,1000,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH79,0.32617,0.089,0.01388,0.1,0,0,0,0.1233,100,1000,2,8,400,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH80,6.38972,1.4868,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH81,5.88792,0.985,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH82,5.61892,0.716,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH83,5.84692,0.944,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,partially upfront,1 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH84,5.83092,0.928,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,All upfront,1 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH85,5.57592,0.673,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,partially upfront,3 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH86,5.54292,0.64,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,All upfront,3 Year commitment,On Demand,SSD,Linux,no,no,US,yes,yes,yes,yes
+Amazon,RH87,7.88792,2.985,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,no upfront,No commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH88,6.78392,1.881,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,no upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH89,6.69292,1.79,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,partially upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH90,6.65792,1.755,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,All upfront,1 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH91,6.19292,1.29,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,no upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH92,6.09692,1.194,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,partially upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH93,6.02492,1.122,0.0084,0.1,0,0,0,4.7945,10000,50000,32,64,400,yes,no,both,no,All upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH94,4.43226,3.154,0.01388,0.1,0,0,0,1.1644,1000,10000,8,32,400,yes,no,both,no,no upfront,No commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH95,2.70126,1.423,0.01388,0.1,0,0,0,1.1644,1000,10000,8,32,400,yes,no,both,no,All upfront,3 Year commitment,Dedicated,SSD,free,no,no,US,yes,yes,yes,yes
+Amazon,RH96,2.06363,0.868,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,no upfront,No commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH97,1.85763,0.662,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,All upfront,1 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH98,1.76363,0.568,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,partially upfront,3 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Amazon,RH99,1.54283,0.3472,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH100,1.64063,0.445,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,no upfront,1 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH101,1.62563,0.43,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,partially upfront,1 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH102,1.51363,0.318,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,All upfront,3 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH103,1.54163,0.346,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,no upfront,3 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Amazon,RH104,1.48963,0.294,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,All upfront,1 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH105,1.38363,0.188,0.03125,0,0,0,0,1.1644,1000,10000,8,32,1000,no,no,both,yes,partially upfront,3 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Amazon,RH106,0.30425,0.1364,0.00347,0,0,0,0,0.1644,100,1000,2,8,100,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH107,0.24408,0.0728,0.0069,0,0,0,0,0.1644,100,1000,2,4,200,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH108,0.57279,0.398,0.01041,0,0,0,0,0.1644,100,1000,4,8,300,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH109,0.46938,0.2912,0.0138,0,0,0,0,0.1644,100,1000,4,16,400,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH110,2.77304,1.592,0.01666,0,0,0,0,1.1644,1000,10000,16,32,500,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH111,2.96428,1.768,0.0319,0,0,0,0,1.1644,1000,10000,16,64,1000,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH112,2.99985,1.832,0.00347,0,0,0,0,1.1644,1000,10000,16,128,100,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH113,8.62884,3.008,0.0044,0,0,0,0,5.6164,10000,50000,32,64,200,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH114,9.08624,3.456,0.0138,0,0,0,0,5.6164,10000,50000,32,128,500,no,no,both,yes,no upfront,No commitment,On Demand,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH115,7.67494,2.0309,0.0276,0,0,0,0,5.6164,10000,50000,32,128,1000,no,no,both,yes,no upfront,No commitment,Spot,SSD,Windows,no,no,Asia,yes,yes,yes,yes
+Amazon,RH116,3.03428,1.3172,0.0097,0.03,0,0.513,0,1.1644,1000,10000,12,48,300,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH117,2.07808,0.646,0.0097,0.03,0,0.228,0,1.1644,1000,10000,12,48,300,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH118,2.03908,0.607,0.0097,0.03,0,0.228,0,1.1644,1000,10000,12,48,300,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH119,2.01108,0.579,0.0097,0.03,0,0.228,0,1.1644,1000,10000,12,48,300,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH120,2.05608,0.624,0.0097,0.03,0,0.228,0,1.1644,1000,10000,12,48,300,yes,no,both,no,All upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH121,2.42108,0.875,0.0097,0.03,0,0.342,0,1.1644,1000,10000,12,48,300,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH122,2.38508,0.839,0.0097,0.03,0,0.342,0,1.1644,1000,10000,12,48,300,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH123,2.37108,0.825,0.0097,0.03,0,0.342,0,1.1644,1000,10000,12,48,300,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH124,2.12908,0.697,0.0097,0.03,0,0.228,0,1.1644,1000,10000,12,48,300,yes,no,both,no,no upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH125,2.08708,0.655,0.0097,0.03,0,0.228,0,1.1644,1000,10000,12,48,300,yes,no,both,no,partially upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Amazon,RH126,0.4747,0.14,0.01041,0.03,0,0.171,0,0.1233,100,1000,2,8,300,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH127,0.4387,0.161,0.01041,0.03,0,0.114,0,0.1233,100,1000,4,16,300,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH128,2.01599,0.4692,0.01041,0.03,0,0.342,0,1.1644,1000,10000,8,16,300,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH129,1.75479,0.322,0.01041,0.03,0,0.228,0,1.1644,1000,10000,8,32,300,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH130,3.01024,1.2862,0.01666,0.03,0,0.513,0,1.1644,1000,10000,12,48,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,US,yes,yes,yes,yes
+Amazon,RH131,2.35828,0.806,0.0159,0.03,0,0.342,0,1.1644,1000,10000,12,48,500,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH132,2.99708,1.1028,0.0159,0.03,0,0.684,0,1.1644,1000,10000,16,128,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH133,2.00128,0.335,0.0159,0.03,0,0.456,0,1.1644,1000,10000,16,32,500,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH134,8.52524,1.4996,0.0112,0.03,0,1.368,0,5.6164,10000,50000,32,64,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH135,7.30164,0.732,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH136,3.00948,1.2862,0.0159,0.03,0,0.513,0,1.1644,1000,10000,12,48,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH137,0.65888,0.2776,0.0159,0.03,0,0.171,0,0.1644,100,1000,4,16,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH138,0.47828,0.154,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH139,2.70848,1.1562,0.0159,0.03,0,0.342,0,1.1644,1000,10000,12,48,500,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH140,2.80748,1.2552,0.0159,0.03,0,0.342,0,1.1644,1000,10000,12,48,500,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH141,2.53788,0.6436,0.0159,0.03,0,0.684,0,1.1644,1000,10000,16,32,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH142,2.12028,0.454,0.0159,0.03,0,0.456,0,1.1644,1000,10000,16,32,500,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH143,2.09828,0.432,0.0159,0.03,0,0.456,0,1.1644,1000,10000,16,32,500,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH144,1.98928,0.323,0.0159,0.03,0,0.456,0,1.1644,1000,10000,16,32,500,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH145,2.01828,0.352,0.0159,0.03,0,0.456,0,1.1644,1000,10000,16,32,500,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH146,8.73964,1.714,0.0112,0.03,0,1.368,0,5.6164,10000,50000,32,128,500,yes,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH147,7.70764,1.138,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH148,7.65964,1.09,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH149,7.64064,1.071,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH150,7.39064,0.821,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH151,7.33964,0.77,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH152,8.83564,1.81,0.0112,0.03,0,1.368,0,5.6164,10000,50000,32,128,500,yes,no,both,no,no upfront,No commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH153,7.39764,0.828,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,All upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH154,7.43564,0.866,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,partially upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH155,7.48664,0.917,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,no upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH156,7.80364,1.234,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,no upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH157,7.75564,1.186,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,partially upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH158,7.73664,1.167,0.0112,0.03,0,0.912,0,5.6164,10000,50000,32,128,500,yes,no,both,no,All upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH159,0.52128,0.197,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH160,0.51528,0.191,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,partially upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH161,0.51228,0.188,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,All upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH162,0.47128,0.147,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,partially upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH163,0.46628,0.142,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,All upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH164,0.54828,0.167,0.0159,0.03,0,0.171,0,0.1644,100,1000,4,16,500,yes,no,both,no,no upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH165,0.61608,0.2918,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,no upfront,No commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH166,0.53428,0.21,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,no upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH167,0.52828,0.204,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,partially upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH168,0.52528,0.201,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,All upfront,1 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH169,0.47928,0.155,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,All upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes
+Amazon,RH170,0.48428,0.16,0.0159,0.03,0,0.114,0,0.1644,100,1000,4,16,500,yes,no,both,no,partially upfront,3 Year commitment,Dedicated,Standard,Linux,yes,no,Asia,yes,yes,yes,yes

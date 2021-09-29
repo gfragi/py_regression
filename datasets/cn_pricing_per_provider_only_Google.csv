@@ -1,0 +1,202 @@
+Provider,product,Price,CPU_RAM_Price,Storage_Price,Cluster_fee,licensed_OS,Hybrid_support,internal_egress_price,external_egress_price,internal_egress,external_egress,CPU,RAM,STORAGE,Cluster_management_fee,Regional_redundancy,Autoscaling,Vendor_lock-in,Payment_option,Term_Length,Instance_Type,Disk_type,OS,Hybrid_multicloud_support,Pay_per_pod_usage,Region,Built-in_authentication,self-recovery_features,automate_backup_tasks,Versioning&upgrades
+Google,S1,0.34355,0.172668,0.0065,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S2,0.52755,0.172668,0.0065,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S3,0.35113,0.172668,0.0065,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S4,0.36535,0.172668,0.0283,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S5,0.54935,0.172668,0.0283,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S6,0.36535,0.172668,0.0283,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S7,0.23025,0.051788,0.0065,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,Spot,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S8,0.40667,0.051788,0.0065,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S9,0.23025,0.051788,0.0065,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S10,0.24447,0.051788,0.0283,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S11,0.42847,0.051788,0.0283,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S12,0.25205,0.051788,0.0283,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,No commitment,Spot,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S13,0.27966,0.108772,0.0065,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S14,0.46366,0.108772,0.0065,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S15,0.28723,0.108772,0.0065,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S16,0.30146,0.108772,0.0283,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S17,0.48546,0.108772,0.0283,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S18,0.30903,0.108772,0.0283,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S19,0.24857,0.077688,0.0065,0,0,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S20,0.43257,0.077688,0.0065,0,0.184,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S21,0.25615,0.077688,0.0065,0,0.007577,0,0,0.1644,100,1000,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S22,0.27037,0.077688,0.0283,0,0,0,0,0.1644,1000,1000,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S23,0.45437,0.077688,0.0283,0,0.184,0,0,0.1644,1000,1000,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S24,0.27795,0.077688,0.0283,0,0.007577,0,0,0.1644,1000,1000,4,16,100,no,no,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S25,0.45172,0.172668,0.0133,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S26,0.63572,0.172668,0.0133,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S27,0.4593,0.172668,0.0133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S28,0.49502,0.172668,0.0566,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S29,0.67902,0.172668,0.0566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S30,0.5026,0.172668,0.0566,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S31,0.33084,0.051788,0.0133,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S32,0.51484,0.051788,0.0133,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S33,0.33842,0.051788,0.0133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S34,0.37414,0.051788,0.0566,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S35,0.55814,0.051788,0.0566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S36,0.38172,0.051788,0.0566,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S37,0.38783,0.108772,0.0133,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S38,0.57183,0.108772,0.0133,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S39,0.3954,0.108772,0.0133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S40,0.43113,0.108772,0.0566,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S41,0.61513,0.108772,0.0566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S42,0.4387,0.108772,0.0566,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S43,0.35674,0.077688,0.0133,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S44,0.54074,0.077688,0.0133,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S45,0.36432,0.077688,0.0133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S46,0.40004,0.077688,0.0566,0.1,0,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S47,0.58404,0.077688,0.0566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S48,0.40762,0.077688,0.0566,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S49,0.50886,0.172668,0.0266,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S50,0.69286,0.172668,0.0266,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S51,0.51644,0.172668,0.0266,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S52,0.59566,0.172668,0.1134,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,free,yes,no,Europe,yes,yes,yes,yes
+Google,S53,0.77966,0.172668,0.1134,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S54,0.60324,0.172668,0.1134,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S55,0.38798,0.051788,0.0266,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S56,0.57198,0.051788,0.0266,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S57,0.39556,0.051788,0.0266,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S58,0.47478,0.051788,0.1134,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,Spot,SSD,free,yes,no,Europe,yes,yes,yes,yes
+Google,S59,0.65878,0.051788,0.1134,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S60,0.48236,0.051788,0.1134,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S61,0.44497,0.108772,0.0266,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S62,0.62897,0.108772,0.0266,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S63,0.45254,0.108772,0.0266,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S64,0.53177,0.108772,0.1134,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,free,yes,no,Europe,yes,yes,yes,yes
+Google,S65,0.71577,0.108772,0.1134,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S66,0.53934,0.108772,0.1134,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S67,0.41388,0.077688,0.0266,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S68,0.59788,0.077688,0.0266,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S69,0.42146,0.077688,0.0266,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S70,0.50068,0.077688,0.1134,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,free,yes,no,Europe,yes,yes,yes,yes
+Google,S71,0.68468,0.077688,0.1134,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S72,0.50826,0.077688,0.1134,0.1,0.007577,0.04384,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S73,0.52528,0.232924,0.0266,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S74,0.70928,0.232924,0.0266,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S75,0.53489,0.232924,0.0266,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S76,0.61208,0.232924,0.1134,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S77,0.79608,0.232924,0.1134,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S78,0.62169,0.232924,0.1134,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S79,0.36221,0.069852,0.0266,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S80,0.54621,0.069852,0.0266,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S81,0.37181,0.069852,0.0266,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S82,0.44901,0.069852,0.1134,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S83,0.63301,0.069852,0.1134,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S84,0.45861,0.069852,0.1134,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S85,0.63807,0.3457184,0.0266,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,free,no,yes,Europe,yes,yes,yes,yes
+Google,S86,0.82207,0.3457184,0.0266,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,yes,Europe,yes,yes,yes,yes
+Google,S87,0.64768,0.3457184,0.0266,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,yes,Europe,yes,yes,yes,yes
+Google,S88,0.72487,0.3457184,0.1134,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,free,no,yes,Europe,yes,yes,yes,yes
+Google,S89,0.90887,0.3457184,0.1134,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,no,yes,Europe,yes,yes,yes,yes
+Google,S90,0.73448,0.3457184,0.1134,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,yes,Europe,yes,yes,yes,yes
+Google,S91,0.53004,0.2376824,0.0266,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,free,no,yes,Europe,yes,yes,yes,yes
+Google,S92,0.71404,0.2376824,0.0266,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,yes,Europe,yes,yes,yes,yes
+Google,S93,0.53964,0.2376824,0.0266,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,yes,Europe,yes,yes,yes,yes
+Google,S94,0.61684,0.2376824,0.1134,0.1,0,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,free,no,yes,Europe,yes,yes,yes,yes
+Google,S95,0.80084,0.2376824,0.1134,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,no,yes,Europe,yes,yes,yes,yes
+Google,S96,0.62644,0.2376824,0.1134,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,yes,Europe,yes,yes,yes,yes
+Google,S97,0.7112,0.4321472,0.0133,0.1,0,0,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,yes,Europe,yes,yes,yes,yes
+Google,S98,0.8952,0.4321472,0.0133,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,yes,Europe,yes,yes,yes,yes
+Google,S99,0.72081,0.4321472,0.0133,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,yes,Europe,yes,yes,yes,yes
+Google,S100,0.7545,0.4321472,0.0566,0.1,0,0,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,free,no,yes,Europe,yes,yes,yes,yes
+Google,S101,0.9385,0.4321472,0.0566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,no,yes,Europe,yes,yes,yes,yes
+Google,S102,0.76411,0.4321472,0.0566,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,yes,Europe,yes,yes,yes,yes
+Google,S103,0.24074,0.069852,0.0065,0,0,0,0,0.1644,1000,1000,4,32,100,no,no,both,no,no upfront,No commitment,Spot,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S104,0.42474,0.069852,0.0065,0,0.184,0,0,0.1644,1000,1000,4,32,100,no,no,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S105,0.25034,0.069852,0.0065,0,0.009609,0,0,0.1644,1000,1000,4,32,100,no,no,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S106,0.26254,0.069852,0.0283,0,0,0,0,0.1644,1000,1000,4,32,100,no,no,both,no,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S107,0.44654,0.069852,0.0283,0,0.184,0,0,0.1644,1000,1000,4,32,100,no,no,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S108,0.27214,0.069852,0.0283,0,0.009609,0,0,0.1644,1000,1000,4,32,100,no,no,both,no,no upfront,No commitment,Spot,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S109,0.66861,0.3457184,0.0133,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,free,yes,yes,Europe,yes,yes,yes,yes
+Google,S110,0.85261,0.3457184,0.0133,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,yes,yes,Europe,yes,yes,yes,yes
+Google,S111,0.67822,0.3457184,0.0133,0.1,0.009609,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,yes,Europe,yes,yes,yes,yes
+Google,S112,0.71191,0.3457184,0.0566,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,free,yes,yes,Europe,yes,yes,yes,yes
+Google,S113,0.89591,0.3457184,0.0566,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,yes,yes,Europe,yes,yes,yes,yes
+Google,S114,0.72152,0.3457184,0.0566,0.1,0.009609,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,yes,yes,Europe,yes,yes,yes,yes
+Google,S115,0.56058,0.2376824,0.0133,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,free,yes,yes,Europe,yes,yes,yes,yes
+Google,S116,0.74458,0.2376824,0.0133,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,yes,yes,Europe,yes,yes,yes,yes
+Google,S117,0.57018,0.2376824,0.0133,0.1,0.009609,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,yes,Europe,yes,yes,yes,yes
+Google,S118,0.60388,0.2376824,0.0566,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,free,yes,yes,Europe,yes,yes,yes,yes
+Google,S119,0.78788,0.2376824,0.0566,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,yes,yes,Europe,yes,yes,yes,yes
+Google,S120,0.61348,0.2376824,0.0566,0.1,0.009609,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,yes,yes,Europe,yes,yes,yes,yes
+Google,S121,0.75504,0.4321472,0.0133,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,yes,yes,Europe,yes,yes,yes,yes
+Google,S122,0.93904,0.4321472,0.0133,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,yes,yes,Europe,yes,yes,yes,yes
+Google,S123,0.76465,0.4321472,0.0133,0.1,0.009609,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,yes,Europe,yes,yes,yes,yes
+Google,S124,0.79834,0.4321472,0.0566,0.1,0,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,free,yes,yes,Europe,yes,yes,yes,yes
+Google,S125,0.98234,0.4321472,0.0566,0.1,0.184,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,yes,yes,Europe,yes,yes,yes,yes
+Google,S126,0.80795,0.4321472,0.0566,0.1,0.009609,0.04384,0.0013699,0.1644,100,1000,4,32,100,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,yes,yes,Europe,yes,yes,yes,yes
+Google,S128,1.91262,0.285088,0.033,0,0,0.08768,0,1.5068,1000,10000,8,16,500,no,no,both,no,no upfront,No commitment,On Demand,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S129,2.19294,0.285088,0.033,0,0.368,0,0,1.5068,1000,10000,8,16,500,no,no,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S130,1.81912,0.179592,0.033,0,0.012002,0.08768,0,1.5068,1000,10000,8,16,500,no,no,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S131,1.83804,0.179592,0.1416,0.01,0,0,0,1.5068,1000,10000,8,16,500,no,no,both,no,no upfront,1 Year commitment,On Demand,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S132,2.2324,0.128272,0.1416,0,0.368,0.08768,0,1.5068,1000,10000,8,16,500,no,no,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S133,1.78872,0.128272,0.1416,0,0.012002,0,0,1.5068,1000,10000,8,16,500,no,no,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S134,2.12016,0.345336,0.0666,0.1,0,0.08768,0.0136986,1.5068,1000,10000,8,32,500,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S135,2.3117,0.168872,0.0666,0.1,0.368,0.08768,0.0136986,1.5068,1000,10000,8,32,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S136,1.90949,0.120632,0.0666,0.1,0.014034,0.08768,0.0136986,1.5068,1000,10000,8,32,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S137,2.07164,0.080408,0.283,0.1,0,0.08768,0.0136986,1.5068,1000,10000,8,32,500,yes,yes,both,no,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S138,9.2035,1.381344,0.283,0.1,1.472,0.35072,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S139,7.07528,0.675488,0.283,0.1,0.049634,0.35072,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S140,6.54806,0.414304,0.0666,0.1,0,0.35072,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Spot,Standard,free,yes,no,Europe,yes,yes,yes,yes
+Google,S141,8.02006,0.414304,0.0666,0.1,1.472,0.35072,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,yes,no,Europe,yes,yes,yes,yes
+Google,S142,6.24698,0.414304,0.0666,0.1,0.049634,0,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S143,6.41374,0.414304,0.283,0.1,0,0,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Spot,SSD,free,no,no,Europe,yes,yes,yes,yes
+Google,S144,7.88574,0.414304,0.283,0.1,1.472,0,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S145,6.46338,0.414304,0.283,0.1,0.049634,0,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Linux,no,no,Europe,yes,yes,yes,yes
+Google,S146,7.23801,1.4549696,0.0666,0.1,0,0,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,free,no,no,Europe,yes,yes,yes,yes
+Google,S147,7.87654,0.621504,0.0666,0.1,1.472,0,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,Europe,yes,yes,yes,yes
+Google,S148,7.12017,0.870176,0.1332,0.1,0.049634,0.35072,0.1369863,5.4795,10000,50000,32,128,500,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,Europe,yes,yes,yes,yes
+Google,S149,0.46596,0.067006,0.1332,0.1,0,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,free,no,no,US,yes,yes,yes,yes
+Google,S150,0.53317,0.042218,0.1332,0.1,0.092,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S151,0.4331,0.030158,0.1332,0.1,0.003987,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,no,US,yes,yes,yes,yes
+Google,S152,0.41906,0.020102,0.1332,0.1,0,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,No commitment,Spot,Standard,free,no,no,US,yes,yes,yes,yes
+Google,S153,0.71697,0.134012,0.1332,0.1,0.184,0,0.0013699,0.1644,100,1000,4,16,1000,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S154,0.49097,0.084436,0.1332,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,no,US,yes,yes,yes,yes
+Google,S155,0.46685,0.060316,0.1332,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S156,0.44673,0.040204,0.1332,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,1000,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S157,0.58731,0.18078,0.1332,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,32,1000,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S158,0.52044,0.113908,0.1332,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,32,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S159,0.4879,0.081372,0.1332,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,32,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,no,US,yes,yes,yes,yes
+Google,S160,0.4628,0.054236,0.1332,0.1,0.009609,0,0.0013699,0.1644,100,1000,4,32,1000,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,US,yes,yes,yes,yes
+Google,S161,2.2813,0.51352,0.1332,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,1000,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,yes,US,yes,yes,yes,yes
+Google,S162,2.6114,0.410816,0.566,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,yes,US,yes,yes,yes,yes
+Google,S163,2.48302,0.2824368,0.566,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,yes,US,yes,yes,yes,yes
+Google,S164,2.54496,0.080408,0.566,0.01,0.368,0,0.0136986,1.5068,1000,10000,8,32,1000,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,US,yes,yes,yes,yes
+Google,S165,4.02495,1.02704,0.566,0,0.736,0.17536,0.0136986,1.5068,1000,10000,16,64,1000,no,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,yes,yes,US,yes,yes,yes,yes
+Google,S166,3.77748,0.821632,0.566,0,0.736,0.1333,0.0136986,1.5068,1000,10000,16,64,1000,no,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,yes,yes,US,yes,yes,yes,yes
+Google,S167,3.52072,0.5648736,0.566,0,0.736,0.1333,0.0136986,1.5068,1000,10000,16,64,1000,no,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,yes,yes,US,yes,yes,yes,yes
+Google,S168,2.28355,0.160816,0.566,0.01,0.026191,0,0.0136986,1.5068,1000,10000,16,64,1000,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Linux,no,no,US,yes,yes,yes,yes
+Google,S169,8.63687,2.05408,0.566,0,0.049634,0.35072,0.1369863,5.4795,10000,50000,32,128,1000,no,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,yes,yes,US,yes,yes,yes,yes
+Google,S170,9.5607,1.643264,0.566,0,1.472,0.263,0.1369863,5.4795,10000,50000,32,128,1000,no,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,yes,yes,US,yes,yes,yes,yes
+Google,S171,9.04719,1.1297472,0.566,0,1.472,0.263,0.1369863,5.4795,10000,50000,32,128,1000,no,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,yes,yes,US,yes,yes,yes,yes
+Google,S172,7.98607,0.321632,0.566,0.01,1.472,0,0.1369863,5.4795,10000,50000,32,128,1000,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,no,no,US,yes,yes,yes,yes
+Google,S173,1.02536,0.1796888,0.566,0,0.092,0.02192,0.0013699,0.1644,100,1000,2,8,1000,no,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,yes,yes,Asia,yes,yes,yes,yes
+Google,S174,1.0675,0.1437512,0.566,0.1,0.092,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S175,1.02258,0.0988292,0.566,0.1,0.092,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S176,0.94386,0.020102,0.566,0.1,0.092,0,0.0013699,0.1644,100,1000,2,8,1000,yes,yes,both,no,no upfront,No commitment,Spot,SSD,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S177,1.48531,0.4695552,0.566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,1000,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S178,1.3914,0.3756448,0.566,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,1000,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S179,0.74801,0.2582568,0.04,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,300,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S180,0.52996,0.040204,0.04,0.1,0.184,0,0.0013699,0.1644,100,1000,4,32,300,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Windows,no,yes,Asia,yes,yes,yes,yes
+Google,S181,2.39334,0.7187552,0.04,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,300,yes,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,no,yes,Asia,yes,yes,yes,yes
+Google,S182,2.24959,0.5750048,0.04,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,300,yes,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,no,yes,Asia,yes,yes,yes,yes
+Google,S183,2.0699,0.3953168,0.04,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,300,yes,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,no,yes,Asia,yes,yes,yes,yes
+Google,S184,1.75499,0.080408,0.04,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,300,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,yes,Asia,yes,yes,yes,yes
+Google,S185,0.58697,0.2039312,0.1133,0.1,0.003987,0,0.0013699,0.1644,100,1000,2,8,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S186,0.50867,0.1256262,0.1133,0.1,0.003987,0,0.0013699,0.1644,100,1000,2,8,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S187,0.4952,0.112162,0.1133,0.1,0.003987,0,0.0013699,0.1644,100,1000,2,8,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S189,0.79449,0.4078624,0.1133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S190,0.63788,0.2512524,0.1133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S191,0.61095,0.224324,0.1133,0.1,0.007577,0,0.0013699,0.1644,100,1000,4,16,200,yes,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S193,2.55129,0.8157248,0.1133,0,0.014034,0.08768,0.0136986,1.5068,1000,10000,8,32,200,no,yes,both,no,no upfront,No commitment,On Demand,SSD,Linux,yes,yes,South America,yes,yes,yes,yes
+Google,S194,2.21599,0.5025048,0.1133,0,0.014034,0.0656,0.0136986,1.5068,1000,10000,8,32,200,no,yes,both,no,no upfront,1 Year commitment,On Demand,SSD,Linux,yes,yes,South America,yes,yes,yes,yes
+Google,S195,2.16213,0.448648,0.1133,0,0.014034,0.0656,0.0136986,1.5068,1000,10000,8,32,200,no,yes,both,no,no upfront,3 Year commitment,On Demand,SSD,Linux,yes,yes,South America,yes,yes,yes,yes
+Google,S196,1.78882,0.127642,0.0266,0.1,0.014034,0,0.0136986,1.5068,1000,10000,8,32,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,yes,South America,yes,yes,yes,yes
+Google,S197,2.59964,0.850944,0.0266,0,0.026191,0.17536,0.0136986,1.5068,1000,10000,16,64,200,no,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
+Google,S198,2.24062,0.53608,0.0266,0,0.026191,0.1312,0.0136986,1.5068,1000,10000,16,64,200,no,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
+Google,S199,2.08745,0.382912,0.0266,0,0.026191,0.1312,0.0136986,1.5068,1000,10000,16,64,200,no,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
+Google,S200,1.83862,0.255283,0.0266,0.01,0.026191,0,0.0136986,1.5068,1000,10000,16,64,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,South America,yes,yes,yes,yes
+Google,S201,9.16765,1.701888,0.0266,0,1.472,0.35072,0.1369863,5.4795,10000,50000,32,128,200,no,yes,both,no,no upfront,No commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
+Google,S202,8.4496,1.07216,0.0266,0,1.472,0.2624,0.1369863,5.4795,10000,50000,32,128,200,no,yes,both,no,no upfront,1 Year commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
+Google,S203,8.14326,0.765824,0.0266,0,1.472,0.2624,0.1369863,5.4795,10000,50000,32,128,200,no,yes,both,no,no upfront,3 Year commitment,On Demand,Standard,Linux,yes,no,South America,yes,yes,yes,yes
+Google,S204,7.6356,0.510566,0.0266,0.01,1.472,0,0.1369863,5.4795,10000,50000,32,128,200,yes,yes,both,no,no upfront,No commitment,Spot,Standard,Linux,no,no,South America,yes,yes,yes,yes

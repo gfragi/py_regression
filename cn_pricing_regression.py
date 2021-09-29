@@ -51,7 +51,7 @@ for column in df:
     elif is_string_dtype(df[column]):
         df[column].value_counts().plot(kind='barh', color='#43FF76')
         cat_list.append(column)
-    plt.xlabel('Observations')
+    plt.xlabel('Bundles')
     plt.show()
 
 # %% Visualize numeric variables
@@ -163,11 +163,20 @@ df.drop(['Autoscaling', 'Term_length_commitment', 'Payment', 'Operating System',
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-#
-df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
-         'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Vendor_agnostic']]
-# df.head()
+# #
+# df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
+#          'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Vendor_agnostic']]
+# # df.head()
 
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
+
+# # legend, title, and labels.
+plt.legend(labels=['CPU'])
+plt.title('Relationship between Price and CPU', size=20)
+plt.xlabel('CPU(Cores)', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
 
 #%% log transformation
 num_list_log = ['Price', 'External_traffic', 'CPU', 'RAM', 'Storage']
@@ -196,7 +205,7 @@ correlation_method: str = 'pearson'
 corr = df.corr(method=correlation_method)
 mask = np.triu(np.ones_like(corr, dtype=bool))
 cmap = sns.diverging_palette(230, 20, as_cmap=True)
-f, ax = plt.subplots(figsize=(38, 20))
+f, ax = plt.subplots(figsize=(30, 18))
 heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
 heatmap.set_title(f"Triangle Correlation Heatmap", fontdict={'fontsize': 24}, pad=1)
 plt.savefig('plots/heatmap_triangle.png')
@@ -243,18 +252,18 @@ plt.show()
 # 0.399–0.2 → Weak
 # 0.199–0 → Very Weak
 
-# # regression plot using seaborn - Very strong
-# fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.External_traffic, y=df.Price, color='#619CFF', marker='o')
-#
-# # # legend, title, and labels.
-# plt.legend(labels=['External_traffic'])
-# plt.title('Relationship between Price and External_traffic', size=20)
-# plt.xlabel('GB/month)', size=18)
-# plt.ylabel('Price ($/hour)', size=18)
-# plt.show()
-#
-#
+# regression plot using seaborn - Very strong
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.External_traffic, y=df.Price, color='#619CFF', marker='o')
+
+# # legend, title, and labels.
+plt.legend(labels=['External_traffic'])
+plt.title('Relationship between Price and External_traffic', size=20)
+plt.xlabel('GB/month)', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+
 # fig = plt.figure(figsize=(10, 7))
 # sns.regplot(x=df.Internal_traffic, y=df.Price, color='#619CFF', marker='o')
 #
@@ -264,7 +273,7 @@ plt.show()
 # plt.xlabel('GB/month)', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
-#
+
 # fig = plt.figure(figsize=(10, 7))
 # sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
 #
@@ -274,40 +283,40 @@ plt.show()
 # plt.xlabel('CPU(Cores)', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
-#
-# fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Storage, y=df.Price, color='#619CFF', marker='o')
-#
-# # legend, title, and labels.
-# plt.legend(labels=['Storage'])
-# plt.title('Relationship between Price and Storage', size=20)
-# plt.xlabel('Storage(GB)', size=18)
-# plt.ylabel('Price ($/hour)', size=18)
-# plt.show()
-#
-# # regression plot using seaborn - Strong
-# fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.RAM, y=df.Price, color='#619CFF', marker='o')
-#
-# # legend, title, and labels.
-# plt.legend(labels=['RAM'])
-# plt.title('Relationship between Price and RAM', size=20)
-# plt.xlabel('RAM(GB)', size=18)
-# plt.ylabel('Price ($/hour)', size=18)
-# plt.show()
-#
-# #%% regression plot using seaborn - Weak
-# fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Multicloud_support, y=df.Price, color='#619CFF', marker='o')
-#
-# # legend, title, and labels.
-# plt.legend(labels=['Multicloud_support'])
-# plt.title('Relationship between Price and Multicloud_support', size=20)
-# plt.xlabel('Multicloud_support', size=18)
-# plt.ylabel('Price ($/hour)', size=18)
-# plt.show()
-#
-#
+
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.Storage, y=df.Price, color='#619CFF', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['Storage'])
+plt.title('Relationship between Price and Storage', size=20)
+plt.xlabel('Storage(GB)', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+# regression plot using seaborn - Strong
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.RAM, y=df.Price, color='#619CFF', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['RAM'])
+plt.title('Relationship between Price and RAM', size=20)
+plt.xlabel('RAM(GB)', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+#%% regression plot using seaborn - Weak
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.Multicloud_support, y=df.Price, color='#619CFF', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['Multicloud_support'])
+plt.title('Relationship between Price and Multicloud_support', size=20)
+plt.xlabel('Multicloud_support', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
+
+
 # fig = plt.figure(figsize=(10, 7))
 # sns.regplot(x=df.Multicloud_support, y=df.Operating System_Linux, color='#619CFF', marker='o')
 #
@@ -317,8 +326,8 @@ plt.show()
 # plt.xlabel('Multicloud_support', size=18)
 # plt.ylabel('Operating System_linux', size=18)
 # plt.show()
-#
-# #%% regression plot using seaborn - Very Weak
+
+#%% regression plot using seaborn - Very Weak
 # fig = plt.figure(figsize=(10, 7))
 # sns.regplot(x=df.Regional_redundancy, y=df.Price, color='#619CFF', marker='o')
 #
@@ -328,17 +337,17 @@ plt.show()
 # plt.xlabel('Regional_redundancy', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
-#
-# #%% regression plot using seaborn - Negative
-# fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Cluster_mgmt_fee, y=df.Price, color='#619CFF', marker='o')
-#
-# # legend, title, and labels.
-# plt.legend(labels=['Cluster_mgmt_fee'])
-# plt.title('Relationship between Price and Cluster_mgmt_fee', size=20)
-# plt.xlabel('Cluster_mgmt_fee', size=18)
-# plt.ylabel('Price ($/hour)', size=18)
-# plt.show()
+
+#%% regression plot using seaborn - Negative
+fig = plt.figure(figsize=(10, 7))
+sns.regplot(x=df.Cluster_mgmt_fee, y=df.Price, color='#619CFF', marker='o')
+
+# legend, title, and labels.
+plt.legend(labels=['Cluster_mgmt_fee'])
+plt.title('Relationship between Price and Cluster_mgmt_fee', size=20)
+plt.xlabel('Cluster_mgmt_fee', size=18)
+plt.ylabel('Price ($/hour)', size=18)
+plt.show()
 
 # ================ Model Evaluation ===========================
 # %% Evaluate the model performance, split the the dataset into 2 partitions (80% - 20% ration)
@@ -400,9 +409,9 @@ plt.xlabel('Actual prices')
 # plt.savefig('plots/plot_horizontal_logS.pdf')
 plt.show()
 
-visualizer = ResidualsPlot(model, hist=False, qqplot=True)
-visualizer.fit(x_train, y_train)
-visualizer.score(x_test, y_test)
+visualizer = ResidualsPlot(model, hist=True, qqplot=False)
+visualizer.fit(x, y)
+# visualizer.score(x_test, y_test)
 visualizer.show()
 
 # ============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
@@ -416,14 +425,16 @@ print(results.summary())
 sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
 plt.show()
 
-# ======================== Tornado diagram ======================================
+#%% ======================== Tornado diagram ======================================
 coeff = results.params
 coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
-sns.barplot(coeff.values, coeff.index, orient='h')
+a4_dims = (11.7, 8.27)
+fig, ax = plt.subplots(figsize=a4_dims)
+sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
 plt.show()
 
 # %%
-sns.distplot(results.resid, fit=stats.norm)
+sns.distplot(results.resid, fit=stats.norm, hist=True)
 plt.show()
 #
 # print('rows x columns:', df.shape)

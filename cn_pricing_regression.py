@@ -21,8 +21,11 @@ warnings.filterwarnings('ignore')  # it is used for some minor warnings in seabo
 df = pd.read_csv('cn_pricing_per_provider_upd3.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
-df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee', 'licensed_OS', 'Hybrid_support', 'external_egress_price',
+df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee_price', 'licensed_OS_price', 'Hybrid_support_price', 'external_egress_price',
               'internal_egress_price', 'product'], axis=1)
+
+# %% ========== Select provider =======
+df = df.loc[df['Provider'] == 'Google']
 
 print('rows x columns:', df.shape)
 print('Columns info:', df.info())
@@ -150,7 +153,7 @@ df.drop(['Autoscaling', 'Term_length_commitment', 'Payment', 'Operating System',
 # Drop features and options
 # #
 # df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
-#          'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Vendor_agnostic']]
+# 'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Payment_no upfront', 'Autoscaling_vertical&horizontal']]
 # # df.head()
 
 fig = plt.figure(figsize=(10, 7))

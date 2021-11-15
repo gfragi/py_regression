@@ -1,11 +1,15 @@
 # ============== Import libraries =========
+from typing import Union, Any
+
 import numpy as np
 import pandas as pd
 import warnings
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
+from pandas import Series
 from pandas.core.dtypes.common import is_numeric_dtype, is_string_dtype
+from pandas.core.generic import NDFrame
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
@@ -18,14 +22,18 @@ warnings.filterwarnings('ignore')  # it is used for some minor warnings in seabo
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('cn_pricing_per_provider_upd3.csv')  # real data
+df = pd.read_csv('cn_pricing_per_provider.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['CPU_RAM_Price', 'Storage_Price', 'Cluster_fee_price', 'licensed_OS_price', 'Hybrid_support_price', 'external_egress_price',
               'internal_egress_price', 'product'], axis=1)
 
-# %% ========== Select provider =======
-df = df.loc[df['Provider'] == 'Google']
+# %% ========== Select Technology (IaaS or PaaS or CaaS) ================
+
+# Rule for rows to drop in iaas technology
+df = df[df['Pay_per_pod_usage'] != "yes"]
+
+# iaas_columns = df[['internal_egress', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Regional_redundancy', 'Autoscaling', 'Payment_option', 'Term_Length', 'Instance_Type', 'Disk_type', 'OS', 'Region']]
 
 print('rows x columns:', df.shape)
 print('Columns info:', df.info())
@@ -35,7 +43,7 @@ print('Data highlights: \n', df.describe())
 print(df.isnull().sum() * 100 / df.shape[0])
 
 # %% =========== Visualize the Data ======================================
-df.drop(['Internal_traffic'], axis=1, inplace=True)
+# df.drop(['Internal_traffic'], axis=1, inplace=True)
 
 num_list = []
 cat_list = []
@@ -66,68 +74,67 @@ fig = plt.figure(figsize=(28, 20))
 fig.suptitle('Outlier analysis for categorical variables', fontsize=32)
 
 plt.subplot(5, 3, 1)
-sns.boxplot(x='Cluster_mgmt_fee', y='Price', data=df)
-# sns.swarmplot(x='Cluster_mgmt_fee', y='Price', data=df, color=".25")
+# sns.boxplot(x='Cluster_mgmt_fee', y='Price', data=df)
+# # sns.swarmplot(x='Cluster_mgmt_fee', y='Price', data=df, color=".25")
 
-plt.subplot(fig_rows, fig_cols, 2)
-sns.boxplot(x='Regional_redundancy', y='Price', data=df)
-# sns.swarmplot(x='Regional_redundancy', y='Price', data=df, color=".25")
+# plt.subplot(fig_rows, fig_cols, 2)
+# sns.boxplot(x='Regional_redundancy', y='Price', data=df)
+# # sns.swarmplot(x='Regional_redundancy', y='Price', data=df, color=".25")
 
-plt.subplot(fig_rows, fig_cols, 3)
-sns.boxplot(x='Autoscaling', y='Price', data=df)
-# sns.swarmplot(x='Autoscaling', y='Price', data=df, color=".25")
-
-plt.subplot(5, 3, 4)
-sns.boxplot(x='Vendor_agnostic', y='Price', data=df)
-# sns.swarmplot(x='Vendor_agnostic', y='Price', data=df, color=".25")
-
-plt.subplot(5, 3, 5)
-sns.boxplot(x='Payment', y='Price', data=df)
-# sns.swarmplot(x='Payment', y='Price', data=df, color=".25")
-
-plt.subplot(5, 3, 6)
-sns.boxplot(x='Term_length_commitment', y='Price', data=df)
-# sns.swarmplot(x='Term_length_commitment', y='Price', data=df, color=".25")
-
-plt.subplot(fig_rows, fig_cols, 7)
-sns.boxplot(x='Instance_Type', y='Price', data=df)
-# sns.swarmplot(x='Instance_Type', y='Price', data=df, color=".25")
-
-plt.subplot(fig_rows, fig_cols, 8)
-sns.boxplot(x='Disk_type', y='Price', data=df)
-# sns.swarmplot(x='Disk_type', y='Price', data=df, color=".25")
-
-plt.subplot(5, 3, 9)
-sns.boxplot(x='Operating System', y='Price', data=df)
-# sns.swarmplot(x='Operating System', y='Price', data=df, color=".25")
-
-plt.subplot(5, 3, 10)
-sns.boxplot(x='Multicloud_support', y='Price', data=df)
-# sns.swarmplot(x='Multicloud_support', y='Price', data=df, color=".25")
-
-plt.subplot(5, 3, 11)
-sns.boxplot(x='Pay_per_container', y='Price', data=df)
-# sns.swarmplot(x='Pay_per_container', y='Price', data=df, color=".25")
-
-plt.subplot(fig_rows, fig_cols, 12)
-sns.boxplot(x='Region', y='Price', data=df)
-# sns.swarmplot(x='Region', y='Price', data=df, color=".25")
-
-# plt.subplot(5, 3, 13)
-# sns.boxplot(x='Internal_traffic', y='Price', data=df)
-# sns.swarmplot(x='Internal_traffic', y='Price', data=df, color=".25")
-
-
-plt.subplot(5, 3, 14)
-sns.boxplot(x='External_traffic', y='Price', data=df)
-# sns.swarmplot(x='External_traffic', y='Price', data=df, color=".25")
-plt.show()
+# plt.subplot(fig_rows, fig_cols, 3)
+# sns.boxplot(x='Autoscaling', y='Price', data=df)
+# # sns.swarmplot(x='Autoscaling', y='Price', data=df, color=".25")
+#
+# plt.subplot(5, 3, 4)
+# sns.boxplot(x='Vendor_agnostic', y='Price', data=df)
+# # sns.swarmplot(x='Vendor_agnostic', y='Price', data=df, color=".25")
+#
+# plt.subplot(5, 3, 5)
+# sns.boxplot(x='Payment', y='Price', data=df)
+# # sns.swarmplot(x='Payment', y='Price', data=df, color=".25")
+#
+# plt.subplot(5, 3, 6)
+# sns.boxplot(x='Term_length_commitment', y='Price', data=df)
+# # sns.swarmplot(x='Term_length_commitment', y='Price', data=df, color=".25")
+#
+# plt.subplot(fig_rows, fig_cols, 7)
+# sns.boxplot(x='Instance_Type', y='Price', data=df)
+# # sns.swarmplot(x='Instance_Type', y='Price', data=df, color=".25")
+#
+# plt.subplot(fig_rows, fig_cols, 8)
+# sns.boxplot(x='Disk_type', y='Price', data=df)
+# # sns.swarmplot(x='Disk_type', y='Price', data=df, color=".25")
+#
+# plt.subplot(5, 3, 9)
+# sns.boxplot(x='Operating System', y='Price', data=df)
+# # sns.swarmplot(x='Operating System', y='Price', data=df, color=".25")
+#
+# plt.subplot(5, 3, 10)
+# sns.boxplot(x='Multicloud_support', y='Price', data=df)
+# # sns.swarmplot(x='Multicloud_support', y='Price', data=df, color=".25")
+#
+# plt.subplot(5, 3, 11)
+# sns.boxplot(x='Pay_per_container', y='Price', data=df)
+# # sns.swarmplot(x='Pay_per_container', y='Price', data=df, color=".25")
+#
+# plt.subplot(fig_rows, fig_cols, 12)
+# sns.boxplot(x='Region', y='Price', data=df)
+# # sns.swarmplot(x='Region', y='Price', data=df, color=".25")
+#
+# # plt.subplot(5, 3, 13)
+# # sns.boxplot(x='Internal_traffic', y='Price', data=df)
+# # sns.swarmplot(x='Internal_traffic', y='Price', data=df, color=".25")
+#
+#
+# plt.subplot(5, 3, 14)
+# sns.boxplot(x='External_traffic', y='Price', data=df)
+# # sns.swarmplot(x='External_traffic', y='Price', data=df, color=".25")
+# plt.show()
 
 # %% =========== Data preparation =================
 
 # Categorical variables to map
-category_list_binary = ['Cluster_mgmt_fee', 'Regional_redundancy', 'Vendor_agnostic', 'Disk_type',
-                        'Multicloud_support', 'Pay_per_container']
+category_list_binary = ['Regional_redundancy', 'Disk_type']
 
 
 # Defining the map function

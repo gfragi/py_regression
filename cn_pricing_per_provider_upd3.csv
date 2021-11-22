@@ -1,4 +1,4 @@
-Provider,product,Price,CPU_RAM_Price,Storage_Price,Cluster_fee,licensed_OS,Hybrid_support,internal_egress_price,external_egress_price,Internal_traffic,External_traffic,CPU,RAM,Storage,Cluster_mgmt_fee,Regional_redundancy,Autoscaling,Vendor_agnostic,Payment,Term_length_commitment,Instance_Type,Disk_type,Operating System,Multicloud_support,Pay_per_container,Region
+Provider,product,Price,CPU_RAM_Price,Storage_Price,Cluster_fee_price,licensed_OS_price,Hybrid_support_price,internal_egress_price,external_egress_price,Internal_traffic,External_traffic,CPU,RAM,Storage,Cluster_mgmt_fee,Regional_redundancy,Autoscaling,Vendor_agnostic,Payment,Term_length_commitment,Instance_Type,Disk_type,Operating System,Multicloud_support,Pay_per_container,Region
 Digital Ocean,Ocean,0.0687,0.055,0,0,0,0,0,0.0137,100,1000,4,8,200,no,yes,horizontal,no,no upfront,1year,on_demand,SSD,free,no,no,US
 Digital Ocean,Ocean,0.07322,0.05952,0,0,0,0,0,0.0137,100,1000,4,8,100,no,yes,horizontal,no,no upfront,no,on_demand,SSD,free,no,no,US
 Amazon,ECS12,0.08244,0.0728,0.0069,0,0,0,0.0027397,0,100,600,2,4,200,no,yes,vertical&horizontal,yes,no upfront,no,on_demand,SSD,Windows,no,no,Asia

@@ -25,7 +25,7 @@ df = df.drop(['CPU_RAM_price', 'Storage_price', 'Cluster_fee_price', 'licensed_O
               'internal_egress_price', 'product'], axis=1)
 
 # %% ========== Select provider =======
-df = df.loc[df['Provider'] == 'Google']
+# df = df.loc[df['Provider'] == 'Amazon']
 
 print('rows x columns:', df.shape)
 print('Columns info:', df.info())
@@ -153,7 +153,7 @@ df.drop(['Autoscaling', 'Term_length_commitment', 'Payment', 'Operating System',
 # Drop features and options
 # #
 df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
-         'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Payment_no upfront', 'Autoscaling_vertical&horizontal']]
+         'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Vendor_agnostic']]
 # df.head()
 
 fig = plt.figure(figsize=(10, 7))

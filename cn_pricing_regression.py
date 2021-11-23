@@ -156,10 +156,9 @@ df.drop(['Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
-# #
-# df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
-# 'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Payment_no upfront', 'Autoscaling_vertical&horizontal']]
-# # df.head()
+#
+df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Disk_type', 'Regional_redundancy']]
+# df.head()
 
 # fig = plt.figure(figsize=(10, 7))
 # sns.regplot(x=df.CPU, y=df.Price, color='#619CFF', marker='o')
@@ -171,27 +170,27 @@ df.drop(['Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
 
-# # %% log transformation
-#
-#
-# num_list_log = ['Price', 'external_egress', 'CPU', 'RAM', 'STORAGE']
-#
-# df[num_list_log] = np.log10(df[num_list] + 1)
-# df[num_list].replace([num_list_log], inplace=True)
-#
-# num_list = []
-# cat_list = []
-#
-# for column in df:
-#     plt.figure(column, figsize=(5, 5))
-#     plt.title(column)
-#     if is_numeric_dtype(df[column]):
-#         df[column].plot(kind='hist', color='green')
-#         num_list.append(column)
-#     elif is_string_dtype(df[column]):
-#         df[column].value_counts().plot(kind='bar', color='green')
-#         cat_list.append(column)
-#     plt.show()
+# %% log transformation
+
+
+num_list_log = ['Price', 'external_egress', 'CPU', 'RAM', 'STORAGE']
+
+df[num_list_log] = np.log10(df[num_list] + 1)
+df[num_list].replace([num_list_log], inplace=True)
+
+num_list = []
+cat_list = []
+
+for column in df:
+    plt.figure(column, figsize=(5, 5))
+    plt.title(column)
+    if is_numeric_dtype(df[column]):
+        df[column].plot(kind='hist', color='green')
+        num_list.append(column)
+    elif is_string_dtype(df[column]):
+        df[column].value_counts().plot(kind='bar', color='green')
+        cat_list.append(column)
+    plt.show()
 
 # %% ===================== Correlation ===========================
 # Check the correlation coefficients to see which variables are highly correlated

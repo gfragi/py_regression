@@ -157,7 +157,7 @@ df.drop(['Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis
 
 # Drop features and options
 #
-df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Disk_type', 'Regional_redundancy']]
+# df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Disk_type', 'Regional_redundancy']]
 # df.head()
 
 # fig = plt.figure(figsize=(10, 7))
@@ -173,7 +173,7 @@ df = df[['Provider', 'Price', 'internal_egress', 'external_egress', 'CPU', 'RAM'
 # %% log transformation
 
 
-num_list_log = ['Price', 'external_egress', 'CPU', 'RAM', 'STORAGE']
+num_list_log = ['Price', 'external_egress', 'internal_egress', 'CPU', 'RAM', 'STORAGE']
 
 df[num_list_log] = np.log10(df[num_list] + 1)
 df[num_list].replace([num_list_log], inplace=True)

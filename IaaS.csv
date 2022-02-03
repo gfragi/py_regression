@@ -1,0 +1,590 @@
+Provider,product,Price,CPU_RAM_price,Storage_price,licensed_OS_price,internal_egress_price,external_egress_price,internal_egress,external_egress,CPU,RAM,STORAGE,Regional_redundancy,Autoscaling,Payment_option,Term_Length,Instance_Type,Disk_type,OS,Region
+Google,S1,0.22848,0.172668,0.0065,0,0.0000000,0.0493,100,300,4,16,100,no,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Alibaba,ACk1,0.25110,0.13,0.02,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,no upfront,No commitment,Dedicated,HDD,free,Asia
+Alibaba,ACk2,0.24210,0.121,0.02,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,no upfront,No commitment,Dedicated,HDD,Windows,Asia
+Alibaba,ACk3,0.29110,0.13,0.06,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Asia
+Alibaba,ACk4,0.28210,0.121,0.06,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Windows,Asia
+Alibaba,ACk5,0.23610,0.075,0.06,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Asia
+Alibaba,ACk6,0.19710,0.036,0.06,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,partially upfront,1 Year commitment,On Demand,SSD,free,Asia
+Alibaba,ACk7,0.19510,0.034,0.06,0,0.0000000,0.1011,30,600,4,8,200,yes,horizontal,All upfront,1 Year commitment,On Demand,SSD,free,Asia
+Alibaba,ACk8,0.21310,0.052,0.06,0,0.0000000,0.1011,100,600,4,8,200,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,Asia
+Alibaba,ACk9,0.18610,0.025,0.06,0,0.0000000,0.1011,100,600,4,8,200,yes,horizontal,partially upfront,3 Year commitment,On Demand,SSD,free,Asia
+Alibaba,ACk10,0.17610,0.015,0.06,0,0.0000000,0.1011,100,600,4,8,200,yes,horizontal,All upfront,3 Year commitment,On Demand,SSD,free,Asia
+Alibaba,ACk11,0.30349,0.075,0.06,0,0.0000000,0.1685,100,1000,4,8,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,Asia
+Alibaba,ACk12,0.26449,0.036,0.06,0,0.0000000,0.1685,100,1000,4,8,200,yes,horizontal,partially upfront,1 Year commitment,On Demand,SSD,Windows,Asia
+Alibaba,ACk13,0.26249,0.034,0.06,0,0.0000000,0.1685,100,1000,4,8,200,yes,horizontal,All upfront,1 Year commitment,On Demand,SSD,Windows,Asia
+Alibaba,ACk14,0.28049,0.052,0.06,0,0.0000000,0.1685,100,1000,4,8,200,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Asia
+Alibaba,ACk15,0.25349,0.025,0.06,0,0.0000000,0.1685,100,1000,4,8,200,yes,horizontal,partially upfront,3 Year commitment,On Demand,SSD,Windows,Asia
+Alibaba,ACk16,0.21349,0.015,0.03,0,0.0000000,0.1685,100,1000,4,8,300,yes,horizontal,All upfront,3 Year commitment,On Demand,SSD,Windows,Asia
+Alibaba,ACk17,1.04797,0.344,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Alibaba,ACk18,0.98497,0.281,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Europe
+Alibaba,ACk19,0.96597,0.262,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,free,Europe
+Alibaba,ACk20,0.96097,0.257,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,free,Europe
+Alibaba,ACk21,0.89997,0.196,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Alibaba,ACk22,0.87997,0.176,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,free,Europe
+Alibaba,ACk23,0.86997,0.166,0.03,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,free,Europe
+Alibaba,ACk24,1.28597,0.612,0,0,0.0000000,0.6740,1000,4000,8,64,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+Alibaba,ACk25,1.06797,0.394,0,0,0.0000000,0.6740,1000,4000,8,16,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+Alibaba,ACk26,0.40349,0.235,0,0,0.0000000,0.1685,100,1000,4,8,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+Amazon,EKS1,0.08732,0.0768,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Amazon,EKS2,0.05852,0.048,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Europe
+Amazon,EKS3,0.05652,0.046,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,free,Europe
+Amazon,EKS4,0.05552,0.045,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,free,Europe
+Amazon,EKS5,0.04352,0.033,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Amazon,EKS6,0.04152,0.031,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,free,Europe
+Amazon,EKS7,0.03952,0.029,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,free,Europe
+Amazon,EKS8,0.06428,0.05376,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Amazon,EKS9,0.13412,0.1236,0.0097,0,0.0008219,0.0000,30,600,2,8,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS10,0.09896,0.08652,0.0097,0,0.0027397,0.0000,100,400,2,8,300,yes,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Amazon,EKS11,0.12199,0.088,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS12,0.11899,0.085,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS13,0.11799,0.084,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS14,0.10299,0.069,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS15,0.09999,0.066,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS16,0.09799,0.064,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,EKS17,0.17079,0.1368,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS18,0.12975,0.09576,0.03125,0,0.0027397,0.0000,100,400,2,8,1000,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Amazon,EKS19,0.15021,0.108,0.03125,0,0.0109589,0.0000,400,400,2,8,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS20,0.14821,0.106,0.03125,0,0.0109589,0.0000,400,400,2,8,1000,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS21,0.14721,0.105,0.03125,0,0.0109589,0.0000,400,400,2,8,1000,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS22,0.25450,0.089,0.03125,0,0.0109589,0.1233,400,1000,2,8,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS23,0.25250,0.087,0.03125,0,0.0109589,0.1233,400,1000,2,8,1000,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS24,0.23713,0.089,0.01388,0,0.0109589,0.1233,400,1000,2,8,400,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,EKS25,3.14452,1.4868,0.01388,0,0.2465753,1.3973,9000,12000,32,64,400,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+Amazon,EKS26,2.64272,0.985,0.01388,0,0.2465753,1.3973,9000,12000,32,64,400,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,US
+Amazon,EKS27,2.37372,0.716,0.01388,0,0.2465753,1.3973,9000,12000,32,64,400,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,US
+Amazon,EKS28,2.60172,0.944,0.01388,0,0.2465753,1.3973,9000,12000,32,64,400,yes,horizontal,partially upfront,1 Year commitment,On Demand,SSD,Linux,US
+Amazon,EKS29,3.51722,0.928,0.01388,0,0.2465753,2.3288,9000,20000,32,64,400,yes,horizontal,All upfront,1 Year commitment,On Demand,SSD,Linux,US
+Amazon,EKS30,3.26222,0.673,0.01388,0,0.2465753,2.3288,9000,20000,32,64,400,yes,horizontal,partially upfront,3 Year commitment,On Demand,SSD,Linux,US
+Amazon,EKS31,3.22922,0.64,0.01388,0,0.2465753,2.3288,9000,20000,32,64,400,yes,horizontal,All upfront,3 Year commitment,On Demand,SSD,Linux,US
+Amazon,EKS32,5.57422,2.985,0.01388,0,0.2465753,2.3288,9000,20000,32,64,400,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+Amazon,EKS33,4.47022,1.881,0.01388,0,0.2465753,2.3288,9000,20000,32,64,400,yes,horizontal,no upfront,1 Year commitment,Dedicated,SSD,free,US
+Amazon,EKS34,4.37922,1.79,0.01388,0,0.2465753,2.3288,9000,20000,32,64,400,yes,horizontal,partially upfront,1 Year commitment,Dedicated,SSD,free,US
+Amazon,EKS35,7.86477,1.755,0.01388,0,0.2739726,5.8219,10000,50000,32,64,400,yes,horizontal,All upfront,1 Year commitment,Dedicated,SSD,free,US
+Amazon,EKS36,7.39977,1.29,0.01388,0,0.2739726,5.8219,10000,50000,32,64,400,yes,horizontal,no upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,EKS37,7.30377,1.194,0.01388,0,0.2739726,5.8219,10000,50000,32,64,400,yes,horizontal,partially upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,EKS38,7.23177,1.122,0.01388,0,0.2739726,5.8219,10000,50000,32,64,400,yes,horizontal,All upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,EKS39,4.42815,3.154,0.01388,0,0.0273973,1.2329,1000,10000,8,32,400,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+Amazon,EKS40,2.69715,1.423,0.01388,0,0.0273973,1.2329,1000,10000,8,32,400,yes,horizontal,All upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,ECS1,2.15952,0.868,0.03125,0,0.0273973,1.2329,1000,10000,8,32,1000,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+Amazon,ECS2,1.95352,0.662,0.03125,0,0.0273973,1.2329,1000,10000,8,32,1000,yes,horizontal,All upfront,1 Year commitment,On Demand,SSD,Windows,Europe
+Amazon,ECS3,1.85952,0.568,0.03125,0,0.0273973,1.2329,1000,10000,8,32,1000,yes,horizontal,partially upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Amazon,ECS4,1.80311,0.3472,0.03125,0,0.0273973,1.3973,1000,12000,8,32,1000,yes,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Amazon,ECS5,1.90091,0.445,0.03125,0,0.0273973,1.3973,1000,12000,8,32,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,ECS6,1.88591,0.43,0.03125,0,0.0273973,1.3973,1000,12000,8,32,1000,yes,horizontal,partially upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,ECS7,1.77391,0.318,0.03125,0,0.0273973,1.3973,1000,12000,8,32,1000,yes,horizontal,All upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,ECS8,1.80191,0.346,0.03125,0,0.0273973,1.3973,1000,12000,8,32,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,ECS9,1.74991,0.294,0.03125,0,0.0273973,1.3973,1000,12000,8,32,1000,yes,horizontal,All upfront,1 Year commitment,On Demand,SSD,free,Europe
+Amazon,ECS10,1.67130,0.188,0.03125,0,0.0547945,1.3973,2000,12000,8,32,1000,yes,horizontal,partially upfront,3 Year commitment,On Demand,SSD,free,Europe
+Amazon,ECS11,0.14261,0.1364,0.00347,0,0.0027397,0.0000,100,600,2,8,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS12,0.08244,0.0728,0.0069,0,0.0027397,0.0000,100,600,2,4,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS13,0.41115,0.398,0.01041,0,0.0027397,0.0000,100,600,4,8,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS14,0.30774,0.2912,0.0138,0,0.0027397,0.0000,100,600,4,16,400,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS15,3.96482,1.592,0.01666,0,0.0273973,2.3288,1000,20000,16,32,500,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS16,4.15606,1.768,0.0319,0,0.0273973,2.3288,1000,20000,16,64,1000,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS17,4.19163,1.832,0.00347,0,0.0273973,2.3288,1000,20000,16,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS18,5.61764,3.008,0.0069,0,0.2739726,2.3288,10000,20000,32,64,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS19,6.07254,3.456,0.0138,0,0.2739726,2.3288,10000,20000,32,128,500,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,ECS20,4.66554,2.0309,0.0319,0,0.2739726,2.3288,10000,20000,32,128,1000,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,Asia
+Amazon,RH1,2.77895,1.3172,0.0097,0,0.0547945,1.3973,2000,12000,12,48,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Amazon,RH2,2.10775,0.646,0.0097,0,0.0547945,1.3973,2000,12000,12,48,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH3,2.06875,0.607,0.0097,0,0.0547945,1.3973,2000,12000,12,48,300,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH4,2.97226,0.579,0.0097,0,0.0547945,2.3288,2000,20000,12,48,300,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH5,3.01726,0.624,0.0097,0,0.0547945,2.3288,2000,20000,12,48,300,yes,horizontal,All upfront,3 Year commitment,Dedicated,HDD,Linux,Europe
+Amazon,RH6,3.26826,0.875,0.0097,0,0.0547945,2.3288,2000,20000,12,48,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH7,3.23226,0.839,0.0097,0,0.0547945,2.3288,2000,20000,12,48,300,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH8,3.21826,0.825,0.0097,0,0.0547945,2.3288,2000,20000,12,48,300,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH9,3.17245,0.697,0.0097,0,0.1369863,2.3288,5000,20000,12,48,300,yes,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Linux,Europe
+Amazon,RH10,3.13045,0.655,0.0097,0,0.1369863,2.3288,5000,20000,12,48,300,yes,horizontal,partially upfront,3 Year commitment,Dedicated,HDD,Linux,Europe
+Amazon,RH11,0.28466,0.14,0.01041,0,0.0109589,0.1233,400,1000,2,8,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Amazon,RH12,0.30566,0.161,0.01041,0,0.0109589,0.1233,400,1000,4,16,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,US
+Amazon,RH13,2.94536,0.4692,0.01041,0,0.1369863,2.3288,5000,20000,8,16,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Amazon,RH14,2.79816,0.322,0.01041,0,0.1369863,2.3288,5000,20000,8,32,300,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,US
+Amazon,RH15,2.67272,1.2862,0.01666,0,0.1369863,1.2329,5000,10000,12,48,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Amazon,RH16,2.60272,0.806,0.0159,0,0.1369863,1.6438,5000,10000,12,48,500,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH19,4.11824,1.4996,0.0159,0,0.2739726,2.3288,10000,20000,32,64,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH20,4.51502,0.732,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH22,0.30446,0.2776,0.0159,0,0.0109589,0.0000,400,600,4,16,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH23,0.18086,0.154,0.0159,0,0.0109589,0.0000,400,600,4,16,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH31,5.49702,1.714,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH32,4.92102,1.138,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH33,4.87302,1.09,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH34,4.85402,1.071,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH35,4.60402,0.821,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH36,4.55302,0.77,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH37,5.59302,1.81,0.0159,0,0.2739726,3.4932,10000,30000,32,128,500,yes,horizontal,no upfront,No commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH38,6.93979,0.828,0.0159,0,0.2739726,5.8219,10000,50000,32,128,500,yes,horizontal,All upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH39,6.97779,0.866,0.0159,0,0.2739726,5.8219,10000,50000,32,128,500,yes,horizontal,partially upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH40,7.02879,0.917,0.0159,0,0.2739726,5.8219,10000,50000,32,128,500,yes,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH41,7.34579,1.234,0.0159,0,0.2739726,5.8219,10000,50000,32,128,500,yes,horizontal,no upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH42,7.29779,1.186,0.0159,0,0.2739726,5.8219,10000,50000,32,128,500,yes,horizontal,partially upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH43,7.27879,1.167,0.0159,0,0.2739726,5.8219,10000,50000,32,128,500,yes,horizontal,All upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH44,0.22386,0.197,0.0159,0,0.0109589,0.0000,400,600,4,16,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH45,0.21786,0.191,0.0159,0,0.0109589,0.0000,400,600,4,16,500,yes,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH46,0.21486,0.188,0.0159,0,0.0109589,0.0000,400,600,4,16,500,yes,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH47,0.66701,0.147,0.0159,0,0.0109589,0.4932,400,3000,4,16,500,yes,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH48,0.66201,0.142,0.0159,0,0.0109589,0.4932,400,3000,4,16,500,yes,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH49,0.68975,0.167,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH50,0.81455,0.2918,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,no upfront,No commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH51,0.73275,0.21,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,no upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH52,0.72675,0.204,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,partially upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH53,0.72375,0.201,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,All upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH54,0.67775,0.155,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,All upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH55,0.68275,0.16,0.0159,0,0.0136986,0.4932,500,3000,4,16,500,yes,horizontal,partially upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH56,0.08650,0.0768,0.0097,0,0.0000000,0.0000,30,300,2,8,300,no,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Amazon,RH57,0.05770,0.048,0.0097,0,0.0000000,0.0000,30,300,2,8,300,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Europe
+Amazon,RH58,0.05570,0.046,0.0097,0,0.0000000,0.0000,30,300,2,8,300,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,free,Europe
+Amazon,RH59,0.05470,0.045,0.0097,0,0.0000000,0.0000,400,300,2,8,300,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,free,Europe
+Amazon,RH60,0.04270,0.033,0.0097,0,0.0000000,0.0000,400,300,2,8,300,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Amazon,RH61,0.04070,0.031,0.0097,0,0.0000000,0.0000,400,300,2,8,300,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,free,Europe
+Amazon,RH62,0.03870,0.029,0.0097,0,0.0000000,0.0000,400,300,2,8,300,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,free,Europe
+Amazon,RH63,0.06346,0.05376,0.0097,0,0.0000000,0.0000,400,300,2,8,300,no,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Amazon,RH64,0.13330,0.1236,0.0097,0,0.0000000,0.0000,400,600,2,8,300,no,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Amazon,RH65,0.09622,0.08652,0.0097,0,0.0000000,0.0000,400,600,2,8,300,no,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Amazon,RH66,0.11925,0.088,0.03125,0,0.0000000,0.0000,400,600,2,8,1000,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,RH67,0.11625,0.085,0.03125,0,0.0000000,0.0000,400,600,2,8,1000,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,RH68,0.11525,0.084,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,RH69,0.10025,0.069,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,RH70,0.09725,0.066,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,RH71,0.09525,0.064,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Amazon,RH72,0.16805,0.1368,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Amazon,RH73,0.12701,0.09576,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Amazon,RH74,0.13925,0.108,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH75,0.13725,0.106,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH76,0.13625,0.105,0.03125,0,0.0000000,0.0000,500,600,2,8,1000,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH77,0.24354,0.089,0.03125,0,0.0000000,0.1233,500,1000,2,8,1000,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH78,0.24154,0.087,0.03125,0,0.0000000,0.1233,500,1000,2,8,1000,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH79,0.22617,0.089,0.01388,0,0.0000000,0.1233,100,1000,2,8,400,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH80,2.89246,1.4868,0.0084,0,0.0000000,1.3973,9000,12000,32,64,400,no,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+Amazon,RH81,2.39066,0.985,0.0084,0,0.0000000,1.3973,9000,12000,32,64,400,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,US
+Amazon,RH82,2.12166,0.716,0.0084,0,0.0000000,1.3973,9000,12000,32,64,400,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,US
+Amazon,RH83,2.34966,0.944,0.0084,0,0.0000000,1.3973,9000,12000,32,64,400,no,horizontal,partially upfront,1 Year commitment,On Demand,SSD,Linux,US
+Amazon,RH84,3.26517,0.928,0.0084,0,0.0000000,2.3288,9000,20000,32,64,400,no,horizontal,All upfront,1 Year commitment,On Demand,SSD,Linux,US
+Amazon,RH85,3.01017,0.673,0.0084,0,0.0000000,2.3288,9000,20000,32,64,400,no,horizontal,partially upfront,3 Year commitment,On Demand,SSD,Linux,US
+Amazon,RH86,2.97717,0.64,0.0084,0,0.0000000,2.3288,9000,20000,32,64,400,no,horizontal,All upfront,3 Year commitment,On Demand,SSD,Linux,US
+Amazon,RH87,5.32217,2.985,0.0084,0,0.0000000,2.3288,9000,20000,32,64,400,no,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+Amazon,RH88,4.21817,1.881,0.0084,0,0.0000000,2.3288,9000,20000,32,64,400,no,horizontal,no upfront,1 Year commitment,Dedicated,SSD,free,US
+Amazon,RH89,4.12717,1.79,0.0084,0,0.0000000,2.3288,10000,20000,32,64,400,no,horizontal,partially upfront,1 Year commitment,Dedicated,SSD,free,US
+Amazon,RH90,7.58532,1.755,0.0084,0,0.0000000,5.8219,10000,50000,32,64,400,no,horizontal,All upfront,1 Year commitment,Dedicated,SSD,free,US
+Amazon,RH91,7.12032,1.29,0.0084,0,0.0000000,5.8219,10000,50000,32,64,400,no,horizontal,no upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,RH92,7.02432,1.194,0.0084,0,0.0000000,5.8219,10000,50000,32,64,400,no,horizontal,partially upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,RH93,6.95232,1.122,0.0084,0,0.0000000,5.8219,10000,50000,32,64,400,no,horizontal,All upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,RH94,4.40076,3.154,0.01388,0,0.0000000,1.2329,1000,10000,8,32,400,no,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+Amazon,RH95,2.66976,1.423,0.01388,0,0.0000000,1.2329,1000,10000,8,32,400,no,horizontal,All upfront,3 Year commitment,Dedicated,SSD,free,US
+Amazon,RH96,2.13213,0.868,0.03125,0,0.0000000,1.2329,1000,10000,8,32,1000,no,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+Amazon,RH97,1.92613,0.662,0.03125,0,0.0000000,1.2329,1000,10000,8,32,1000,no,horizontal,All upfront,1 Year commitment,On Demand,SSD,Windows,Europe
+Amazon,RH98,1.83213,0.568,0.03125,0,0.0000000,1.2329,2000,10000,8,32,1000,no,horizontal,partially upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Amazon,RH99,1.61133,0.3472,0.03125,0,0.0000000,1.2329,2000,10000,8,32,1000,no,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Amazon,RH100,1.70913,0.445,0.03125,0,0.0000000,1.2329,2000,10000,8,32,1000,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,RH101,1.69413,0.43,0.03125,0,0.0000000,1.2329,2000,10000,8,32,1000,no,horizontal,partially upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,RH102,1.74651,0.318,0.03125,0,0.0000000,1.3973,2000,12000,8,32,1000,no,horizontal,All upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,RH103,1.77451,0.346,0.03125,0,0.0000000,1.3973,2000,12000,8,32,1000,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Amazon,RH104,1.72251,0.294,0.03125,0,0.0000000,1.3973,2000,12000,8,32,1000,no,horizontal,All upfront,1 Year commitment,On Demand,SSD,free,Europe
+Amazon,RH105,1.61651,0.188,0.03125,0,0.0000000,1.3973,5000,12000,8,32,1000,no,horizontal,partially upfront,3 Year commitment,On Demand,SSD,free,Europe
+Amazon,RH106,0.30425,0.1364,0.00347,0,0.0000000,0.1644,30,1000,2,8,100,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH107,0.24408,0.0728,0.0069,0,0.0000000,0.1644,30,1000,2,4,200,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH108,0.57279,0.398,0.01041,0,0.0000000,0.1644,30,1000,4,8,300,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH109,0.46938,0.2912,0.0138,0,0.0000000,0.1644,100,1000,4,16,400,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH110,3.25250,1.592,0.01666,0,0.0000000,1.6438,1000,10000,16,32,500,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH111,3.44374,1.768,0.0319,0,0.0000000,1.6438,1000,10000,16,64,1000,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH112,3.47931,1.832,0.00347,0,0.0000000,1.6438,1000,10000,16,128,100,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH113,4.65624,3.008,0.0044,0,0.0000000,1.6438,500,10000,32,64,200,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH114,5.11364,3.456,0.0138,0,0.0000000,1.6438,500,10000,32,128,500,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Amazon,RH115,3.70234,2.0309,0.0276,0,0.0000000,1.6438,500,10000,32,128,1000,no,horizontal,no upfront,No commitment,Spot,SSD,Windows,Asia
+Amazon,RH116,2.72416,1.3172,0.0097,0,0.0000000,1.3973,5000,12000,12,48,300,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Amazon,RH117,2.05296,0.646,0.0097,0,0.0000000,1.3973,5000,12000,12,48,300,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH118,2.01396,0.607,0.0097,0,0.0000000,1.3973,5000,12000,12,48,300,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH119,1.98596,0.579,0.0097,0,0.0000000,1.3973,5000,12000,12,48,300,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH120,2.03096,0.624,0.0097,0,0.0000000,1.3973,5000,12000,12,48,300,no,horizontal,All upfront,3 Year commitment,Dedicated,HDD,Linux,Europe
+Amazon,RH121,3.21347,0.875,0.0097,0,0.0000000,2.3288,5000,20000,12,48,300,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH122,3.17747,0.839,0.0097,0,0.0000000,2.3288,5000,20000,12,48,300,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH123,3.16347,0.825,0.0097,0,0.0000000,2.3288,5000,20000,12,48,300,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Amazon,RH124,3.03547,0.697,0.0097,0,0.0000000,2.3288,5000,20000,12,48,300,no,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Linux,Europe
+Amazon,RH125,2.99347,0.655,0.0097,0,0.0000000,2.3288,1000,20000,12,48,300,no,horizontal,partially upfront,3 Year commitment,Dedicated,HDD,Linux,Europe
+Amazon,RH126,0.27370,0.14,0.01041,0,0.0000000,0.1233,100,1000,2,8,300,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Amazon,RH127,0.54127,0.161,0.01041,0,0.0000000,0.3699,100,3000,4,16,300,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,US
+Amazon,RH128,2.80838,0.4692,0.01041,0,0.0000000,2.3288,1000,20000,8,16,300,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Amazon,RH129,2.66118,0.322,0.01041,0,0.0000000,2.3288,1000,20000,8,32,300,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,US
+Amazon,RH130,3.63163,1.2862,0.01666,0,0.0000000,2.3288,1000,20000,12,48,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Amazon,RH131,2.46574,0.806,0.0159,0,0.0000000,1.6438,1000,10000,12,48,500,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH132,2.76254,1.1028,0.0159,0,0.0000000,1.6438,1000,10000,16,128,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH133,1.99474,0.335,0.0159,0,0.0000000,1.6438,1000,10000,16,32,500,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH134,3.15464,1.4996,0.0112,0,0.0000000,1.6438,500,10000,32,64,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH135,2.38704,0.732,0.0112,0,0.0000000,1.6438,500,10000,32,128,500,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH136,3.63087,1.2862,0.0159,0,0.0000000,2.3288,1000,20000,12,48,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH137,0.45788,0.2776,0.0159,0,0.0000000,0.1644,100,1000,4,16,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH138,0.33428,0.154,0.0159,0,0.0000000,0.1644,100,1000,4,16,500,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH139,3.50087,1.1562,0.0159,0,0.0000000,2.3288,1000,20000,12,48,500,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH140,3.59987,1.2552,0.0159,0,0.0000000,2.3288,1000,20000,12,48,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH141,2.98827,0.6436,0.0159,0,0.0000000,2.3288,1000,20000,16,32,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH142,2.79867,0.454,0.0159,0,0.0000000,2.3288,1000,20000,16,32,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH143,1.84516,0.432,0.0159,0,0.0000000,1.3973,1000,12000,16,32,500,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH144,1.73616,0.323,0.0159,0,0.0000000,1.3973,1000,12000,16,32,500,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH145,1.76516,0.352,0.0159,0,0.0000000,1.3973,1000,12000,16,32,500,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH146,3.36904,1.714,0.0112,0,0.0000000,1.6438,500,10000,32,128,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Amazon,RH147,2.79304,1.138,0.0112,0,0.0000000,1.6438,500,10000,32,128,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH148,3.42997,1.09,0.0112,0,0.0000000,2.3288,5000,20000,32,128,500,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH149,3.41097,1.071,0.0112,0,0.0000000,2.3288,5000,20000,32,128,500,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH150,3.16097,0.821,0.0112,0,0.0000000,2.3288,5000,20000,32,128,500,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH151,3.10997,0.77,0.0112,0,0.0000000,2.3288,5000,20000,32,128,500,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH152,4.14997,1.81,0.0112,0,0.0000000,2.3288,5000,20000,32,128,500,no,horizontal,no upfront,No commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH153,6.66112,0.828,0.0112,0,0.0000000,5.8219,5000,50000,32,128,500,no,horizontal,All upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH154,6.69912,0.866,0.0112,0,0.0000000,5.8219,5000,50000,32,128,500,no,horizontal,partially upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH155,6.75012,0.917,0.0112,0,0.0000000,5.8219,10000,50000,32,128,500,no,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH156,7.06712,1.234,0.0112,0,0.0000000,5.8219,10000,50000,32,128,500,no,horizontal,no upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH157,7.01912,1.186,0.0112,0,0.0000000,5.8219,10000,50000,32,128,500,no,horizontal,partially upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH158,7.00012,1.167,0.0112,0,0.0000000,5.8219,10000,50000,32,128,500,no,horizontal,All upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH159,0.37728,0.197,0.0159,0,0.0000000,0.1644,100,1000,4,16,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH160,0.37128,0.191,0.0159,0,0.0000000,0.1644,100,1000,4,16,500,no,horizontal,partially upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH161,0.36828,0.188,0.0159,0,0.0000000,0.1644,100,1000,4,16,500,no,horizontal,All upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH162,0.65605,0.147,0.0159,0,0.0000000,0.4932,400,3000,4,16,500,no,horizontal,partially upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH163,0.65105,0.142,0.0159,0,0.0000000,0.4932,400,3000,4,16,500,no,horizontal,All upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Amazon,RH164,0.67605,0.167,0.0159,0,0.0000000,0.4932,400,3000,4,16,500,no,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH165,0.80085,0.2918,0.0159,0,0.0000000,0.4932,400,3000,4,16,500,no,horizontal,no upfront,No commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH166,0.71905,0.21,0.0159,0,0.0000000,0.4932,500,3000,4,16,500,no,horizontal,no upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH167,0.71305,0.204,0.0159,0,0.0000000,0.4932,500,3000,4,16,500,no,horizontal,partially upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH168,0.71005,0.201,0.0159,0,0.0000000,0.4932,500,3000,4,16,500,no,horizontal,All upfront,1 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH169,0.66405,0.155,0.0159,0,0.0000000,0.4932,500,3000,4,16,500,no,horizontal,All upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Amazon,RH170,0.66905,0.16,0.0159,0,0.0000000,0.4932,500,3000,4,16,500,no,horizontal,partially upfront,3 Year commitment,Dedicated,HDD,Linux,Asia
+Digital,Ocean,0.07322,0.05952,0,0,0.0000000,0.0137,100,1000,4,8,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.06870,0.055,0,0,0.0000000,0.0137,100,1000,4,8,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,0.37509,0.2381,0,0,0.0000000,0.1370,1000,10000,8,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.35899,0.222,0,0,0.0000000,0.1370,1000,10000,8,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,0.40485,0.26786,0,0,0.0000000,0.1370,1000,10000,8,16,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.38699,0.25,0,0,0.0000000,0.1370,1000,10000,8,16,400,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,0.61318,0.47619,0,0,0.0000000,0.1370,1000,10000,16,32,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.58099,0.444,0,0,0.0000000,0.1370,1000,10000,16,32,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,0.67270,0.53571,0,0,0.0000000,0.1370,1000,10000,16,32,800,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.63699,0.5,0,0,0.0000000,0.1370,1000,10000,16,32,800,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,0.92303,0.2381,0,0,0.0000000,0.6849,100,1000,4,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.90493,0.22,0,0,0.0000000,0.6849,100,1000,4,32,100,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,0.48989,0.47619,0,0,0.0000000,0.0137,1000,10000,8,64,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,0.45370,0.44,0,0,0.0000000,0.0137,1000,10000,8,64,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Digital,Ocean,1.08937,0.95238,0,0,0.0000000,0.1370,1000,10000,16,128,400,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Digital,Ocean,1.01699,0.88,0,0,0.0000000,0.1370,1000,10000,16,128,400,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Google,S2,0.41248,0.172668,0.0065,0.184,0.0000000,0.0493,100,300,4,16,100,no,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Google,S3,0.23606,0.172668,0.0065,0.007577,0.0000000,0.0493,100,300,4,16,100,no,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Google,S4,0.25028,0.172668,0.0283,0,0.0000000,0.0493,100,300,4,16,100,no,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+Google,S5,0.43428,0.172668,0.0283,0.184,0.0000000,0.0493,100,300,4,16,100,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Europe
+Google,S6,0.25028,0.172668,0.0283,0,0.0000000,0.0493,100,300,4,16,100,no,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Google,S7,0.11518,0.051788,0.0065,0.007577,0.0000000,0.0493,400,300,4,16,100,no,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Google,S8,0.29160,0.051788,0.0065,0.184,0.0000000,0.0493,400,300,4,16,100,no,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Google,S9,0.11518,0.051788,0.0065,0.007577,0.0000000,0.0493,400,300,4,16,100,no,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Google,S10,0.17872,0.051788,0.0283,0,0.0000000,0.0986,400,600,4,16,100,no,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S11,0.36272,0.051788,0.0283,0.184,0.0000000,0.0986,400,600,4,16,100,no,horizontal,no upfront,No commitment,Spot,SSD,Windows,Europe
+Google,S12,0.18630,0.051788,0.0283,0.007577,0.0000000,0.0986,400,600,4,16,100,no,horizontal,no upfront,No commitment,Spot,SSD,Linux,Europe
+Google,S13,0.21390,0.108772,0.0065,0,0.0000000,0.0986,500,600,4,16,100,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Europe
+Google,S14,0.39790,0.108772,0.0065,0.184,0.0000000,0.0986,500,600,4,16,100,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Google,S15,0.22148,0.108772,0.0065,0.007577,0.0000000,0.0986,500,600,4,16,100,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Google,S16,0.23570,0.108772,0.0283,0,0.0000000,0.0986,500,600,4,16,100,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Europe
+Google,S17,0.41970,0.108772,0.0283,0.184,0.0000000,0.0986,500,600,4,16,100,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,Europe
+Google,S18,0.30903,0.108772,0.0283,0.007577,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Google,S19,0.24857,0.077688,0.0065,0,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Google,S20,0.43257,0.077688,0.0065,0.184,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Google,S21,0.25615,0.077688,0.0065,0.007577,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Google,S22,0.27037,0.077688,0.0283,0,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,Europe
+Google,S23,0.45437,0.077688,0.0283,0.184,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Google,S24,0.27795,0.077688,0.0283,0.007577,0.0000000,0.1644,500,1000,4,16,100,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Google,S25,0.35583,0.172668,0.0133,0,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Google,S26,0.53983,0.172668,0.0133,0.184,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Google,S27,0.36341,0.172668,0.0133,0.007577,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Google,S28,0.39913,0.172668,0.0566,0,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+Google,S29,0.58313,0.172668,0.0566,0.184,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Europe
+Google,S30,0.40671,0.172668,0.0566,0.007577,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Google,S31,0.67331,0.051788,0.0133,0,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Google,S32,0.85731,0.051788,0.0133,0.184,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Google,S33,0.68088,0.051788,0.0133,0.007577,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Google,S34,0.71661,0.051788,0.0566,0,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S35,0.90061,0.051788,0.0566,0.184,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,Europe
+Google,S36,0.72418,0.051788,0.0566,0.007577,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,No commitment,Spot,SSD,Linux,Europe
+Google,S37,0.73029,0.108772,0.0133,0,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Europe
+Google,S38,0.91429,0.108772,0.0133,0.184,0.0054795,0.6027,400,4000,4,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Google,S39,0.29951,0.108772,0.0133,0.007577,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Google,S40,0.33524,0.108772,0.0566,0,0.0054795,0.1644,400,1000,4,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Europe
+Google,S41,0.45348,0.108772,0.0566,0.184,0.0054795,0.0986,400,600,4,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,Europe
+Google,S42,0.27706,0.108772,0.0566,0.007577,0.0054795,0.0986,400,600,4,16,100,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Google,S43,0.19510,0.077688,0.0133,0,0.0054795,0.0986,400,600,4,16,100,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Google,S44,0.37499,0.077688,0.0133,0.184,0.0013699,0.0986,100,600,4,16,100,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Google,S45,0.19857,0.077688,0.0133,0.007577,0.0013699,0.0986,100,600,4,16,100,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Google,S46,0.23429,0.077688,0.0566,0,0.0013699,0.0986,100,600,4,16,100,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,Europe
+Google,S47,0.41829,0.077688,0.0566,0.184,0.0013699,0.0986,100,600,4,16,100,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Google,S48,0.24187,0.077688,0.0566,0.007577,0.0013699,0.0986,100,600,4,16,100,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Google,S49,0.29927,0.172668,0.0266,0,0.0013699,0.0986,100,600,4,16,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Google,S50,0.54902,0.172668,0.0266,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Google,S51,0.37260,0.172668,0.0266,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Google,S52,0.45182,0.172668,0.1134,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+Google,S53,0.63582,0.172668,0.1134,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Europe
+Google,S54,0.45940,0.172668,0.1134,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Google,S55,0.24414,0.051788,0.0266,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Google,S56,0.42814,0.051788,0.0266,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Google,S57,0.25172,0.051788,0.0266,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Google,S58,0.33094,0.051788,0.1134,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S59,0.51494,0.051788,0.1134,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,Europe
+Google,S60,0.33852,0.051788,0.1134,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,No commitment,Spot,SSD,Linux,Europe
+Google,S61,0.30113,0.108772,0.0266,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Europe
+Google,S62,0.48513,0.108772,0.0266,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Google,S63,0.30870,0.108772,0.0266,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Google,S64,0.38793,0.108772,0.1134,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Europe
+Google,S65,0.57193,0.108772,0.1134,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,Europe
+Google,S66,0.39550,0.108772,0.1134,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Google,S67,0.27004,0.077688,0.0266,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Google,S68,0.45404,0.077688,0.0266,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Google,S69,0.27762,0.077688,0.0266,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Google,S70,0.35684,0.077688,0.1134,0,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,Europe
+Google,S71,0.54084,0.077688,0.1134,0.184,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Google,S72,0.36442,0.077688,0.1134,0.007577,0.0013699,0.1644,100,1000,4,16,200,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Google,S73,0.86363,0.232924,0.0266,0,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Google,S74,1.04763,0.232924,0.0266,0.184,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Google,S75,0.87324,0.232924,0.0266,0.009609,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Google,S76,0.95043,0.232924,0.1134,0,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+Google,S77,1.13443,0.232924,0.1134,0.184,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Europe
+Google,S78,0.96004,0.232924,0.1134,0.009609,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Google,S79,0.70056,0.069852,0.0266,0,0.0013699,0.6027,100,4000,4,32,200,yes,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Google,S80,0.89689,0.069852,0.0266,0.184,0.0136986,0.6027,1000,4000,4,32,200,yes,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Google,S81,0.72250,0.069852,0.0266,0.009609,0.0136986,0.6027,1000,4000,4,32,200,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Google,S82,0.79969,0.069852,0.1134,0,0.0136986,0.6027,1000,4000,4,32,200,yes,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S83,0.98369,0.069852,0.1134,0.184,0.0136986,0.6027,1000,4000,4,32,200,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,Europe
+Google,S84,0.37094,0.069852,0.1134,0.009609,0.0136986,0.1644,1000,1000,4,32,200,yes,horizontal,no upfront,No commitment,Spot,SSD,Linux,Europe
+Google,S103,0.52841,0.069852,0.0065,0,0.0000000,0.4521,500,3000,4,32,100,no,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Google,S104,0.71241,0.069852,0.0065,0.184,0.0000000,0.4521,1000,3000,4,32,100,no,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Google,S105,0.53802,0.069852,0.0065,0.009609,0.0000000,0.4521,1000,3000,4,32,100,no,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Google,S106,0.55021,0.069852,0.0283,0,0.0000000,0.4521,1000,3000,4,32,100,no,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S107,0.73421,0.069852,0.0283,0.184,0.0000000,0.4521,1000,3000,4,32,100,no,horizontal,no upfront,No commitment,Spot,SSD,Windows,Europe
+Google,S108,0.55982,0.069852,0.0283,0.009609,0.0000000,0.4521,1000,3000,4,32,100,no,horizontal,no upfront,No commitment,Spot,SSD,Linux,Europe
+Google,S128,0.92083,0.285088,0.033,0,0.0000000,0.6027,1000,4000,8,16,500,no,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Google,S129,2.19294,0.285088,0.033,0.368,0.0000000,1.5068,1000,10000,8,16,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Google,S130,1.73144,0.179592,0.033,0.012002,0.0000000,1.5068,1000,10000,8,16,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Google,S131,1.82804,0.179592,0.1416,0,0.0000000,1.5068,1000,12000,8,16,500,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Europe
+Google,S132,2.14472,0.128272,0.1416,0.368,0.0000000,1.5068,1000,12000,8,16,500,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Google,S133,1.78872,0.128272,0.1416,0.012002,0.0000000,1.5068,1000,12000,8,16,500,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Google,S134,1.93248,0.345336,0.0666,0,0.0136986,1.5068,1000,10000,8,32,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Google,S135,2.12402,0.168872,0.0666,0.368,0.0136986,1.5068,1000,10000,8,32,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Google,S136,1.71633,0.120632,0.0666,0.014034,0.0082192,1.5068,600,10000,8,32,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Google,S137,1.87848,0.080408,0.283,0,0.0082192,1.5068,600,10000,8,32,500,yes,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S138,4.58840,1.381344,0.283,1.472,0.1369863,1.3151,10000,12000,32,128,500,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Europe
+Google,S139,2.46018,0.675488,0.283,0.049634,0.1369863,1.3151,10000,12000,32,128,500,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Google,S140,1.93296,0.414304,0.0666,0,0.1369863,1.3151,10000,12000,32,128,500,yes,horizontal,no upfront,No commitment,Spot,HDD,free,Europe
+Google,S141,3.40496,0.414304,0.0666,1.472,0.1369863,1.3151,10000,12000,32,128,500,yes,horizontal,no upfront,No commitment,Spot,HDD,Windows,Europe
+Google,S142,1.98259,0.414304,0.0666,0.049634,0.1369863,1.3151,10000,12000,32,128,500,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,Europe
+Google,S143,6.31374,0.414304,0.283,0,0.1369863,5.4795,10000,50000,32,128,500,yes,horizontal,no upfront,No commitment,Spot,SSD,free,Europe
+Google,S144,7.71725,0.414304,0.283,1.472,0.0684932,5.4795,5000,50000,32,128,500,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,Europe
+Google,S145,6.29488,0.414304,0.283,0.049634,0.0684932,5.4795,5000,50000,32,128,500,yes,horizontal,no upfront,No commitment,Spot,SSD,Linux,Europe
+Google,S146,7.06951,1.4549696,0.0666,0,0.0684932,5.4795,5000,50000,32,128,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Google,S147,7.70805,0.621504,0.0666,1.472,0.0684932,5.4795,5000,50000,32,128,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Google,S148,6.60096,0.870176,0.1332,0.049634,0.0684932,5.4795,5000,50000,32,128,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Google,S149,0.25089,0.067006,0.1332,0,0.0013699,0.0493,100,300,2,8,1000,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,US
+Google,S150,0.31810,0.042218,0.1332,0.092,0.0013699,0.0493,100,300,2,8,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,US
+Google,S151,0.21803,0.030158,0.1332,0.003987,0.0013699,0.0493,100,300,2,8,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,US
+Google,S152,0.20399,0.020102,0.1332,0,0.0013699,0.0493,100,300,2,8,1000,yes,horizontal,no upfront,No commitment,Spot,HDD,free,US
+Google,S153,0.50190,0.134012,0.1332,0.184,0.0013699,0.0493,100,300,4,16,1000,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,US
+Google,S154,0.27590,0.084436,0.1332,0.007577,0.0013699,0.0493,100,300,4,16,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,US
+Google,S155,0.30109,0.060316,0.1332,0.007577,0.0013699,0.0986,100,600,4,16,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,US
+Google,S156,0.28098,0.040204,0.1332,0.007577,0.0013699,0.0986,100,600,4,16,1000,yes,horizontal,no upfront,No commitment,Spot,HDD,Windows,US
+Google,S157,0.42156,0.18078,0.1332,0.007577,0.0013699,0.0986,100,600,4,32,1000,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,US
+Google,S158,0.35469,0.113908,0.1332,0.007577,0.0013699,0.0986,100,600,4,32,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,US
+Google,S159,0.32215,0.081372,0.1332,0.007577,0.0013699,0.0986,100,600,4,32,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,US
+Google,S160,0.29705,0.054236,0.1332,0.009609,0.0013699,0.0986,100,600,4,32,1000,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,US
+Google,S164,2.58975,0.080408,0.566,0.368,0.0684932,1.5068,5000,10000,8,32,1000,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,US
+Google,S168,3.01328,0.160816,0.566,0.026191,0.0684932,2.1918,5000,20000,16,64,1000,yes,horizontal,no upfront,No commitment,Spot,SSD,Linux,US
+Google,S172,4.67470,0.321632,0.566,1.472,0.1232877,2.1918,9000,20000,32,128,1000,yes,horizontal,no upfront,No commitment,Spot,SSD,Windows,US
+Google,S197,2.23250,0.850944,0.0266,0.026191,0.0136986,1.3151,1000,12000,16,64,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,South America
+Google,S198,1.93134,0.53608,0.0266,0.026191,0.0273973,1.3151,2000,12000,16,64,200,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,South America
+Google,S199,1.77817,0.382912,0.0266,0.026191,0.0273973,1.3151,2000,12000,16,64,200,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,South America
+Google,S200,1.65054,0.255283,0.0266,0.026191,0.0273973,1.3151,2000,12000,16,64,200,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,South America
+Google,S201,5.51556,1.701888,0.0266,1.472,0.1232877,2.1918,9000,20000,32,128,200,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,South America
+Google,S202,4.88583,1.07216,0.0266,1.472,0.1232877,2.1918,9000,20000,32,128,200,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,South America
+Google,S203,4.57949,0.765824,0.0266,1.472,0.1232877,2.1918,9000,20000,32,128,200,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,South America
+Google,S204,4.32423,0.510566,0.0266,1.472,0.1232877,2.1918,9000,20000,32,128,200,yes,horizontal,no upfront,No commitment,Spot,HDD,Linux,South America
+Microsoft,AKS1,1.79788,0.595,0.00425,0,0.0000000,1.1986,5000,10000,12,48,100,no,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Microsoft,AKS2,1.84588,0.643,0.00425,0,0.0000000,1.1986,5000,10000,12,48,100,no,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Europe
+Microsoft,AKS3,1.58663,0.348,0.04,0,0.0000000,1.1986,5000,10000,12,48,100,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Europe
+Microsoft,AKS4,1.63463,0.396,0.04,0,0.0000000,1.1986,5000,10000,12,48,100,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,Europe
+Microsoft,AKS5,1.42688,0.224,0.00425,0,0.0000000,1.1986,9000,10000,12,48,100,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Europe
+Microsoft,AKS6,3.68721,0.272,0.00425,0,0.0000000,3.4110,9000,30000,12,48,100,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Europe
+Microsoft,AKS8,4.23996,0.794,0.035,0,0.0000000,3.4110,9000,30000,16,64,1000,no,horizontal,no upfront,No commitment,On Demand,HDD,free,Europe
+Microsoft,AKS9,3.97396,0.528,0.035,0,0.0000000,3.4110,9000,30000,16,64,1000,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Europe
+Microsoft,AKS10,1.92032,0.363,0.3319,0,0.0273973,1.1980,1000,10000,16,64,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Europe
+Microsoft,AKS11,2.98232,1.425,0.3319,0,0.0273973,1.1980,1000,10000,8,64,1000,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+Microsoft,AKS12,1.97505,1.15,0.3319,0,0.0136986,0.4795,1000,4000,8,64,1000,yes,horizontal,no upfront,1 Year commitment,Dedicated,SSD,free,Europe
+Microsoft,AKS13,1.68505,0.86,0.3319,0,0.0136986,0.4795,1000,4000,8,64,1000,yes,horizontal,no upfront,3 Year commitment,Dedicated,SSD,free,Europe
+Microsoft,AKS14,1.12695,0.57,0.0638,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,US
+Microsoft,AKS15,0.89895,0.342,0.0638,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,US
+Microsoft,AKS16,0.78495,0.228,0.0638,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,US
+Microsoft,AKS17,1.72615,0.57,0.663,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Microsoft,AKS18,1.49815,0.342,0.663,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Microsoft,AKS19,1.38415,0.228,0.663,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,US
+Microsoft,AKS20,1.49495,0.938,0.0638,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,US
+Microsoft,AKS21,1.26695,0.71,0.0638,0,0.0136986,0.4795,1000,4000,8,64,2000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,US
+Microsoft,AKS22,1.16665,0.596,0.0638,0,0.0273973,0.4795,2000,4000,8,64,2000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,US
+Microsoft,AKS23,2.76538,0.938,0.663,0,0.0273973,1.1370,2000,10000,8,64,2000,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,US
+Microsoft,AKS24,2.53738,0.71,0.663,0,0.0273973,1.1370,2000,10000,8,64,2000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,US
+Microsoft,AKS25,2.42338,0.596,0.663,0,0.0273973,1.1370,2000,10000,8,64,2000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,US
+Microsoft,AKS26,7.29602,1.424,0.0638,0,0.1232877,5.6849,9000,50000,20,160,2000,yes,horizontal,no upfront,No commitment,On Demand,HDD,free,US
+Microsoft,AKS27,6.72602,0.854,0.0638,0,0.1232877,5.6849,9000,50000,20,160,2000,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,US
+Microsoft,AKS28,6.44202,0.57,0.0638,0,0.1232877,5.6849,9000,50000,20,160,2000,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,US
+Microsoft,AKS29,7.89522,1.424,0.663,0,0.1232877,5.6849,9000,50000,20,160,2000,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+Microsoft,AKS30,7.32522,0.854,0.663,0,0.1232877,5.6849,9000,50000,20,160,2000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,US
+Microsoft,AKS31,7.04122,0.57,0.663,0,0.1232877,5.6849,9000,50000,20,160,2000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,US
+Microsoft,AKS32,8.16172,2.344,0.0095,0,0.1232877,5.6849,9000,50000,20,160,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Windows,US
+Microsoft,AKS33,7.59172,1.774,0.0095,0,0.1232877,5.6849,9000,50000,20,160,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,US
+Microsoft,AKS34,7.30772,1.49,0.0095,0,0.1232877,5.6849,9000,50000,20,160,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,US
+Microsoft,AKS35,8.25122,2.344,0.099,0,0.1232877,5.6849,9000,50000,20,160,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Windows,US
+Microsoft,AKS36,7.68122,1.774,0.099,0,0.1232877,5.6849,9000,50000,20,160,300,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,US
+Microsoft,AKS37,7.41092,1.49,0.099,0,0.1369863,5.6849,10000,50000,20,160,300,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,US
+Microsoft,AKS38,3.09503,1.425,0.0125,0,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,No commitment,Dedicated,HDD,free,Asia
+Microsoft,AKS39,2.82003,1.15,0.0125,0,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,1 Year commitment,Dedicated,HDD,free,Asia
+Microsoft,AKS40,2.53003,0.86,0.0125,0,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,3 Year commitment,Dedicated,HDD,free,Asia
+Microsoft,AKS41,2.35938,1.096,0.099,0,0.0273973,1.1370,2000,10000,8,64,300,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+Microsoft,AKS42,2.14338,0.88,0.099,0,0.0273973,1.1370,2000,10000,8,64,300,yes,horizontal,no upfront,1 Year commitment,Dedicated,SSD,free,US
+Microsoft,AKS43,1.92338,0.66,0.099,0,0.0273973,1.1370,2000,10000,8,64,300,yes,horizontal,no upfront,3 Year commitment,Dedicated,SSD,free,US
+Microsoft,AKS44,3.13403,1.096,0.0125,0.368,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,No commitment,Dedicated,HDD,Windows,Asia
+Microsoft,AKS45,2.91803,0.88,0.0125,0.368,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,1 Year commitment,Dedicated,HDD,Windows,Asia
+Microsoft,AKS46,2.69803,0.66,0.0125,0.368,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,3 Year commitment,Dedicated,HDD,Windows,Asia
+Microsoft,AKS47,3.01228,1.096,0.12875,0.13,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+Microsoft,AKS48,2.79628,0.88,0.12875,0.13,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,1 Year commitment,Dedicated,SSD,Linux,Asia
+Microsoft,AKS49,2.57628,0.66,0.12875,0.13,0.0136986,1.6438,1000,10000,8,64,300,yes,horizontal,no upfront,3 Year commitment,Dedicated,SSD,Linux,Asia
+Microsoft,AKS50,5.62175,2.112,0.0166,0,0.0000000,3.4932,5000,30000,32,128,500,no,horizontal,no upfront,No commitment,On Demand,HDD,free,Asia
+Microsoft,AKS51,4.77675,1.267,0.0166,0,0.0000000,3.4932,5000,30000,32,128,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,free,Asia
+Microsoft,AKS52,4.31275,0.803,0.0166,0,0.0000000,3.4932,9000,30000,32,128,500,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,free,Asia
+Microsoft,AKS53,5.81965,2.112,0.2145,0,0.0000000,3.4932,9000,30000,32,128,500,no,horizontal,no upfront,No commitment,On Demand,SSD,free,Asia
+Microsoft,AKS54,4.97465,1.267,0.2145,0,0.0000000,3.4932,9000,30000,32,128,500,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,free,Asia
+Microsoft,AKS55,4.51065,0.803,0.2145,0,0.0000000,3.4932,9000,30000,32,128,500,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,free,Asia
+Microsoft,AKS56,7.09375,3.584,0.0166,0,0.0000000,3.4932,9000,30000,32,128,500,no,horizontal,no upfront,No commitment,On Demand,HDD,Windows,Asia
+Microsoft,AKS57,8.37204,2.739,0.0166,0,0.0000000,5.6164,9000,50000,32,128,500,no,horizontal,no upfront,1 Year commitment,On Demand,HDD,Windows,Asia
+Microsoft,AKS58,7.90804,2.275,0.0166,0,0.0000000,5.6164,9000,50000,32,128,500,no,horizontal,no upfront,3 Year commitment,On Demand,HDD,Windows,Asia
+Microsoft,AKS59,9.41494,3.584,0.2145,0,0.0000000,5.6164,10000,50000,32,128,500,no,horizontal,no upfront,No commitment,On Demand,SSD,Windows,Asia
+Microsoft,AKS60,8.56994,2.739,0.2145,0,0.0000000,5.6164,10000,50000,32,128,500,no,horizontal,no upfront,1 Year commitment,On Demand,SSD,Windows,Asia
+Microsoft,AKS61,8.10594,2.275,0.2145,0,0.0000000,5.6164,10000,50000,32,128,500,no,horizontal,no upfront,3 Year commitment,On Demand,SSD,Windows,Asia
+Microsoft,RH1,7.75782,1.604,0.3319,0,0.1369863,5.6849,10000,50000,32,128,1000,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH2,2.56648,1.0702,0.3319,0,0.0273973,1.1370,2000,10000,16,64,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH3,2.25938,0.722,0.3319,0,0.0684932,1.1370,5000,10000,16,64,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH4,3.84033,1.74,0.4291,0,0.0273973,1.6438,2000,10000,16,64,1000,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+Microsoft,RH5,3.19223,1.0919,0.4291,0,0.0273973,1.6438,2000,10000,16,64,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Asia
+Microsoft,RH6,2.14776,0.7023,0.0208,0,0.0273973,1.3973,2000,12000,16,64,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH7,2.99746,1.552,0.0208,0,0.0273973,1.3973,2000,12000,16,64,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH8,2.34948,0.979,0.165,0,0.0684932,1.1370,5000,10000,16,64,500,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,US
+Microsoft,RH9,2.01858,0.6481,0.165,0,0.0684932,1.1370,5000,10000,16,64,500,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,US
+Microsoft,RH10,0.52813,0.391,0.0159,0,0.0013699,0.1199,100,1000,4,16,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Microsoft,RH11,0.39053,0.2534,0.0159,0,0.0013699,0.1199,100,1000,4,16,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,US
+Microsoft,RH12,0.30263,0.1655,0.0159,0,0.0013699,0.1199,100,1000,4,16,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,US
+Microsoft,RH13,0.67123,0.385,0.165,0,0.0013699,0.1199,100,1000,4,16,500,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH14,0.54123,0.255,0.165,0,0.0013699,0.1199,100,1000,4,16,500,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH15,0.45403,0.1678,0.165,0,0.0013699,0.1199,100,1000,4,16,500,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH16,0.62155,0.435,0.0208,0,0.0013699,0.1644,100,1000,4,16,500,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH17,0.45746,0.2668,0.0208,0,0.0054795,0.1644,400,1000,4,16,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH18,0.36496,0.1743,0.0208,0,0.0054795,0.1644,400,1000,4,16,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH19,9.25782,3.104,0.3319,0,0.1369863,5.6849,10000,50000,32,128,1000,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+Microsoft,RH20,8.11182,1.958,0.3319,0,0.1369863,5.6849,10000,50000,32,128,1000,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,US
+Microsoft,RH21,4.03906,1.2962,0.3319,0,0.1369863,2.2740,10000,20000,32,128,1000,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,US
+Microsoft,RH22,5.53096,3.08,0.04,0,0.1369863,2.2740,10000,20000,32,128,1000,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Europe
+Microsoft,RH23,4.46496,2.0381,0.0159,0,0.1369863,2.2740,10000,20000,32,128,500,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Europe
+Microsoft,RH24,3.76856,1.3417,0.0159,0,0.1369863,2.2740,10000,20000,32,128,500,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Europe
+Microsoft,RH25,6.10755,3.48,0.1618,0,0.1369863,2.3288,10000,20000,32,128,500,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+Microsoft,RH26,4.81135,2.1838,0.1618,0,0.1369863,2.3288,10000,20000,32,128,500,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Asia
+Microsoft,RH27,4.03205,1.4045,0.1618,0,0.1369863,2.3288,10000,20000,32,128,500,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Asia
+Microsoft,RH28,1.99098,0.776,0.0095,0,0.0684932,1.1370,5000,10000,8,32,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,US
+Microsoft,RH29,1.93188,0.4895,0.0095,0,0.0684932,1.3644,5000,12000,8,32,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,US
+Microsoft,RH30,1.76648,0.3241,0.0095,0,0.0684932,1.3644,5000,12000,8,32,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,US
+Microsoft,RH31,2.30188,0.77,0.099,0,0.0684932,1.3644,5000,12000,8,32,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH32,2.04138,0.5095,0.099,0,0.0684932,1.3644,5000,12000,8,32,300,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH33,1.86738,0.3355,0.099,0,0.0684932,1.3644,5000,12000,8,32,300,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Europe
+Microsoft,RH34,2.30716,0.87,0.0125,0,0.0273973,1.3973,2000,12000,8,32,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH35,1.98306,0.5459,0.0125,0,0.0273973,1.3973,2000,12000,8,32,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH36,1.78836,0.3512,0.0125,0,0.0273973,1.3973,2000,12000,8,32,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,Asia
+Microsoft,RH37,0.67194,0.425,0.1216,0,0.0054795,0.1199,400,1000,4,16,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Africa
+Microsoft,RH38,0.50704,0.2601,0.1216,0,0.0054795,0.1199,400,1000,4,16,300,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Africa
+Microsoft,RH39,0.41584,0.1689,0.1216,0,0.0054795,0.1199,400,1000,4,16,300,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Africa
+Microsoft,RH40,0.62384,0.489,0.0095,0,0.0054795,0.1199,400,1000,4,16,300,yes,horizontal,no upfront,No commitment,On Demand,HDD,Linux,South America
+Microsoft,RH41,0.41403,0.2833,0.0095,0,0.0013699,0.1199,100,1000,4,16,300,yes,horizontal,no upfront,1 Year commitment,On Demand,HDD,Linux,South America
+Microsoft,RH42,0.32633,0.1956,0.0095,0,0.0013699,0.1199,100,1000,4,16,300,yes,horizontal,no upfront,3 Year commitment,On Demand,HDD,Linux,South America
+Microsoft,RH43,0.90373,0.421,0.1204,0,0.0027397,0.3596,100,3000,4,16,300,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Australia
+Microsoft,RH44,0.75423,0.2715,0.1204,0,0.0027397,0.3596,100,3000,4,16,300,yes,horizontal,no upfront,1 Year commitment,On Demand,SSD,Linux,Australia
+Microsoft,RH45,0.66333,0.1806,0.1204,0,0.0027397,0.3596,100,3000,4,16,300,yes,horizontal,no upfront,3 Year commitment,On Demand,SSD,Linux,Australia
+IBM,CKS4,1.86247,0.52,0,0,0,1.3425,500,10000,8,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+IBM,CKS5,2.10247,0.76,0,0,0,1.3425,500,10000,8,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+IBM,CKS6,1.86247,0.52,0,0,0,1.3425,500,10000,8,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS7,2.10247,0.76,0,0,0,1.3425,500,10000,8,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+IBM,CKS8,2.02685,0.52,0,0,0,1.5068,1000,10000,8,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Asia
+IBM,CKS9,2.26685,0.76,0,0,0,1.5068,1000,10000,8,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Asia
+IBM,CKS10,0.14699,0.11,0,0,0,0.0370,30,300,2,4,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+IBM,CKS11,0.37699,0.34,0,0,0,0.0370,30,300,2,4,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+IBM,CKS12,0.14699,0.11,0,0,0,0.0370,30,300,2,4,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS13,0.37699,0.34,0,0,0,0.0370,30,300,2,4,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+IBM,CKS14,0.15521,0.11,0,0,0,0.0452,30,300,2,4,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Asia
+IBM,CKS15,0.43041,0.34,0,0,0,0.0904,30,600,2,4,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Asia
+IBM,CKS16,1.30497,1.231,0,0,0,0.0740,400,600,4,32,2000,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS17,4.07075,1.605,0,0,0,2.4658,9000,20000,20,64,2000,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS18,2.26096,0.65,0,0,0,1.6110,2000,12000,16,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+IBM,CKS19,2.52096,0.91,0,0,0,1.6110,2000,12000,16,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+IBM,CKS20,2.96685,1.46,0,0,0,1.5068,1000,10000,16,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Asia
+IBM,CKS21,2.85685,1.35,0,0,0,1.5068,1000,10000,16,128,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Asia
+IBM,CKS22,2.42096,0.81,0,0,0,1.6110,2000,12000,16,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS23,2.67096,1.06,0,0,0,1.6110,2000,12000,16,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+IBM,CKS24,2.59096,0.98,0,0,0,1.6110,2000,12000,16,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS25,2.96096,1.35,0,0,0,1.6110,2000,12000,16,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+IBM,CKS26,3.63575,1.17,0,0,0,2.4658,9000,20000,32,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS27,4.02575,1.56,0,0,0,2.4658,9000,20000,32,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+IBM,CKS28,3.88575,1.42,0,0,0,2.4658,9000,20000,32,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,Europe
+IBM,CKS29,4.27575,1.81,0,0,0,2.4658,9000,20000,32,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,Europe
+IBM,CKS49,3.07096,1.46,0,0,0,1.6110,2000,12000,16,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+IBM,CKS50,3.51096,1.9,0,0,0,1.6110,1000,12000,16,128,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+IBM,CKS51,4.25575,1.79,0,0,0,2.4658,9000,20000,32,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,free,US
+IBM,CKS52,4.67575,2.21,0,0,0,2.4658,9000,20000,32,128,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,free,US
+IBM,RH7,5.70575,3.24,0,0,0,2.4658,9000,20000,32,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH8,5.93575,3.47,0,0,0,2.4658,9000,20000,32,128,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH9,2.49096,0.88,0,0,0,1.6110,1000,12000,8,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH10,2.67096,1.06,0,0,0,1.6110,1000,12000,8,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH11,0.55397,0.48,0,0,0,0.0740,100,600,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH12,0.84397,0.77,0,0,0,0.0740,100,600,4,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH13,0.59397,0.52,0,0,0,0.0740,400,600,4,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH14,0.76397,0.69,0,0,0,0.0740,100,600,4,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH15,2.54096,0.93,0,0,0,1.6110,1000,12000,8,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH16,2.77096,1.16,0,0,0,1.6110,1000,12000,8,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH17,2.58096,0.97,0,0,0,1.6110,1000,12000,8,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH18,3.11096,1.5,0,0,0,1.6110,5000,12000,16,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH19,3.34096,1.73,0,0,0,1.6110,5000,12000,16,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH20,4.49493,1.81,0,0,0,2.6849,5000,20000,16,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH21,4.82493,2.14,0,0,0,2.6849,5000,20000,16,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH22,4.35493,1.67,0,0,0,2.6849,5000,20000,16,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH23,4.53493,1.85,0,0,0,2.6849,5000,20000,16,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH24,4.71493,2.03,0,0,0,2.6849,5000,20000,16,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH25,5.36575,2.9,0,0,0,2.4658,9000,20000,32,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH26,5.67575,3.21,0,0,0,2.4658,9000,20000,32,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH27,5.63575,3.17,0,0,0,2.4658,10000,20000,32,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,South America
+IBM,RH28,5.67575,3.21,0,0,0,2.4658,10000,20000,32,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,South America
+IBM,RH31,1.80397,1.73,0,0,0,0.0740,100,600,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH32,0.49397,0.42,0,0,0,0.0740,100,600,4,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH33,0.79329,0.67,0,0,0,0.1233,400,1000,4,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH34,0.58329,0.46,0,0,0,0.1233,400,1000,4,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH35,3.49493,0.81,0,0,0,2.6849,1000,20000,8,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH36,3.69493,1.01,0,0,0,2.6849,1000,20000,8,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH37,3.52493,0.84,0,0,0,2.6849,1000,20000,8,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH38,3.98493,1.3,0,0,0,2.6849,1000,20000,16,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH39,4.18493,1.5,0,0,0,2.6849,1000,20000,16,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH40,4.25493,1.57,0,0,0,2.6849,1000,20000,16,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH41,4.54493,1.86,0,0,0,2.6849,1000,20000,16,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH42,2.74247,1.4,0,0,0,1.3425,1000,10000,16,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH43,2.94247,1.6,0,0,0,1.3425,1000,10000,16,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH44,3.18247,1.84,0,0,0,1.3425,1000,10000,16,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH45,4.98575,2.52,0,0,0,2.4658,10000,20000,32,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH46,5.25575,2.79,0,0,0,2.4658,10000,20000,32,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH47,8.92438,2.76,0,0,0,6.1644,10000,50000,32,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,US
+IBM,RH48,9.16438,3,0,0,0,6.1644,10000,50000,32,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,US
+IBM,RH49,0.59068,0.44,0,0,0,0.1507,100,1000,4,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH50,0.85068,0.7,0,0,0,0.1507,100,1000,4,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH51,0.63068,0.48,0,0,0,0.1507,500,1000,4,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH52,0.78068,0.63,0,0,0,0.1507,500,1000,4,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH53,2.35685,0.85,0,0,0,1.5068,1000,10000,8,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH54,2.56685,1.06,0,0,0,1.5068,1000,10000,8,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH55,2.39685,0.89,0,0,0,1.5068,1000,10000,8,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH56,4.38370,1.37,0,0,0,3.0137,5000,20000,16,16,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH57,4.59370,1.58,0,0,0,3.0137,5000,20000,16,16,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH58,4.66370,1.65,0,0,0,3.0137,5000,20000,16,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH59,4.97370,1.96,0,0,0,3.0137,5000,20000,16,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH60,2.97685,1.47,0,0,0,1.5068,2000,10000,16,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH61,3.19685,1.69,0,0,0,1.5068,2000,10000,16,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH62,9.47425,1.94,0,0,0,7.5342,2000,50000,16,128,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH63,10.18425,2.65,0,0,0,7.534246575,10000,50000,32,32,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH64,10.46425,2.93,0,0,0,7.534246575,10000,50000,32,32,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia
+IBM,RH65,10.43425,2.9,0,0,0,7.534246575,10000,50000,32,64,100,yes,horizontal,no upfront,No commitment,On Demand,SSD,Linux,Asia
+IBM,RH66,10.68425,3.15,0,0,0,7.534246575,10000,50000,32,64,100,yes,horizontal,no upfront,No commitment,Dedicated,SSD,Linux,Asia

@@ -1,0 +1,9 @@
+Dep. Variable:,PaaS_Price,R-squared:,0.695
+Model:,OLS,Adj. R-squared:,0.688
+Method:,Least Squares,F-statistic:,94.3
+Date:,"Sun, 30 Jan 2022",Prob (F-statistic):,9.2e-188
+Time:,02:34:41,Log-Likelihood:,1114.4
+No. Observations:,806,AIC:,-2189.0
+Df Residuals:,786,BIC:,-2095.0
+Df Model:,19,,
+Covariance Type:,nonrobust,,

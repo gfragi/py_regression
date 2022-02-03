@@ -1,0 +1,20 @@
+VIF Factor,features
+27.1,CPU
+21.3,RAM
+14.8,STORAGE
+11.6,Autoscaling
+1.9,Term_Length
+3.6,OS
+9.6,Scaling_to_zero
+2.1,AppService_Domain
+2.5,Regional_Redudancy
+13.8,Container_support
+2.8,Instance_Type_Dedicated
+2.3,Instance_Type_Isolated
+1.2,Region_Africa
+1.6,Region_Asia
+1.4,Region_Australia
+1.7,Region_Europe
+1.5,Region_South America
+1.4,Certificates_Standard
+1.4,Certificates_Wildcard

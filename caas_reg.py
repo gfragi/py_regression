@@ -448,3 +448,4 @@ vif_2 = pd.DataFrame()
 vif_2["VIF_Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
 vif_2["features"] = x.columns
 vif_2.round(1)
+

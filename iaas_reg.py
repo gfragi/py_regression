@@ -14,24 +14,25 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from yellowbrick.regressor import ResidualsPlot
+import my_functions as mf
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('IaaS.csv')  # real data
+df = pd.read_csv('datasets/iaas_data.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 df = df.drop(['Autoscaling', 'CPU_RAM_price', 'Storage_price', 'licensed_OS_price', 'external_egress_price',
-              'internal_egress_price', 'product'], axis=1)
+              'internal_egress_price', 'product', 'internal_egress', 'external_egress'], axis=1)
 
 # %% ========== Select Technology (IaaS or PaaS or CaaS) ================
 
 # Rule for rows to drop in iaas technology
 # df = df[df['Pay_per_container'] != "yes"]
 
-# iaas_columns = df[['internal_egress', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Regional_redundancy', 'Autoscaling', 'Payment_option', 'Term_Length', 'Instance_Type', 'Disk_type', 'OS', 'Region']]
+# iaas_columns = df[['internal_egress', 'external_egress', 'CPU', 'RAM', 'STORAGE', 'Regional_redundancy', 'Autoscaling', 'Payment', 'Term_Length', 'Instance_Type', 'Disk_type', 'OS', 'Region']]
 
 print('rows x columns:', df.shape)
 print('Columns info:', df.info())
@@ -40,23 +41,27 @@ print('Data highlights: \n', df.describe())
 # Check for null values
 print(df.isnull().sum() * 100 / df.shape[0])
 
+uniqueList = tuple((column,) for column in df)
+for column in df:
+    print(df[column].value_counts())
+
 # %% =========== Visualize the Data ======================================
 # df.drop(['Internal_traffic'], axis=1, inplace=True)
-
-num_list = []
-cat_list = []
-
-for column in df:
-    plt.figure(column, figsize=(8, 5))
-    plt.title(column)
-    if is_numeric_dtype(df[column]):
-        df[column].plot(kind='hist')
-        num_list.append(column)
-    elif is_string_dtype(df[column]):
-        df[column].value_counts().plot(kind='barh', color='#43FF76')
-        cat_list.append(column)
-    plt.xlabel('Bundles')
-    plt.show()
+#
+# num_list = []
+# cat_list = []
+#
+# for column in df:
+#     plt.figure(column, figsize=(8, 5))
+#     plt.title(column)
+#     if is_numeric_dtype(df[column]):
+#         df[column].plot(kind='hist')
+#         num_list.append(column)
+#     elif is_string_dtype(df[column]):
+#         df[column].value_counts().plot(kind='barh', color='#43FF76')
+#         cat_list.append(column)
+#     plt.xlabel('Bundles')
+#     plt.show()
 
 # # %% Visualize numeric variables
 # ax = sns.pairplot(df)
@@ -145,14 +150,14 @@ df[category_list_binary] = df[category_list_binary].apply(binary_map)
 df.head()
 
 # Map Categorical variables with 3 observations
-category_list = ['Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region']
-status = pd.get_dummies(df[category_list])
+category_list = ['Payment', 'OS', 'Instance_Type', 'Region']
+status = pd.get_dummies(df[category_list], drop_first=True)
 
 status.head()
 
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
-df.drop(['Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis=1,
+df.drop(['Payment', 'OS', 'Instance_Type', 'Region'], axis=1,
         inplace=True)  # drop the initial categorical variables as we have created dummies
 
 # Drop features and options
@@ -173,24 +178,21 @@ df.drop(['Term_Length', 'Payment_option', 'OS', 'Instance_Type', 'Region'], axis
 # %% log transformation
 
 
-num_list_log = ['Price', 'external_egress', 'internal_egress', 'CPU', 'RAM', 'STORAGE']
+num_list_log = ['Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
 
-df[num_list_log] = np.log10(df[num_list] + 1)
-df[num_list].replace([num_list_log], inplace=True)
+df[num_list_log] = np.log10(df[num_list_log] + 1)
+df[num_list_log].replace([num_list_log], inplace=True)
 
-num_list = []
-cat_list = []
-
-for column in df:
-    plt.figure(column, figsize=(5, 5))
-    plt.title(column)
-    if is_numeric_dtype(df[column]):
-        df[column].plot(kind='hist', color='green')
-        num_list.append(column)
-    elif is_string_dtype(df[column]):
-        df[column].value_counts().plot(kind='bar', color='green')
-        cat_list.append(column)
-    plt.show()
+# for column in df:
+#     plt.figure(column, figsize=(5, 5))
+#     plt.title(column)
+#     if is_numeric_dtype(df[column]):
+#         df[column].plot(kind='hist', color='green')
+#         num_list.append(column)
+#     elif is_string_dtype(df[column]):
+#         df[column].value_counts().plot(kind='bar', color='green')
+#         cat_list.append(column)
+#     plt.show()
 
 # %% ===================== Correlation ===========================
 # Check the correlation coefficients to see which variables are highly correlated
@@ -201,8 +203,8 @@ mask = np.triu(np.ones_like(corr, dtype=bool))
 cmap = sns.diverging_palette(230, 20, as_cmap=True)
 f, ax = plt.subplots(figsize=(30, 18))
 heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
-heatmap.set_title(f"Triangle Correlation Heatmap", fontdict={'fontsize': 24}, pad=1)
-plt.savefig('plots/heatmap_triangle.png')
+heatmap.set_title(f"Triangle Correlation Heatmap - IaaS", fontdict={'fontsize': 24}, pad=1)
+plt.savefig('plots/iaas_heatmap_triangle.png')
 plt.show()
 
 y = df.Price
@@ -225,8 +227,8 @@ plt.figure(figsize=(12, 15))
 heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1,
                       vmax=1, annot=True,
                       cmap='BrBG')
-heatmap.set_title(f"Features Correlating with Price", fontdict={'fontsize': 18}, pad=16)
-plt.savefig('plots/heatmap_only_price.png')
+heatmap.set_title(f"Features Correlating with Price - IaaS", fontdict={'fontsize': 18}, pad=16)
+plt.savefig('plots/iaas_heatmap_only_price.png')
 plt.show()
 
 # %% ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
@@ -362,6 +364,13 @@ model_sm = sm.OLS(y, x)
 results = model_sm.fit()
 
 print(results.summary())
+
+# ========== Export OLS results =========
+metrics = pd.read_html(results.summary().tables[0].as_html(), header=0, index_col=0)[0]
+coefficients = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
+metrics.to_csv(f'results/iaas_metrics.csv', index=True)
+coefficients.to_csv(f'results/iaas_coeff.csv', index=True)
+
 # %%
 sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
 plt.show()
@@ -372,8 +381,68 @@ coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
+plt.title('Coefficients - IaaS', size=20)
+plt.savefig(f'plots/iaas_coeff_tornado_net.png')
 plt.show()
 
 # %%
 sns.distplot(results.resid, fit=stats.norm, hist=True)
 plt.show()
+
+# ================= Selection of features by P-value ===========================
+
+coeff_results = mf.load_data(f'results/iaas_coeff.csv')
+coeff_results.rename(columns={'Unnamed: 0': 'Feature'}, inplace=True)
+
+significant = coeff_results[coeff_results['P>|t|'] < 0.05]
+
+features_list = significant['Feature'].tolist()
+features_list.remove('const')
+# features_list.remove('AppService_Domain')
+features_list.insert(0, 'Price')
+features_list.insert(5, 'Region_US')
+# features_list.insert(6, 'Region_Asia')
+
+
+# features_list.insert(0, 'RAM')
+
+df = df[features_list]
+
+# %%============ 2nd Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
+
+y = df.Price
+x = df.drop('Price', axis=1)
+
+# mf.ols_regression(x, y)
+x = sm.add_constant(x)
+model_sm = sm.OLS(y, x)
+results = model_sm.fit()
+print(results.summary())
+print(results.params)
+metrics_sign = pd.read_html(results.summary().tables[0].as_html(), header=0, index_col=0)[0]
+coefficients_sign = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
+
+# ========== 2nd Export OLS results =========
+metrics_sign.to_csv(f'results/iaas_significant_metrics.csv', index=True)
+coefficients_sign.to_csv(f'results/iaas_significant_coeff.csv', index=True)
+
+# %% ========================2nd Tornado diagram ======================================
+coeff = results.params
+coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
+a4_dims = (11.7, 8.27)
+fig, ax = plt.subplots(figsize=a4_dims)
+sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
+plt.title('Statistically significant coefficients - IaaS', size=20)
+plt.savefig(f'plots/iaas_significant_coeff_tornado.png')
+plt.show()
+# %%
+sns.distplot(results.resid, fit=stats.norm, hist=True)
+plt.show()
+
+# =================== 2nd Calculate VIF Factors =====================
+# For each X, calculate VIF and save in dataframe. variance inflation factor
+
+vif_2 = pd.DataFrame()
+vif_2["VIF_Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
+vif_2["features"] = x.columns
+vif_2.round(1)

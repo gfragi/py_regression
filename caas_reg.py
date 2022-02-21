@@ -21,7 +21,7 @@ network = False
 # ============= Load the Data ============================================================
 # %% Load the csv & print columns' info
 # df = pd.read_csv('cn_provider_pricing_dummy.csv')  # dummy data
-df = pd.read_csv('cn_pricing_per_provider_upd3.csv')  # real data
+df = pd.read_csv('datasets/caas_data.csv')  # real data
 
 # Drop some not useful for calculation columns (sum calculation for total price)
 if network:
@@ -97,8 +97,8 @@ for column in df:
 # # sns.swarmplot(x='Payment', y='Price', data=df, color=".25")
 #
 # plt.subplot(5, 3, 6)
-# sns.boxplot(x='Term_length_commitment', y='Price', data=df)
-# # sns.swarmplot(x='Term_length_commitment', y='Price', data=df, color=".25")
+# sns.boxplot(x='Term_Length', y='Price', data=df)
+# # sns.swarmplot(x='Term_Length', y='Price', data=df, color=".25")
 #
 # plt.subplot(fig_rows, fig_cols, 7)
 # sns.boxplot(x='Instance_Type', y='Price', data=df)
@@ -109,8 +109,8 @@ for column in df:
 # # sns.swarmplot(x='Disk_type', y='Price', data=df, color=".25")
 #
 # plt.subplot(5, 3, 9)
-# sns.boxplot(x='Operating System', y='Price', data=df)
-# # sns.swarmplot(x='Operating System', y='Price', data=df, color=".25")
+# sns.boxplot(x='OS', y='Price', data=df)
+# # sns.swarmplot(x='OS', y='Price', data=df, color=".25")
 #
 # plt.subplot(5, 3, 10)
 # sns.boxplot(x='Multicloud_support', y='Price', data=df)
@@ -151,7 +151,7 @@ df[category_list_binary] = df[category_list_binary].apply(binary_map)
 df.head()
 
 # Map Categorical variables with 3 observations
-category_list = ['Payment', 'Operating System', 'Instance_Type', 'Region']
+category_list = ['Payment', 'OS', 'Instance_Type', 'Region']
 status = pd.get_dummies(df[category_list], drop_first=True)
 
 status.head()
@@ -159,11 +159,11 @@ status.head()
 # Add the above results to the original dataframe df
 df = pd.concat([df, status], axis=1)
 # drop the initial categorical variables as we have created dummies
-df.drop(['Payment', 'Operating System', 'Instance_Type', 'Region'], axis=1, inplace=True)
+df.drop(['Payment', 'OS', 'Instance_Type', 'Region'], axis=1, inplace=True)
 
 # Drop features and options
 # #
-# df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'Storage',  'Cluster_mgmt_fee',
+# df = df[['Provider', 'Price', 'External_traffic', 'CPU', 'RAM', 'STORAGE',  'Cluster_mgmt_fee',
 #          'Disk_type', 'Multicloud_support', 'Pay_per_container', 'Vendor_agnostic']]
 # df.head()
 
@@ -179,14 +179,14 @@ plt.show()
 
 # %% log transformation
 if network:
-    num_list_log = ['Price', 'Internal_traffic', 'External_traffic', 'CPU', 'RAM', 'Storage', 'Term_length_commitment']
+    num_list_log = ['Price', 'Internal_traffic', 'External_traffic', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
 else:
-    num_list_log = ['Price', 'CPU', 'RAM', 'Storage', 'Term_length_commitment']
+    num_list_log = ['Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
 
 df[num_list_log] = np.log10(df[num_list_log] + 1)
 df[num_list_log].replace([num_list_log], inplace=True)
 
-# df = df[['Provider', 'Price', 'CPU', 'RAM', 'Storage', 'Cluster_mgmt_fee',
+# df = df[['Provider', 'Price', 'CPU', 'RAM', 'STORAGE', 'Cluster_mgmt_fee',
 #          'Pay_per_container', 'Multicloud_support', 'Vendor_agnostic', 'Disk_type']]
 # for column in df:
 #     plt.figure(column, figsize=(5, 5))
@@ -208,8 +208,8 @@ mask = np.triu(np.ones_like(corr, dtype=bool))
 cmap = sns.diverging_palette(230, 20, as_cmap=True)
 f, ax = plt.subplots(figsize=(30, 18))
 heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
-heatmap.set_title(f"Triangle Correlation Heatmap", fontdict={'fontsize': 24}, pad=1)
-plt.savefig('plots/heatmap_triangle.png')
+heatmap.set_title(f"Triangle Correlation Heatmap - CaaS", fontdict={'fontsize': 24}, pad=1)
+plt.savefig('plots/caas_heatmap_triangle.png')
 plt.show()
 
 y = df.Price
@@ -232,8 +232,8 @@ vif.round(1)
 # heatmap = sns.heatmap(df.corr(method=correlation_method)[['Price']].sort_values(by='Price', ascending=False), vmin=-1,
 #                       vmax=1, annot=True,
 #                       cmap='BrBG')
-# heatmap.set_title(f"Features Correlating with Price", fontdict={'fontsize': 18}, pad=16)
-# plt.savefig(f'plots/heatmap_only_price_net_{network}.png')
+# heatmap.set_title(f"Features Correlating with Price - CaaS", fontdict={'fontsize': 18}, pad=16)
+# plt.savefig(f'plots/heatmap_only_price_net_{network} - CaaS.png')
 # plt.show()
 
 # %% ####### Positive Correlation ######## https://towardsdatascience.com/simple-and-multiple-linear-regression-with-python-c9ab422ec29c
@@ -255,12 +255,12 @@ vif.round(1)
 # plt.show()
 #
 # fig = plt.figure(figsize=(10, 7))
-# sns.regplot(x=df.Storage, y=df.Price, color='#619CFF', marker='o')
+# sns.regplot(x=df.STORAGE, y=df.Price, color='#619CFF', marker='o')
 #
 # # legend, title, and labels.
-# plt.legend(labels=['Storage'])
-# plt.title('Relationship between Price and Storage', size=20)
-# plt.xlabel('Storage(GB)', size=18)
+# plt.legend(labels=['STORAGE'])
+# plt.title('Relationship between Price and STORAGE', size=20)
+# plt.xlabel('STORAGE(GB)', size=18)
 # plt.ylabel('Price ($/hour)', size=18)
 # plt.show()
 #
@@ -373,8 +373,8 @@ print(results.summary())
 # ========== Export OLS results =========
 metrics = pd.read_html(results.summary().tables[0].as_html(), header=0, index_col=0)[0]
 coefficients = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
-metrics.to_csv(f'results/metrics_net_{network}.csv', index=True)
-coefficients.to_csv(f'results/coeff_net_{network}.csv', index=True)
+metrics.to_csv(f'results/caas_metrics.csv', index=True)
+coefficients.to_csv(f'results/caas_coeff.csv', index=True)
 
 # %%
 sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
@@ -386,8 +386,8 @@ coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
-plt.title('Coefficients - IaaS', size=20)
-plt.savefig(f'plots/coeff_tornado_net_{network}.png')
+plt.title('Coefficients - CaaS', size=20)
+plt.savefig(f'plots/caas_coeff_tornado.png')
 plt.show()
 # %%
 sns.distplot(results.resid, fit=stats.norm, hist=True)
@@ -395,7 +395,7 @@ plt.show()
 
 # ================= Selection of features by P-value ===========================
 
-coeff_results = mf.load_data(f'results/coeff_net_{network}.csv')
+coeff_results = mf.load_data(f'results/caas_coeff.csv')
 coeff_results.rename(columns={'Unnamed: 0': 'Feature'}, inplace=True)
 
 significant = coeff_results[coeff_results['P>|t|'] < 0.05]
@@ -424,8 +424,8 @@ metrics_sign = pd.read_html(results.summary().tables[0].as_html(), header=0, ind
 coefficients_sign = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
 
 # ========== 2nd Export OLS results =========
-metrics_sign.to_csv(f'results/significant_metrics_net_{network}.csv', index=True)
-coefficients_sign.to_csv(f'results/significant_coeff_net_{network}.csv', index=True)
+metrics_sign.to_csv(f'results/caas_significant_metrics.csv', index=True)
+coefficients_sign.to_csv(f'results/caas_significant_coeff.csv', index=True)
 
 # %% ========================2nd Tornado diagram ======================================
 coeff = results.params
@@ -433,9 +433,18 @@ coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
-plt.title('Statistically significant coefficients - IaaS', size=20)
-plt.savefig(f'plots/significant_coeff_tornado_net_{network}.png')
+plt.title('Statistically significant coefficients - CaaS', size=20)
+plt.savefig(f'plots/caas_significant_coeff_tornado.png')
 plt.show()
 # %%
 sns.distplot(results.resid, fit=stats.norm, hist=True)
 plt.show()
+
+
+# =================== 2nd Calculate VIF Factors =====================
+# For each X, calculate VIF and save in dataframe. variance inflation factor
+
+vif_2 = pd.DataFrame()
+vif_2["VIF_Factor"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
+vif_2["features"] = x.columns
+vif_2.round(1)

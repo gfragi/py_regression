@@ -1,0 +1,9 @@
+Dep. Variable:,Price,R-squared:,0.871
+Model:,OLS,Adj. R-squared:,0.869
+Method:,Least Squares,F-statistic:,433.5
+Date:,"Wed, 16 Feb 2022",Prob (F-statistic):,1.2499999999999999e-250
+Time:,13:58:54,Log-Likelihood:,500.09
+No. Observations:,589,AIC:,-980.2
+Df Residuals:,579,BIC:,-936.4
+Df Model:,9,,
+Covariance Type:,nonrobust,,

@@ -45,14 +45,14 @@ else:
 
 # %% Map binary categorical columns to numerical
 
-categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'OS', 'AppService_Domain', 'Regional_Redudancy',
+categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'AppService_Domain', 'Regional_redundancy',
                       'Container_support']
 df[categorical_binary] = df[categorical_binary].apply(mf.binary_map)
 
 # Map>3 categorical columns to numerical
 
 # Write the categorical values as a list
-categorical = ['Instance_Type', 'Region', 'Certificates']
+categorical = ['Instance_Type', 'Region', 'Certificates', 'OS']
 categorical2numeric = pd.get_dummies(df[categorical], drop_first=True, sparse=False)
 
 # Add the above results to the original dataframe df
@@ -63,11 +63,11 @@ df.drop(columns=categorical, axis=1, inplace=True)
 # Columns with numerical values to change scale
 col2log = []
 if network:
-    col2log = ['PaaS_Price', 'CPU', 'RAM', 'STORAGE', 'external_egress', 'internal_egress', 'Term_Length']
+    col2log = ['Price', 'CPU', 'RAM', 'STORAGE', 'external_egress', 'internal_egress', 'Term_Length']
 else:
-    col2log = ['CPU', 'RAM', 'STORAGE', "Term_Length"]
+    col2log = ['Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
                # 'Autoscaling', 'Scaling_to_zero', 'OS', 'AppService_Domain',
-               # 'Regional_Redudancy', 'Container_support']
+               # 'Regional_redundancy', 'Container_support']
 
 # for column in df:
 #     df[column] = df[column].astype(int)
@@ -79,14 +79,24 @@ df[col2log].replace([col2log], inplace=True)
 
 # %% ===================== Correlation ===========================
 # Check the correlation coefficients to see which variables are highly correlated
-mf.correlation_triangle(df)
+correlation_method: str = 'pearson'
 
-# Check the correlation of the feature with price
-mf.corr_per_value(df, 'PaaS_Price')
+corr = df.corr(method=correlation_method)
+mask = np.triu(np.ones_like(corr, dtype=bool))
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+f, ax = plt.subplots(figsize=(30, 18))
+heatmap = sns.heatmap(corr, mask=mask, annot=True, cmap=cmap, fmt=".2f")
+heatmap.set_title(f"Triangle Correlation Heatmap - PaaS", fontdict={'fontsize': 24}, pad=1)
+plt.savefig('plots/paas_heatmap_triangle.png')
+plt.show()
+
+y = df.Price
+x = df.drop('Price', axis=1)
+# x = x_stage.drop('Provider', axis=1)
 
 # %% ===================== Model Evaluation ===========================
-y = df.PaaS_Price
-x = df.drop('PaaS_Price', axis=1)
+y = df.Price
+x = df.drop('Price', axis=1)
 
 mf.model_evaluation(x, y)
 model = linear_model.LinearRegression()
@@ -95,20 +105,20 @@ model = linear_model.LinearRegression()
 
 vif = mf.vif_calc(x)
 
-# %%  =================== Drop columns after vif/reg calculation =====================
-if vif_features:
-    good_vif = vif[vif['VIF Factor'] < 20]
-    drop_after_vif = good_vif['features'].tolist()
-    df_new = df[drop_after_vif]
-    price = df['PaaS_Price']
-    df_new = df_new.join(price)
-    df = df_new
-    # Re-assign x, y for regression
-    y = df.PaaS_Price
-    x = df.drop('PaaS_Price', axis=1)
-    good_vif.to_csv(f'results/term/paas_vif_net_{network}.csv', index=False)
-else:
-    vif.to_csv(f'results/term/paas_good_vif_net_{network}.csv', index=False)
+# # %%  =================== Drop columns after vif/reg calculation =====================
+# if vif_features:
+#     good_vif = vif[vif['VIF Factor'] < 20]
+#     drop_after_vif = good_vif['features'].tolist()
+#     df_new = df[drop_after_vif]
+#     price = df['Price']
+#     df_new = df_new.join(price)
+#     df = df_new
+#     # Re-assign x, y for regression
+#     y = df.Price
+#     x = df.drop('Price', axis=1)
+#     good_vif.to_csv(f'results/term/paas_vif_net_{network}.csv', index=False)
+# else:
+#     vif.to_csv(f'results/term/paas_good_vif_net_{network}.csv', index=False)
 
 # %%============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
@@ -122,13 +132,14 @@ metrics = pd.read_html(results.summary().tables[0].as_html(), header=0, index_co
 coefficients = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
 
 # ========== Export OLS results =========
-if vif_features:
-    metrics.to_csv(f'results/term/(vif)paas_reg_metrics_net_{network}.csv', index=True)
-    coefficients.to_csv(f'results/term/(vif)paas_reg_coeff_net_{network}.csv', index=True)
+metrics = pd.read_html(results.summary().tables[0].as_html(), header=0, index_col=0)[0]
+coefficients = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
+metrics.to_csv(f'results/paas_metrics.csv', index=True)
+coefficients.to_csv(f'results/paas_coeff.csv', index=True)
 
-else:
-    metrics.to_csv(f'results/term/paas_reg_metrics_net_{network}.csv', index=True)
-    coefficients.to_csv(f'results/term/paas_reg_coeff_net_{network}.csv', index=True)
+# %%
+sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
+plt.show()
 
 # %% ======================== Tornado diagram ======================================
 coeff = results.params
@@ -136,16 +147,16 @@ coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
-plt.title(f'Coefficients - PaaS', fontdict=None, loc='center', pad=None)
-if vif_features:
-    plt.savefig(f'results/term/(vif)paas_coeff_net_{network}.png')
-else:
-    plt.savefig(f'results/term/(vif)paas_coeff_net_{network}.png')
+plt.title('Coefficients - PaaS', size=20)
+plt.savefig(f'plots/paas_coeff_tornado.png')
+plt.show()
+# %%
+sns.distplot(results.resid, fit=stats.norm, hist=True)
 plt.show()
 
 # ================= Selection of features by P-value ===========================
 
-coeff_results = mf.load_data('results/term/paas_reg_coeff_net_False.csv')
+coeff_results = mf.load_data('results/paas_coeff.csv')
 coeff_results.rename(columns={'Unnamed: 0': 'Feature'}, inplace=True)
 
 significant = coeff_results[coeff_results['P>|t|'] < 0.05]
@@ -153,16 +164,16 @@ significant = coeff_results[coeff_results['P>|t|'] < 0.05]
 features_list = significant['Feature'].tolist()
 features_list.remove('const')
 # features_list.remove('AppService_Domain')
-features_list.insert(0, 'PaaS_Price')
+features_list.insert(0, 'Price')
 
 # features_list.insert(0, 'RAM')
 
 df = df[features_list]
 
-# %%============ Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
+# %%============  2nd Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
-y = df.PaaS_Price
-x = df.drop('PaaS_Price', axis=1)
+y = df.Price
+x = df.drop('Price', axis=1)
 
 # mf.ols_regression(x, y)
 x = sm.add_constant(x)
@@ -175,20 +186,17 @@ coefficients_sign = pd.read_html(results.summary().tables[1].as_html(), header=0
 
 # %% ========== Export OLS results =========
 
-metrics.to_csv(f'results/term/significant_paas_reg_metrics.csv', index=True)
-coefficients.to_csv(f'results/term/significant_paas_reg_coeff.csv', index=True)
+metrics.to_csv(f'results/paas_significant_metrics.csv', index=True)
+coefficients.to_csv(f'results/paas_significant_coeff.csv', index=True)
 
-# %% ======================== Tornado diagram ======================================
+# %% =========================2nd Tornado diagram ======================================
 coeff = results.params
 coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
-plt.title(f'Coefficients - PaaS', fontdict=None, loc='center', pad=None)
-# if vif_features:
-#     plt.savefig(f'results/term/(vif)paas_coeff_net_{network}.png')
-# else:
-#     plt.savefig(f'results/term/(vif)paas_coeff_net_{network}.png')
+plt.title(f'Statistically significant coefficients - PaaS', fontdict=None, loc='center', pad=None)
+plt.savefig(f'plots/paas_significant_coeff_tornado.png')
 plt.show()
 
 # %% ====== Visualizations for evaluation purposes ===========================

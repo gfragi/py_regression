@@ -407,12 +407,12 @@ features_list.insert(0, 'Price')
 
 # features_list.insert(0, 'RAM')
 
-df = df[features_list]
+df2 = df[features_list]
 
 # %%============ 2nd Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
-y = df.Price
-x = df.drop('Price', axis=1)
+y = df2.Price
+x = df2.drop('Price', axis=1)
 
 # mf.ols_regression(x, y)
 x = sm.add_constant(x)

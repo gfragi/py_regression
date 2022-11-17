@@ -1,0 +1,271 @@
+Provider,PaaS_Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
+Google,0.1787671233,WebApp,1,0.5,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.2787671233,WebApp,2,1,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.3787671233,WebApp,2,2,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.4787671233,WebApp,4,2,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.1787671233,WebApp,1,0.5,50,400,400,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.2787671233,WebApp,2,1,50,400,400,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.3787671233,WebApp,2,2,50,400,400,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Google,0.140915411,WebApp,1,1.75,10,400,400,yes,0,A_Shared,Windows,US,yes,no,A_no,yes,yes
+Google,0.205940411,WebApp,2,3.5,10,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.335990411,WebApp,4,7,10,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.132040411,WebApp,1,0.5,10,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.188190411,WebApp,2,1,10,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.423509589,WebApp,2,2,500,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.459009589,WebApp,2,7,500,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.613909589,WebApp,4,14,500,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.466109589,WebApp,2,8,500,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.5061917808,WebApp,4,16,500,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.8301917808,WebApp,8,32,500,400,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.2450684932,WebApp,1,0.5,500,400,100,no,0,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Google,0.3750684932,WebApp,2,1,500,400,100,no,0,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Google,0.5050684932,WebApp,2,2,500,400,100,no,0,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Google,0.6350684932,WebApp,4,2,500,400,100,no,0,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Google,0.2450684932,WebApp,1,0.5,500,400,100,yes,0,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Google,0.3750684932,WebApp,2,1,500,400,100,yes,0,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Google,0.5016438356,WebApp,2,2,500,400,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.1811472603,WebApp,1,1.75,50,400,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,yes
+Google,0.2648972603,WebApp,2,3.5,50,400,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.4365068493,WebApp,4,7,50,400,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.1740068493,WebApp,1,0.5,50,400,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.2465068493,WebApp,2,1,50,400,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.2555068493,WebApp,2,2,50,400,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.3005068493,WebApp,2,7,50,400,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.5022465753,WebApp,4,14,50,400,600,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.3122465753,WebApp,2,8,50,400,600,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.5202465753,WebApp,4,16,50,400,600,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.9734383562,WebApp,8,32,250,400,600,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.5662328767,WebApp,1,0.5,10,400,0,no,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Google,0.5662328767,WebApp,2,1,10,400,100,no,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Google,0.5162328767,WebApp,2,2,10,400,100,no,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Google,0.6662328767,WebApp,4,2,10,400,100,no,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Google,0.2162328767,WebApp,1,0.5,10,400,100,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Google,0.372260274,WebApp,2,1,10,400,400,yes,0,A_Shared,Windows,South America,yes,no,A_no,yes,no
+Google,0.522260274,WebApp,2,2,10,400,400,yes,0,A_Shared,Windows,South America,yes,no,A_no,yes,no
+Google,0.1674965753,WebApp,1,1.75,10,400,100,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,yes
+Google,0.2657465753,WebApp,2,3.5,10,400,100,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.4622465753,WebApp,4,7,10,400,100,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.1537465753,WebApp,1,0.5,10,400,100,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.243109589,WebApp,2,1,10,400,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.254109589,WebApp,2,2,10,400,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.407739726,WebApp,2,7,10,1000,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.642739726,WebApp,4,14,10,1000,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.4117534247,WebApp,2,8,10,1000,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.6577534247,WebApp,4,16,10,1000,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,1.149753425,WebApp,8,32,10,1000,100,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.1954520548,WebApp,1,0.5,500,400,100,no,0,A_Shared,Windows,Asia,yes,no,A_no,no,no
+Google,0.3114520548,WebApp,2,1,500,400,100,no,0,A_Shared,Windows,Asia,yes,no,A_no,no,no
+Google,0.4274520548,WebApp,2,2,500,400,100,no,0,A_Shared,Windows,Asia,yes,no,A_no,no,no
+Google,0.6133150685,WebApp,4,2,500,400,100,no,0,A_Shared,Windows,Asia,yes,no,A_no,yes,no
+Google,0.2653150685,WebApp,1,0.5,500,400,100,yes,0,A_Shared,Windows,Asia,yes,no,A_no,yes,no
+Google,0.3813150685,WebApp,2,1,500,400,100,yes,0,A_Shared,Windows,Asia,yes,no,A_no,yes,no
+Google,0.5959452055,WebApp,2,2,500,1000,100,yes,0,A_Shared,Windows,Asia,yes,no,A_no,yes,no
+Google,0.1425479452,WebApp,1,1.75,10,400,100,yes,0,A_Shared,Windows,Asia,yes,no,A_no,no,yes
+Google,0.2165479452,WebApp,2,3.5,10,400,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.3645479452,WebApp,4,7,10,400,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.1325479452,WebApp,1,0.5,10,400,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.1965479452,WebApp,2,1,10,400,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.2155616438,WebApp,2,2,10,400,600,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.2555616438,WebApp,2,7,10,400,600,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.4315616438,WebApp,4,14,10,400,600,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.2635616438,WebApp,2,8,10,400,600,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.4475616438,WebApp,4,16,10,400,600,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.9073424658,WebApp,8,32,10,1000,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.4099726027,WebApp,1,0.5,1000,400,100,no,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.5459726027,WebApp,2,1,1000,400,100,no,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.6819726027,WebApp,2,2,1000,400,100,no,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.8179726027,WebApp,4,2,1000,400,100,no,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.5661369863,WebApp,1,0.5,1000,1000,100,yes,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.622,WebApp,2,1,500,1000,400,yes,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.758,WebApp,2,2,500,1000,400,yes,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.1955547945,WebApp,1,1.75,50,400,100,yes,0,A_Shared,Windows,Australia,yes,no,A_no,yes,yes
+Google,0.2840547945,WebApp,2,3.5,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.4610547945,WebApp,4,7,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.1830547945,WebApp,1,0.5,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.2590547945,WebApp,2,1,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.2690547945,WebApp,2,2,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.3190547945,WebApp,2,7,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.5310547945,WebApp,4,14,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.3290547945,WebApp,2,8,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.5510547945,WebApp,4,16,50,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.9937945205,WebApp,8,32,10,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.2657534247,WebApp,1,0.5,50,1000,100,no,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,0.3646575342,WebApp,2,1,10,1000,100,no,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.4646575342,WebApp,2,2,10,1000,100,no,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.5646575342,WebApp,4,2,10,1000,100,no,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.2646575342,WebApp,1,0.5,10,1000,100,yes,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.3646575342,WebApp,2,1,10,1000,100,yes,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.6309589041,WebApp,2,2,10,2000,100,yes,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,0.5102304795,WebApp,1,1.75,500,2000,100,yes,0,A_Shared,Windows,US,yes,no,A_no,no,yes
+Google,0.5752554795,WebApp,2,3.5,500,2000,100,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.7053054795,WebApp,4,7,500,2000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.3965609589,WebApp,1,0.5,50,2000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.4527109589,WebApp,2,1,50,2000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.4598109589,WebApp,2,2,50,2000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.8240780822,WebApp,2,7,50,4000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.9789780822,WebApp,4,14,50,4000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,0.8777534247,WebApp,2,8,250,4000,400,yes,0,A_Shared,Windows,US,no,no,A_no,no,yes
+Google,1.103452055,WebApp,4,16,250,4000,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,1.427452055,WebApp,8,32,250,4000,400,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.2930136986,WebApp,1,0.5,1000,400,600,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.5216438356,WebApp,2,1,1000,1000,600,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.6571232877,WebApp,2,2,1000,1000,1000,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.7871232877,WebApp,4,2,1000,1000,1000,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.3971232877,WebApp,1,0.5,1000,1000,1000,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.5271232877,WebApp,2,1,1000,1000,1000,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Google,0.6468493151,WebApp,2,2,1000,1000,1000,yes,0,A_Shared,Windows,A_Europe,yes,yes,A_no,no,no
+Google,0.3238184932,WebApp,1,1.75,250,1000,1000,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,yes
+Google,0.4075684932,WebApp,2,3.5,250,1000,1000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.5750684932,WebApp,4,7,250,1000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.3125684932,WebApp,1,0.5,250,1000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.3850684932,WebApp,2,1,250,1000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.5584520548,WebApp,2,2,250,2000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.6034520548,WebApp,2,7,250,2000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.8024520548,WebApp,4,14,250,2000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.6124520548,WebApp,2,8,250,2000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.8204520548,WebApp,4,16,250,2000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,1.49090411,WebApp,8,32,500,2000,2000,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,0.5797945205,WebApp,1,0.5,50,400,400,no,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.6784246575,WebApp,2,1,50,1000,400,no,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.6284246575,WebApp,2,2,50,1000,400,no,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.7784246575,WebApp,4,2,50,1000,400,no,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.3284246575,WebApp,1,0.5,50,1000,400,yes,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.4784246575,WebApp,2,1,50,1000,400,yes,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.6284246575,WebApp,2,2,50,1000,400,yes,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.270989726,WebApp,1,1.75,10,1000,100,yes,0,A_Shared,Windows,South America,yes,no,A_no,yes,yes
+Google,0.3733493151,WebApp,2,3.5,10,1000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.5698493151,WebApp,4,7,10,1000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.2892945205,WebApp,1,0.5,50,1000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.3737945205,WebApp,2,1,50,1000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.3847945205,WebApp,2,2,50,1000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.4397945205,WebApp,2,7,50,1000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,1.167945205,WebApp,4,14,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,0.9439452055,WebApp,2,8,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,1.189945205,WebApp,4,16,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,yes,yes
+Google,1.659,WebApp,8,32,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.367369863,WebApp,1,0.5,500,1000,100,no,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.4874794521,WebApp,2,1,500,1000,400,no,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.6856712329,WebApp,2,2,1000,1000,400,no,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.8016712329,WebApp,4,2,1000,1000,400,no,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.4536712329,WebApp,1,0.5,1000,1000,400,yes,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.7340547945,WebApp,2,1,1000,2000,400,yes,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.8500547945,WebApp,2,2,1000,2000,400,yes,0,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Google,0.2453424658,WebApp,1,1.75,10,1000,100,yes,0,A_Shared,Windows,Asia,yes,no,A_no,yes,yes
+Google,0.3193424658,WebApp,2,3.5,10,1000,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.4673424658,WebApp,4,7,10,1000,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.2353424658,WebApp,1,0.5,10,1000,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.2993424658,WebApp,2,1,10,1000,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.3073424658,WebApp,2,2,10,1000,100,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.373369863,WebApp,2,7,10,1000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.549369863,WebApp,4,14,10,1000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.8968767123,WebApp,2,8,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,1.080876712,WebApp,4,16,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,1.407506849,WebApp,8,32,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.4894246575,WebApp,1,0.5,500,1000,400,no,0,A_Shared,Windows,Australia,yes,yes,A_no,yes,no
+Google,0.6254246575,WebApp,2,1,500,1000,400,no,0,A_Shared,Windows,Australia,yes,yes,A_no,yes,no
+Google,1.018273973,WebApp,2,2,500,2000,400,no,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,1.157013699,WebApp,4,2,500,2000,600,no,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.833260274,WebApp,1,0.5,1000,2000,600,yes,0,A_Shared,Windows,Australia,yes,no,A_no,yes,no
+Google,0.8240547945,WebApp,2,1,1000,2000,600,yes,0,A_Shared,Windows,Australia,yes,no,A_no,no,no
+Google,0.9600547945,WebApp,2,2,1000,2000,600,yes,0,A_Shared,Windows,Australia,yes,no,A_no,no,no
+Google,0.1942945205,WebApp,1,1.75,10,400,100,yes,0,A_Shared,Windows,Australia,yes,no,A_no,yes,yes
+Google,0.2827945205,WebApp,2,3.5,10,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.461260274,WebApp,4,7,10,400,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.3394246575,WebApp,1,0.5,10,1000,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.4154246575,WebApp,2,1,10,1000,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.4380273973,WebApp,2,2,50,1000,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.4880273973,WebApp,2,7,50,1000,100,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.7000273973,WebApp,4,14,50,1000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.4980273973,WebApp,2,8,50,1000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.7200273973,WebApp,4,16,50,1000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,1.42430137,WebApp,8,32,50,2000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.7638356164,WebApp,1,0.5,10,4000,400,no,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,0.8638356164,WebApp,2,1,10,4000,400,no,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,0.9665753425,WebApp,2,2,10,4000,600,no,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,1.066575342,WebApp,4,2,10,4000,600,no,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,0.7665753425,WebApp,1,0.5,10,4000,600,yes,0,A_Shared,Windows,US,yes,no,A_no,yes,no
+Google,0.8578082192,WebApp,2,1,10,4000,600,yes,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.9578082192,WebApp,2,2,10,4000,600,yes,0,A_Shared,Windows,US,yes,no,A_no,no,no
+Google,0.8472167808,WebApp,1,1.75,250,4000,600,yes,0,A_Shared,Windows,US,yes,no,A_no,yes,yes
+Google,0.9122417808,WebApp,2,3.5,250,4000,600,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,1.042291781,WebApp,4,7,250,4000,600,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.8438212329,WebApp,1,0.5,250,4000,1000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,1.249286301,WebApp,2,1,1000,4000,1000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.9276191781,WebApp,2,2,1000,2000,1000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.9631191781,WebApp,2,7,1000,2000,1000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,1.131717808,WebApp,4,14,1000,2000,2000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.9839178082,WebApp,2,8,1000,2000,2000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,1.145917808,WebApp,4,16,1000,2000,2000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,1.469917808,WebApp,8,32,1000,2000,2000,yes,0,A_Shared,Windows,US,no,no,A_no,yes,yes
+Google,0.4930136986,WebApp,1,0.5,1000,2000,2000,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.6230136986,WebApp,2,1,1000,2000,2000,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.7530136986,WebApp,2,2,1000,2000,2000,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.8830136986,WebApp,4,2,1000,2000,100,no,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.4930136986,WebApp,1,0.5,1000,2000,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.6230136986,WebApp,2,1,1000,2000,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.7530136986,WebApp,2,2,1000,2000,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Google,0.7166267123,WebApp,1,1.75,500,2000,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,yes
+Google,1.129143836,WebApp,2,3.5,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,1.296643836,WebApp,4,7,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,1.034143836,WebApp,1,0.5,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,1.106643836,WebApp,2,1,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,1.115643836,WebApp,2,2,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,1.160643836,WebApp,2,7,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,yes,yes
+Google,1.20690411,WebApp,4,14,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,1.01690411,WebApp,2,8,500,4000,100,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,1.22490411,WebApp,4,16,500,4000,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,1.64090411,WebApp,8,32,500,4000,400,yes,0,A_Shared,Windows,A_Europe,no,no,A_no,no,yes
+Google,0.677739726,WebApp,1,0.5,50,1000,600,no,0,A_Shared,Windows,South America,yes,no,A_no,yes,no
+Google,0.6811643836,WebApp,2,1,50,1000,600,no,0,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Google,0.6297945205,WebApp,2,2,250,1000,600,no,0,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Google,0.7797945205,WebApp,4,2,250,1000,600,no,0,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Google,0.3297945205,WebApp,1,0.5,250,1000,2000,yes,0,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Google,0.6441780822,WebApp,2,1,250,2000,2000,yes,0,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Google,0.7941780822,WebApp,2,2,250,2000,2000,yes,0,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Google,0.77325,WebApp,1,1.75,50,4000,400,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,yes
+Google,0.8715,WebApp,2,3.5,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,1.068,WebApp,4,7,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.7595,WebApp,1,0.5,50,4000,400,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.5152328767,WebApp,2,1,50,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.5262328767,WebApp,2,2,50,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.5812328767,WebApp,2,7,50,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.8860958904,WebApp,4,14,250,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.6620958904,WebApp,2,8,250,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.9080958904,WebApp,4,16,250,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,1.40009589,WebApp,8,32,250,2000,600,yes,0,A_Shared,Windows,South America,no,no,A_no,no,yes
+Google,0.4755890411,WebApp,1,0.5,1000,2000,400,no,0,A_Shared,Windows,Asia,yes,yes,A_no,no,no
+Google,0.5915890411,WebApp,2,1,1000,2000,400,no,0,A_Shared,Windows,Asia,yes,yes,A_no,no,no
+Google,0.7075890411,WebApp,2,2,1000,2000,600,no,0,A_Shared,Windows,Asia,yes,yes,A_no,no,no
+Google,1.152356164,WebApp,4,2,1000,4000,600,no,0,A_Shared,Windows,Asia,yes,yes,A_no,no,no
+Google,0.8043561644,WebApp,1,0.5,1000,4000,600,yes,0,A_Shared,Windows,Asia,yes,yes,A_no,no,no
+Google,0.9169315068,WebApp,2,1,1000,4000,600,yes,0,A_Shared,Windows,Asia,yes,no,A_no,no,no
+Google,1.032931507,WebApp,2,2,1000,4000,600,yes,0,A_Shared,Windows,Asia,yes,no,A_no,no,no
+Google,0.7455068493,WebApp,1,1.75,50,4000,2000,yes,0,A_Shared,Windows,Asia,yes,no,A_no,no,yes
+Google,0.8195068493,WebApp,2,3.5,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.9675068493,WebApp,4,7,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.7355068493,WebApp,1,0.5,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,no,yes
+Google,0.8408767123,WebApp,2,1,50,4000,2000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.8351780822,WebApp,2,2,50,4000,1000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.5464109589,WebApp,2,7,50,2000,1000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.7224109589,WebApp,4,14,50,2000,1000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.5544109589,WebApp,2,8,50,2000,1000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.7384109589,WebApp,4,16,50,2000,1000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,1.106410959,WebApp,8,32,50,2000,1000,yes,0,A_Shared,Windows,Asia,no,no,A_no,yes,yes
+Google,0.6880547945,WebApp,1,0.5,1000,2000,600,no,0,A_Shared,Windows,Australia,yes,no,A_no,no,no
+Google,1.34460274,WebApp,2,1,1000,4000,600,no,0,A_Shared,Windows,Australia,yes,no,A_no,no,no
+Google,1.484027397,WebApp,2,2,1000,4000,1000,no,0,A_Shared,Windows,Australia,yes,yes,A_no,no,no
+Google,1.620027397,WebApp,4,2,1000,4000,1000,no,0,A_Shared,Windows,Australia,yes,yes,A_no,no,no
+Google,1.212027397,WebApp,1,0.5,1000,4000,1000,yes,0,A_Shared,Windows,Australia,yes,yes,A_no,no,no
+Google,1.348027397,WebApp,2,1,1000,4000,1000,yes,0,A_Shared,Windows,Australia,yes,yes,A_no,no,no
+Google,1.484027397,WebApp,2,2,1000,4000,1000,yes,0,A_Shared,Windows,Australia,yes,yes,A_no,no,no
+Google,0.6878150685,WebApp,1,1.75,250,2000,400,yes,0,A_Shared,Windows,Australia,yes,no,A_no,no,yes
+Google,0.7763150685,WebApp,2,3.5,250,2000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,no,yes
+Google,0.8879041096,WebApp,4,7,250,2000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.6099041096,WebApp,1,0.5,250,2000,400,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.6886438356,WebApp,2,1,250,2000,600,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,0.7065205479,WebApp,2,2,500,2000,600,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,1.277068493,WebApp,2,7,500,4000,600,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,1.494547945,WebApp,4,14,500,4000,1000,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,1.292547945,WebApp,2,8,500,4000,1000,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,1.514547945,WebApp,4,16,500,4000,1000,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes
+Google,1.958547945,WebApp,8,32,500,4000,1000,yes,0,A_Shared,Windows,Australia,no,no,A_no,yes,yes

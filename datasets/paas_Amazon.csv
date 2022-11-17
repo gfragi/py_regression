@@ -1,0 +1,255 @@
+Provider,PaaS_Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
+Amazon,0.05879863014,WebApp,1,0.5,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
+Amazon,0.08269863014,WebApp,1,2,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
+Amazon,0.1106986301,WebApp,2,4,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
+Amazon,0.07029863014,WebApp,2,1,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
+Amazon,0.08989863014,WebApp,2,2,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
+Amazon,0.1628684932,WebApp,2,8,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.4350684932,WebApp,4,7,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.4880684932,WebApp,4,32,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.4074931507,WebApp,4,8,50,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.2976027397,WebApp,4,16,50,400,400,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.5376027397,WebApp,8,32,50,400,400,yes,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.06400273973,WebApp,1,0.5,50,400,400,yes,1,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.08227534247,WebApp,1,2,50,400,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.1049753425,WebApp,2,4,50,400,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.1472479452,WebApp,2,1,50,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.1639479452,WebApp,2,2,50,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.2181479452,WebApp,2,8,50,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.4595479452,WebApp,4,7,50,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.4856712329,WebApp,4,32,250,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.4446712329,WebApp,4,8,250,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,yes,no
+Amazon,0.3257917808,WebApp,4,16,250,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.5192917808,WebApp,8,32,250,1000,400,yes,1,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.1373917808,WebApp,1,0.5,250,1000,400,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.1528917808,WebApp,1,2,250,1000,400,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.1711917808,WebApp,2,4,250,1000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.1465917808,WebApp,2,1,250,1000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.1608917808,WebApp,2,2,250,1000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.2010917808,WebApp,2,8,250,1000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.7880547945,WebApp,4,7,250,4000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.8040547945,WebApp,4,32,250,4000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.7680547945,WebApp,4,8,250,4000,600,yes,3,A_Shared,Windows,US,yes,no,A_no,no,no
+Amazon,0.6764054795,WebApp,4,16,500,4000,600,yes,3,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.8326054795,WebApp,8,32,500,4000,600,yes,3,A_Shared,Windows,US,yes,yes,A_no,yes,no
+Amazon,0.5260054795,WebApp,1,0.5,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.5432054795,WebApp,1,2,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.5618054795,WebApp,2,4,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.5306054795,WebApp,2,1,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.5410054795,WebApp,2,2,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.6034054795,WebApp,2,8,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.7192054795,WebApp,4,7,500,4000,600,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.7516849315,WebApp,4,32,500,4000,1000,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.7134931507,WebApp,4,8,1000,4000,1000,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.7098931507,WebApp,4,16,1000,4000,1000,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.8762931507,WebApp,8,32,1000,4000,1000,yes,0,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.5475931507,WebApp,1,0.5,1000,4000,1000,yes,1,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.3134178082,WebApp,1,2,1000,2000,1000,yes,1,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.3269178082,WebApp,2,4,1000,2000,1000,yes,1,A_Shared,Linux,US,yes,yes,A_no,yes,no
+Amazon,0.2907191781,WebApp,2,1,1000,2000,1000,yes,1,A_Shared,Linux,US,yes,yes,A_no,no,no
+Amazon,0.2971917808,WebApp,2,2,1000,2000,1000,yes,1,A_Shared,Linux,US,yes,no,A_no,no,no
+Amazon,0.3471917808,WebApp,2,8,1000,2000,1000,yes,1,Dedicated,Linux,US,yes,no,A_no,no,no
+Amazon,0.4411917808,WebApp,4,7,1000,2000,1000,yes,1,Dedicated,Linux,US,yes,no,A_no,no,no
+Amazon,0.4601917808,WebApp,4,32,1000,2000,1000,yes,1,Dedicated,Linux,US,yes,no,A_no,no,no
+Amazon,0.4151917808,WebApp,4,8,1000,2000,1000,yes,1,Dedicated,Linux,US,yes,no,A_no,no,no
+Amazon,0.4120917808,WebApp,4,16,1000,2000,1000,yes,1,Dedicated,Linux,US,yes,no,A_no,no,no
+Amazon,0.5419917808,WebApp,8,32,1000,2000,1000,yes,1,Dedicated,Linux,US,yes,no,A_no,no,no
+Amazon,0.2498315068,WebApp,1,0.5,10,2000,1000,yes,3,A_Shared,Linux,US,yes,no,A_no,no,no
+Amazon,0.272130137,WebApp,1,2,10,2000,1000,yes,3,A_Shared,Linux,US,yes,no,A_no,yes,no
+Amazon,0.281230137,WebApp,2,4,10,2000,1000,yes,3,A_Shared,Linux,US,yes,no,A_no,yes,no
+Amazon,0.1562410959,WebApp,2,1,10,1000,2000,yes,3,A_Shared,Linux,US,yes,no,A_no,yes,no
+Amazon,0.1613410959,WebApp,2,2,10,1000,2000,yes,3,A_Shared,Linux,US,yes,no,A_no,yes,no
+Amazon,0.1973410959,WebApp,2,8,10,1000,2000,yes,3,Dedicated,Linux,US,yes,no,A_no,yes,no
+Amazon,0.2630410959,WebApp,4,7,10,1000,2000,yes,3,Dedicated,Linux,US,yes,no,A_no,yes,no
+Amazon,0.2820410959,WebApp,4,32,10,1000,2000,yes,3,Dedicated,Linux,US,yes,no,A_no,yes,no
+Amazon,0.2430410959,WebApp,4,8,10,1000,2000,yes,3,Dedicated,Linux,US,yes,no,A_no,yes,no
+Amazon,0.2435410959,WebApp,4,16,10,1000,2000,yes,3,Dedicated,Linux,US,yes,no,A_no,yes,no
+Amazon,0.3360410959,WebApp,8,32,10,1000,2000,yes,3,Dedicated,Linux,US,yes,no,A_no,yes,no
+Amazon,0.07560958904,WebApp,1,0.5,250,1000,2000,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Amazon,0.102609589,WebApp,1,2,250,1000,2000,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Amazon,0.133009589,WebApp,2,4,250,1000,2000,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Amazon,0.06041232877,WebApp,2,1,250,1000,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.08161232877,WebApp,2,2,250,1000,100,yes,0,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.170439726,WebApp,2,8,250,400,100,yes,0,Dedicated,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.474239726,WebApp,4,7,250,400,100,yes,0,Dedicated,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.514239726,WebApp,4,32,250,400,100,yes,0,Dedicated,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.431239726,WebApp,4,8,250,400,100,yes,0,Dedicated,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.319039726,WebApp,4,16,250,400,100,yes,0,Dedicated,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.5601958904,WebApp,8,32,10,400,100,yes,0,Dedicated,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.01039589041,WebApp,1,0.5,10,400,100,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.03379589041,WebApp,1,2,10,400,100,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.06079589041,WebApp,2,4,10,400,100,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.02179589041,WebApp,2,1,10,400,100,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,no,no
+Amazon,0.04226575342,WebApp,2,2,10,400,100,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.1921315068,WebApp,2,8,500,400,400,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.4499315068,WebApp,4,7,500,400,400,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.4669315068,WebApp,4,32,500,400,400,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.4229315068,WebApp,4,8,500,4000,400,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.3177315068,WebApp,4,16,500,4000,400,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.5506315068,WebApp,8,32,500,4000,400,yes,1,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.09113150685,WebApp,1,0.5,500,4000,400,yes,3,A_Shared,Windows,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.1089041096,WebApp,1,2,500,4000,400,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Amazon,0.1305041096,WebApp,2,4,500,4000,400,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Amazon,0.1002041096,WebApp,2,1,500,4000,400,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,yes,no
+Amazon,0.1109246575,WebApp,2,2,500,4000,400,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.1625246575,WebApp,2,8,500,4000,400,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.4014246575,WebApp,4,7,500,4000,600,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.4054246575,WebApp,4,32,500,4000,600,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.3734246575,WebApp,4,8,500,4000,600,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.2649246575,WebApp,4,16,500,4000,600,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.3746684932,WebApp,8,32,10,4000,600,yes,3,A_Shared,Windows,A_Europe,yes,no,A_no,no,no
+Amazon,0.6733958904,WebApp,1,0.5,10,4000,600,yes,0,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.6952958904,WebApp,1,2,10,4000,600,yes,0,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.2271150685,WebApp,2,4,50,1000,600,yes,0,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.1875150685,WebApp,2,1,50,1000,600,yes,0,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.2007150685,WebApp,2,2,50,1000,600,yes,0,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.2862150685,WebApp,2,8,50,1000,600,yes,0,Dedicated,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.4586849315,WebApp,4,7,50,400,600,yes,0,Dedicated,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.3636849315,WebApp,4,32,50,400,600,yes,0,Dedicated,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.2846849315,WebApp,4,8,50,400,600,yes,0,Dedicated,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.2994849315,WebApp,4,16,50,400,600,yes,0,Dedicated,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.5233849315,WebApp,8,32,50,400,600,yes,0,Dedicated,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.08088493151,WebApp,1,0.5,50,400,600,yes,1,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.1952150685,WebApp,1,2,50,1000,600,yes,1,A_Shared,Linux,Asia,yes,no,A_no,yes,no
+Amazon,0.2121726027,WebApp,2,4,10,1000,600,yes,1,A_Shared,Linux,Asia,yes,yes,A_no,yes,no
+Amazon,0.1834726027,WebApp,2,1,10,1000,600,yes,1,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.1930726027,WebApp,2,2,10,1000,600,yes,1,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2566726027,WebApp,2,8,10,1000,600,yes,1,Dedicated,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.3784520548,WebApp,4,7,10,1000,1000,yes,1,Dedicated,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.3934520548,WebApp,4,32,10,1000,1000,yes,1,Dedicated,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.3434520548,WebApp,4,8,10,1000,1000,yes,1,Dedicated,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.3787561644,WebApp,4,16,1000,1000,1000,yes,1,Dedicated,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.5441561644,WebApp,8,32,1000,1000,1000,yes,1,Dedicated,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2169561644,WebApp,1,0.5,1000,1000,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2275561644,WebApp,1,2,1000,1000,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2390561644,WebApp,2,4,1000,1000,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2197561644,WebApp,2,1,1000,1000,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2262561644,WebApp,2,2,1000,1000,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.1662260274,WebApp,2,8,1000,400,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2111917808,WebApp,4,7,50,400,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.2241917808,WebApp,4,32,50,400,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.1831917808,WebApp,4,8,50,400,1000,yes,3,A_Shared,Linux,Asia,yes,yes,A_no,no,no
+Amazon,0.1841643836,WebApp,4,16,50,400,1000,yes,3,A_Shared,Linux,Asia,yes,no,A_no,no,no
+Amazon,0.2871643836,WebApp,8,32,50,400,1000,yes,3,A_Shared,Linux,Asia,yes,no,A_no,no,no
+Amazon,0.09656575342,WebApp,1,0.5,50,400,1000,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.1313657534,WebApp,1,2,50,400,1000,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.1705657534,WebApp,2,4,50,400,1000,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.4397328767,WebApp,2,1,50,2000,1000,yes,0,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.4772123288,WebApp,2,2,10,2000,1000,yes,0,A_Shared,Windows,South America,yes,no,A_no,yes,no
+Amazon,0.5946123288,WebApp,2,8,10,2000,1000,yes,0,Dedicated,Windows,South America,yes,no,A_no,yes,no
+Amazon,0.9492123288,WebApp,4,7,10,2000,1000,yes,0,Dedicated,Windows,South America,yes,no,A_no,yes,no
+Amazon,1.006910959,WebApp,4,32,10,2000,2000,yes,0,Dedicated,Windows,South America,yes,no,A_no,yes,no
+Amazon,0.9162260274,WebApp,4,8,250,2000,2000,yes,0,Dedicated,Windows,South America,yes,no,A_no,yes,no
+Amazon,0.8093260274,WebApp,4,16,250,2000,2000,yes,0,Dedicated,Windows,South America,yes,no,A_no,yes,no
+Amazon,1.166426027,WebApp,8,32,250,2000,2000,yes,0,Dedicated,Windows,South America,yes,no,A_no,yes,no
+Amazon,0.4606260274,WebApp,1,0.5,250,2000,2000,yes,1,A_Shared,Windows,South America,yes,no,A_no,yes,no
+Amazon,0.4583287671,WebApp,1,2,250,2000,2000,yes,1,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.4876287671,WebApp,2,4,250,2000,2000,yes,1,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.4451287671,WebApp,2,1,250,2000,2000,yes,1,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.4521136986,WebApp,2,2,10,2000,2000,yes,1,A_Shared,Windows,South America,yes,no,A_no,no,no
+Amazon,0.5352136986,WebApp,2,8,10,2000,2000,yes,1,Dedicated,Windows,South America,yes,no,A_no,no,no
+Amazon,0.8745136986,WebApp,4,7,10,2000,2000,yes,1,Dedicated,Windows,South America,yes,no,A_no,no,no
+Amazon,0.8805410959,WebApp,4,32,10,2000,2000,yes,1,Dedicated,Windows,South America,yes,yes,A_no,no,no
+Amazon,0.8275410959,WebApp,4,8,10,2000,2000,yes,1,Dedicated,Windows,South America,yes,yes,A_no,no,no
+Amazon,0.6783410959,WebApp,4,16,10,2000,2000,yes,1,Dedicated,Windows,South America,yes,yes,A_no,no,no
+Amazon,0.9714260274,WebApp,8,32,500,2000,2000,yes,1,Dedicated,Windows,South America,yes,yes,A_no,no,no
+Amazon,0.4466260274,WebApp,1,0.5,500,2000,2000,yes,3,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Amazon,0.4675260274,WebApp,1,2,500,2000,2000,yes,3,A_Shared,Windows,South America,yes,yes,A_no,no,no
+Amazon,0.1903561644,WebApp,2,4,500,400,2000,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.1299287671,WebApp,2,1,500,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.1475287671,WebApp,2,2,500,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.2070287671,WebApp,2,8,500,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.4753287671,WebApp,4,7,500,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.5300684932,WebApp,4,32,1000,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.4650684932,WebApp,4,8,1000,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.3479684932,WebApp,4,16,1000,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.5558684932,WebApp,8,32,1000,400,100,yes,3,A_Shared,Windows,South America,yes,yes,A_no,yes,no
+Amazon,0.1785150685,WebApp,2,4,1000,400,100,yes,0,A_Shared,Linux,Africa,yes,yes,A_no,yes,no
+Amazon,0.1379150685,WebApp,2,1,1000,400,100,yes,0,A_Shared,Linux,Africa,yes,yes,A_no,yes,no
+Amazon,0.1514150685,WebApp,2,2,1000,400,100,yes,0,A_Shared,Linux,Africa,yes,yes,A_no,yes,no
+Amazon,0.2369246575,WebApp,2,8,1000,400,400,yes,0,A_Shared,Linux,Africa,yes,yes,A_no,yes,no
+Amazon,0.5059452055,WebApp,4,7,1000,400,400,yes,0,A_Shared,Linux,Africa,yes,yes,A_no,no,no
+Amazon,0.5579178082,WebApp,4,32,1000,400,400,yes,0,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.3499178082,WebApp,4,8,1000,400,400,yes,0,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.3389178082,WebApp,4,16,1000,400,400,yes,0,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.5558178082,WebApp,8,32,1000,400,400,yes,0,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.1283178082,WebApp,1,0.5,1000,400,400,yes,1,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.1476178082,WebApp,1,2,1000,400,400,yes,1,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.2687424658,WebApp,2,4,250,1000,400,yes,1,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.2370424658,WebApp,2,1,250,1000,400,yes,1,A_Shared,Linux,Africa,yes,no,A_no,no,no
+Amazon,0.2159246575,WebApp,2,2,250,1000,400,yes,1,A_Shared,Windows,Asia,yes,no,A_no,no,no
+Amazon,0.2887246575,WebApp,2,8,250,1000,400,yes,1,Dedicated,Windows,Asia,yes,no,A_no,no,no
+Amazon,0.5641643836,WebApp,4,7,250,1000,600,yes,1,Dedicated,Windows,Asia,yes,no,A_no,no,no
+Amazon,0.5709452055,WebApp,4,32,250,1000,600,yes,1,Dedicated,Windows,Asia,yes,no,A_no,yes,no
+Amazon,0.5219726027,WebApp,4,8,250,1000,600,yes,1,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.4129726027,WebApp,4,16,250,1000,600,yes,1,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.6519726027,WebApp,8,32,250,1000,600,yes,1,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.1798726027,WebApp,1,0.5,250,1000,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.1973726027,WebApp,1,2,250,1000,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.1125931507,WebApp,2,4,50,400,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.08409315068,WebApp,2,1,50,400,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.09979315068,WebApp,2,2,50,400,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.1475931507,WebApp,2,8,50,400,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.3814931507,WebApp,4,7,50,400,600,yes,3,A_Shared,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.4104931507,WebApp,4,32,50,400,1000,yes,3,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.3654931507,WebApp,4,8,50,400,1000,yes,3,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.2576931507,WebApp,4,16,50,400,1000,yes,3,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.7100068493,WebApp,8,32,50,2000,1000,yes,3,Dedicated,Windows,Asia,yes,yes,A_no,yes,no
+Amazon,0.02926849315,WebApp,1,0.5,50,2000,1000,yes,0,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.04834109589,WebApp,1,2,50,2000,1000,yes,0,A_Shared,Linux,A_Europe,yes,no,A_no,yes,no
+Amazon,0.05584246575,WebApp,2,4,50,2000,1000,yes,0,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.01984246575,WebApp,2,1,50,2000,1000,yes,0,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.02556849315,WebApp,2,2,10,2000,1000,yes,0,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.1041684932,WebApp,2,8,10,2000,1000,yes,0,Dedicated,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.2515684932,WebApp,4,7,10,2000,2000,yes,0,Dedicated,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.2915684932,WebApp,4,32,10,2000,2000,yes,0,Dedicated,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.2085684932,WebApp,4,8,10,2000,2000,yes,0,Dedicated,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.2067684932,WebApp,4,16,10,2000,2000,yes,0,Dedicated,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.4888246575,WebApp,8,32,500,2000,2000,yes,0,Dedicated,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.08392465753,WebApp,1,0.5,500,2000,2000,yes,1,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.1004246575,WebApp,1,2,500,2000,2000,yes,1,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.1182246575,WebApp,2,4,500,400,2000,yes,1,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.08842465753,WebApp,2,1,500,400,2000,yes,1,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.09832465753,WebApp,2,2,500,400,2000,yes,1,A_Shared,Linux,A_Europe,yes,no,A_no,no,no
+Amazon,0.1590520548,WebApp,2,8,500,400,2000,yes,1,A_Shared,Linux,A_Europe,yes,yes,A_no,no,no
+Amazon,0.2878493151,WebApp,4,7,500,400,2000,yes,1,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2788219178,WebApp,4,32,500,400,100,yes,1,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2348219178,WebApp,4,8,500,400,100,yes,1,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2400219178,WebApp,4,16,500,400,100,yes,1,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.3993219178,WebApp,8,32,500,400,100,yes,1,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.08472191781,WebApp,1,0.5,500,400,100,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.09662191781,WebApp,1,2,500,400,100,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.1090219178,WebApp,2,4,500,400,100,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.1663465753,WebApp,2,1,1000,400,100,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.1733465753,WebApp,2,2,1000,400,100,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2198561644,WebApp,2,8,1000,400,400,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.3023561644,WebApp,4,7,1000,400,400,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.3063561644,WebApp,4,32,1000,1000,400,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2743561644,WebApp,4,8,1000,1000,400,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2762561644,WebApp,4,16,1000,1000,400,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.3892561644,WebApp,8,32,1000,1000,400,yes,3,A_Shared,Linux,A_Europe,yes,yes,A_no,yes,no
+Amazon,0.2309315068,WebApp,1,0.5,1000,1000,400,yes,0,A_Shared,Windows,US,no,yes,A_no,no,yes
+Amazon,0.2379315068,WebApp,1,1,1000,1000,400,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2519315068,WebApp,1,2,1000,1000,400,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2799315068,WebApp,1,4,1000,1000,400,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.3219315068,WebApp,1,7,1000,1000,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.3359315068,WebApp,1,8,1000,1000,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2610958904,WebApp,2,0.5,50,1000,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2361232877,WebApp,2,4,50,400,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.1941232877,WebApp,2,1,50,400,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2081232877,WebApp,2,2,50,400,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2921232877,WebApp,2,8,50,400,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.2781232877,WebApp,2,7,50,400,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.5123835616,WebApp,4,0.5,50,2000,1000,yes,0,A_Shared,Linux,US,no,yes,A_no,no,yes
+Amazon,0.5183561644,WebApp,4,1,50,2000,1000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,0.5309315068,WebApp,4,2,10,2000,2000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,0.6009315068,WebApp,4,7,10,2000,2000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,0.9509315068,WebApp,4,32,10,2000,2000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,0.6149315068,WebApp,4,8,10,2000,2000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,0.9735068493,WebApp,4,16,10,4000,2000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,1.012506849,WebApp,8,0.5,10,4000,2000,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,1.028054795,WebApp,8,1,250,4000,100,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,1.042054795,WebApp,8,2,250,4000,100,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,1.070054795,WebApp,8,4,250,4000,100,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,1.238054795,WebApp,8,16,250,4000,100,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes
+Amazon,1.462054795,WebApp,8,32,250,4000,100,yes,0,A_Shared,Linux,US,no,no,A_no,no,yes

@@ -1,0 +1,283 @@
+Provider,PaaS_Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
+Microsoft,0.06183561644,WebApp,1,1.75,10,400,100,no,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.06887671233,WebApp,2,3.5,10,300,600,no,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.071,WebApp,4,7,10,2000,1000,no,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.1188356164,WebApp,1,1.75,10,400,100,no,0,Dedicated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.1828767123,WebApp,2,3.5,10,300,600,no,0,Dedicated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.3,WebApp,4,7,10,2000,1000,no,0,Dedicated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.1388356164,WebApp,1,1.75,50,400,100,yes,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.2228767123,WebApp,2,3.5,50,300,600,yes,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.38,WebApp,4,7,50,2000,1000,yes,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.1518253425,WebApp,1,1.75,50,400,100,yes,0,Dedicated,Windows,US,no,no,Standard,no,yes
+Microsoft,0.2408664384,WebApp,2,3.5,50,300,600,yes,0,Dedicated,Windows,US,no,no,Standard,no,yes
+Microsoft,0.407989726,WebApp,4,7,50,4000,1000,yes,0,Dedicated,Windows,US,no,no,Standard,no,yes
+Microsoft,0.1668253425,WebApp,1,3.5,250,400,100,yes,0,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.2718664384,WebApp,2,7,250,300,600,yes,0,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.469989726,WebApp,4,14,250,4000,1000,yes,0,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.2780810502,WebApp,1,3.5,250,400,100,yes,0,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.5438344749,WebApp,2,7,250,1000,600,yes,0,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.8342454338,WebApp,4,14,250,4000,1000,yes,0,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.4788344749,WebApp,2,8,250,1000,600,yes,0,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.7042454338,WebApp,4,16,250,4000,1000,yes,0,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,1.374245434,WebApp,8,32,250,4000,1000,yes,0,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.3938344749,WebApp,2,8,250,1000,600,yes,1,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.5342454338,WebApp,4,16,250,4000,1000,yes,1,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,1.034245434,WebApp,8,32,250,4000,1000,yes,1,Dedicated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.3115890411,WebApp,2,8,250,1000,600,yes,3,Dedicated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.404,WebApp,4,16,250,4000,1000,yes,3,Dedicated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.808,WebApp,8,32,250,4000,1000,yes,3,Dedicated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.0632043379,WebApp,1,1.75,10,400,100,no,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.1469577626,WebApp,2,3.5,10,1000,600,no,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.07236872146,WebApp,4,7,10,4000,1000,no,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.1202043379,WebApp,1,1.75,10,400,100,no,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.2609577626,WebApp,2,3.5,10,1000,600,no,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3013687215,WebApp,4,7,10,4000,1000,no,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.1402043379,WebApp,1,1.75,50,400,100,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.3009577626,WebApp,2,3.5,50,1000,600,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.3813687215,WebApp,4,7,50,4000,1000,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.1452043379,WebApp,1,1.75,50,400,100,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3109577626,WebApp,2,3.5,50,1000,600,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.4013687215,WebApp,4,7,50,4000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.1602043379,WebApp,1,3.5,250,400,100,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.3419577626,WebApp,2,7,250,1000,600,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.4633687215,WebApp,4,14,250,2000,1000,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.2452043379,WebApp,1,3.5,250,400,100,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.5109577626,WebApp,2,7,250,1000,600,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.8013687215,WebApp,4,14,250,2000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.4459577626,WebApp,2,8,250,1000,600,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.6713687215,WebApp,4,16,250,2000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,1.341368721,WebApp,8,32,250,2000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3609577626,WebApp,2,8,250,1000,600,yes,1,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.5013687215,WebApp,4,16,250,2000,1000,yes,1,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,1.001368721,WebApp,8,32,250,2000,1000,yes,1,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3129577626,WebApp,2,8,250,1000,600,yes,3,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.4053687215,WebApp,4,16,250,2000,1000,yes,3,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.8093687215,WebApp,8,32,250,2000,1000,yes,3,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.1402043379,WebApp,1,1.75,50,400,100,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.3009577626,WebApp,2,3.5,50,1000,600,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.3813687215,WebApp,4,7,50,2000,1000,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.1452043379,WebApp,1,1.75,50,400,100,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3109577626,WebApp,2,3.5,50,1000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.4013687215,WebApp,4,7,50,2000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.1602043379,WebApp,1,3.5,250,400,100,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.3419577626,WebApp,2,7,250,1000,1000,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.4633687215,WebApp,4,14,250,2000,2000,yes,0,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.2452043379,WebApp,1,3.5,250,400,100,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.5109577626,WebApp,2,7,250,1000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.8013687215,WebApp,4,14,250,2000,2000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.4459577626,WebApp,2,8,250,1000,1000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.6713687215,WebApp,4,16,250,2000,2000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,1.341368721,WebApp,8,32,250,2000,2000,yes,0,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3609577626,WebApp,2,8,250,1000,1000,yes,1,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.5013687215,WebApp,4,16,250,2000,2000,yes,1,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,1.001368721,WebApp,8,32,250,2000,2000,yes,1,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.3129577626,WebApp,2,8,250,1000,1000,yes,3,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.4053687215,WebApp,4,16,250,2000,2000,yes,3,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.8093687215,WebApp,8,32,250,2000,2000,yes,3,Dedicated,Windows,US,no,yes,A_no,no,yes
+Microsoft,0.2845890411,WebApp,2,8,250,1000,1000,yes,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.35,WebApp,4,16,250,2000,2000,yes,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.7,WebApp,8,32,250,2000,2000,yes,0,Dedicated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.2315787671,WebApp,2,8,250,1000,1000,yes,1,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.235989726,WebApp,4,16,250,1000,2000,yes,1,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.462989726,WebApp,8,32,250,1000,2000,yes,1,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.1965787671,WebApp,2,8,250,1000,1000,yes,3,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.2755787671,WebApp,4,16,250,1000,2000,yes,3,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.4325787671,WebApp,8,32,250,1000,2000,yes,3,Dedicated,Linux,US,no,no,Standard,no,yes
+Microsoft,0.4297922374,WebApp,2,8,250,2000,1000,yes,0,Dedicated,Linux,US,no,no,Wildcard,no,yes
+Microsoft,0.4952031963,WebApp,4,16,250,1000,2000,yes,0,Dedicated,Linux,US,no,yes,Wildcard,no,yes
+Microsoft,0.8452031963,WebApp,8,32,250,1000,2000,yes,0,Dedicated,Linux,US,no,yes,Wildcard,no,yes
+Microsoft,0.3687922374,WebApp,2,8,250,2000,1000,yes,1,Dedicated,Linux,US,no,yes,Wildcard,no,yes
+Microsoft,0.3732031963,WebApp,4,16,250,1000,2000,yes,1,Dedicated,Linux,US,no,yes,Wildcard,no,yes
+Microsoft,0.6002031963,WebApp,8,32,250,1000,2000,yes,1,Dedicated,Linux,US,no,yes,Wildcard,no,yes
+Microsoft,0.2995468037,WebApp,2,8,250,2000,1000,yes,3,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.2689577626,WebApp,4,16,250,1000,2000,yes,3,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.4259577626,WebApp,8,32,250,1000,2000,yes,3,Dedicated,Linux,US,no,yes,A_no,no,yes
+Microsoft,0.06183561644,WebApp,1,1.75,10,400,100,no,0,Dedicated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.2551780822,WebApp,2,3.5,10,2000,1000,no,0,Dedicated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.1805890411,WebApp,4,7,10,1000,2000,no,0,Dedicated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.1188356164,WebApp,1,1.75,10,400,400,no,0,Dedicated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.3691780822,WebApp,2,3.5,10,2000,1000,no,0,Dedicated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.4095890411,WebApp,4,7,10,1000,2000,no,0,Dedicated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.1388356164,WebApp,1,1.75,50,400,400,yes,0,Dedicated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.4091780822,WebApp,2,3.5,50,2000,1000,yes,0,Dedicated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.4895890411,WebApp,4,7,50,1000,2000,yes,0,Dedicated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.1518253425,WebApp,1,1.75,50,400,400,yes,0,Dedicated,Windows,A_Europe,no,no,Standard,no,yes
+Microsoft,0.4271678082,WebApp,2,3.5,50,2000,1000,yes,0,Dedicated,Windows,A_Europe,no,no,Standard,no,yes
+Microsoft,0.5175787671,WebApp,4,7,50,1000,2000,yes,0,Dedicated,Windows,A_Europe,no,no,Standard,no,yes
+Microsoft,0.1668253425,WebApp,1,3.5,250,400,400,yes,0,Dedicated,Linux,A_Europe,no,no,Standard,no,yes
+Microsoft,0.4581678082,WebApp,2,7,250,2000,1000,yes,0,Dedicated,Linux,A_Europe,no,no,Standard,no,yes
+Microsoft,0.5795787671,WebApp,4,14,250,1000,2000,yes,0,Dedicated,Linux,A_Europe,no,no,Standard,no,yes
+Microsoft,0.2780810502,WebApp,1,3.5,250,400,400,yes,0,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.653423516,WebApp,2,7,250,2000,1000,yes,0,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.9438344749,WebApp,4,14,250,1000,2000,yes,0,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.591423516,WebApp,2,8,250,2000,1000,yes,0,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.8198344749,WebApp,4,16,250,1000,2000,yes,0,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,1.495834475,WebApp,8,32,250,1000,2000,yes,0,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.505423516,WebApp,2,8,250,2000,1000,yes,1,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.6478344749,WebApp,4,16,250,1000,2000,yes,1,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,1.151834475,WebApp,8,32,250,1000,2000,yes,1,Dedicated,Windows,A_Europe,no,no,Wildcard,no,yes
+Microsoft,0.4221780822,WebApp,2,8,250,2000,1000,yes,3,Dedicated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.5155890411,WebApp,4,16,250,1000,2000,yes,3,Dedicated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.9215890411,WebApp,8,32,250,1000,2000,yes,3,Dedicated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.08512214612,WebApp,1,1.75,10,400,400,no,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.3651358447,WebApp,2,3.5,10,2000,600,no,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.2357522831,WebApp,4,7,10,1000,2000,no,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.1421221461,WebApp,1,1.75,10,400,400,no,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.4801358447,WebApp,2,3.5,10,2000,600,no,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.958902968,WebApp,4,7,10,4000,2000,no,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.1471221461,WebApp,1,1.75,50,400,400,yes,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.4901358447,WebApp,2,3.5,50,2000,600,yes,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.978902968,WebApp,4,7,50,4000,2000,yes,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.2657522831,WebApp,1,1.75,50,1000,400,yes,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.5301358447,WebApp,2,3.5,50,2000,600,yes,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,1.058902968,WebApp,4,7,50,4000,2000,yes,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.2697522831,WebApp,1,3.5,250,1000,400,yes,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.5381358447,WebApp,2,7,250,2000,600,yes,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,1.074902968,WebApp,4,14,250,4000,2000,yes,0,Dedicated,Linux,South America,no,yes,A_no,no,yes
+Microsoft,0.3657522831,WebApp,1,3.5,250,1000,400,yes,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.7301358447,WebApp,2,7,250,2000,600,yes,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,1.458902968,WebApp,4,14,250,4000,2000,yes,0,Dedicated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.6797385845,WebApp,2,8,250,2000,600,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,1.358108447,WebApp,4,16,250,4000,2000,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,2.112108447,WebApp,8,32,250,4000,2000,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,0.5807385845,WebApp,2,8,250,2000,600,yes,1,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,1.160108447,WebApp,4,16,250,4000,2000,yes,1,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,1.716108447,WebApp,8,32,250,4000,2000,yes,1,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,0.5227385845,WebApp,2,8,250,2000,600,yes,3,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,1.044108447,WebApp,4,16,250,4000,2000,yes,3,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,1.484108447,WebApp,8,32,250,4000,2000,yes,3,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,0.247053653,WebApp,1,1.75,50,1000,400,yes,0,Dedicated,Linux,Asia,no,yes,A_no,no,yes
+Microsoft,0.4927385845,WebApp,2,3.5,50,2000,600,yes,0,Dedicated,Linux,Asia,no,yes,A_no,no,yes
+Microsoft,0.9841084475,WebApp,4,7,50,4000,2000,yes,0,Dedicated,Linux,Asia,no,yes,A_no,no,yes
+Microsoft,0.252053653,WebApp,1,1.75,50,1000,400,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,0.5027385845,WebApp,2,3.5,50,2000,600,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,1.004108447,WebApp,4,7,50,4000,2000,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,0.276053653,WebApp,1,3.5,250,1000,400,yes,0,Dedicated,Linux,Asia,no,yes,A_no,no,yes
+Microsoft,0.5497385845,WebApp,2,7,250,2000,600,yes,0,Dedicated,Linux,Asia,no,yes,A_no,no,yes
+Microsoft,1.098108447,WebApp,4,14,250,4000,2000,yes,0,Dedicated,Linux,Asia,no,yes,A_no,no,yes
+Microsoft,0.352053653,WebApp,1,3.5,250,1000,400,yes,0,Dedicated,Windows,Asia,no,yes,A_no,no,yes
+Microsoft,0.8867385845,WebApp,2,7,250,2000,600,yes,0,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,1.772108447,WebApp,4,14,250,4000,2000,yes,0,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,0.6557385845,WebApp,2,8,250,2000,600,yes,0,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,1.310108447,WebApp,4,16,250,4000,2000,yes,0,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,2.016108447,WebApp,8,32,250,4000,2000,yes,0,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,0.5647385845,WebApp,2,8,250,2000,600,yes,1,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,1.128108447,WebApp,4,16,250,4000,2000,yes,1,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,1.652108447,WebApp,8,32,250,4000,2000,yes,1,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,0.5127385845,WebApp,2,8,250,2000,600,yes,3,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,1.024108447,WebApp,4,16,250,4000,2000,yes,3,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,1.444108447,WebApp,8,32,250,4000,2000,yes,3,Dedicated,Windows,Africa,no,yes,A_no,no,yes
+Microsoft,0.494369863,WebApp,2,8,250,2000,400,yes,0,Dedicated,Linux,Africa,no,no,A_no,no,yes
+Microsoft,0.988739726,WebApp,4,16,250,4000,2000,yes,0,Dedicated,Linux,Africa,no,no,A_no,no,yes
+Microsoft,1.374739726,WebApp,8,32,250,4000,2000,yes,0,Dedicated,Linux,Africa,no,no,A_no,no,yes
+Microsoft,0.434359589,WebApp,2,8,250,2000,400,yes,1,Dedicated,Linux,Africa,no,no,Standard,no,yes
+Microsoft,0.8617294521,WebApp,4,16,250,4000,2000,yes,1,Dedicated,Linux,Africa,no,no,Standard,no,yes
+Microsoft,1.112729452,WebApp,8,32,250,4000,2000,yes,1,Dedicated,Linux,Africa,no,no,Standard,no,yes
+Microsoft,0.396359589,WebApp,2,8,250,2000,400,yes,3,Dedicated,Linux,Africa,no,no,Standard,no,yes
+Microsoft,0.7847294521,WebApp,4,16,250,4000,2000,yes,3,Dedicated,Linux,Africa,no,no,Standard,no,yes
+Microsoft,0.9577294521,WebApp,8,32,250,4000,2000,yes,3,Dedicated,Linux,Africa,no,no,Standard,no,yes
+Microsoft,0.5209840183,WebApp,2,8,250,2000,400,yes,0,Dedicated,Linux,Australia,no,no,Wildcard,no,yes
+Microsoft,1.006353881,WebApp,4,16,250,4000,2000,yes,0,Dedicated,Linux,Australia,no,yes,Wildcard,no,yes
+Microsoft,1.374353881,WebApp,8,32,250,4000,2000,yes,0,Dedicated,Linux,Australia,no,yes,Wildcard,no,yes
+Microsoft,0.4569840183,WebApp,2,8,250,2000,400,yes,1,Dedicated,Linux,Australia,no,yes,Wildcard,no,yes
+Microsoft,0.8773538813,WebApp,4,16,250,4000,2000,yes,1,Dedicated,Linux,Australia,no,yes,Wildcard,no,yes
+Microsoft,1.116353881,WebApp,8,32,250,4000,2000,yes,1,Dedicated,Linux,Australia,no,yes,Wildcard,no,yes
+Microsoft,0.3857385845,WebApp,2,8,250,2000,400,yes,3,Dedicated,Linux,Australia,no,yes,A_no,no,yes
+Microsoft,0.7701084475,WebApp,4,16,250,4000,2000,yes,3,Dedicated,Linux,Australia,no,yes,A_no,no,yes
+Microsoft,0.9351084475,WebApp,8,32,250,4000,1000,yes,3,Dedicated,Linux,Australia,no,yes,A_no,no,yes
+Microsoft,0.5095890411,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Windows,US,no,no,A_no,no,yes
+Microsoft,1.019178082,WebApp,2,7,1000,2000,400,yes,0,Isolated,Windows,US,no,no,A_no,no,yes
+Microsoft,2.038356164,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Windows,US,no,no,A_no,no,yes
+Microsoft,0.4895890411,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.9791780822,WebApp,2,7,1000,2000,400,yes,0,Isolated,Linux,US,no,no,A_no,no,yes
+Microsoft,1.958356164,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Linux,US,no,no,A_no,no,yes
+Microsoft,0.7973972603,WebApp,2,8,1000,2000,600,yes,0,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,1.677945205,WebApp,4,16,1000,4000,1000,yes,0,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,2.817945205,WebApp,8,32,1000,4000,1000,yes,0,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,0.6273972603,WebApp,2,8,1000,2000,600,yes,1,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,1.347945205,WebApp,4,16,1000,4000,1000,yes,1,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,2.147945205,WebApp,8,32,1000,4000,1000,yes,1,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,0.5373972603,WebApp,2,8,1000,2000,600,yes,3,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,1.157945205,WebApp,4,16,1000,4000,1000,yes,3,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,1.767945205,WebApp,8,32,1000,4000,1000,yes,3,Isolated,Windows,US,no,no,A_no,yes,yes
+Microsoft,0.6373972603,WebApp,2,8,1000,2000,600,yes,0,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,1.357945205,WebApp,4,16,1000,4000,1000,yes,0,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,2.167945205,WebApp,8,32,1000,4000,1000,yes,0,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,0.4873972603,WebApp,2,8,1000,2000,600,yes,1,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,1.077945205,WebApp,4,16,1000,4000,1000,yes,1,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,1.607945205,WebApp,8,32,1000,4000,1000,yes,1,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,0.3973972603,WebApp,2,8,1000,2000,600,yes,3,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,0.8879452055,WebApp,4,16,1000,4000,1000,yes,3,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,1.237945205,WebApp,8,32,1000,4000,1000,yes,3,Isolated,Linux,US,no,no,A_no,yes,yes
+Microsoft,0.4095890411,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.8191780822,WebApp,2,7,1000,2000,400,yes,0,Isolated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,1.638356164,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Windows,A_Europe,no,no,A_no,no,yes
+Microsoft,0.3995890411,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.7891780822,WebApp,2,7,1000,2000,400,yes,0,Isolated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,1.578356164,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Linux,A_Europe,no,no,A_no,no,yes
+Microsoft,0.7973972603,WebApp,2,8,1000,2000,600,yes,0,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,1.687945205,WebApp,4,16,1000,4000,1000,yes,0,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,2.827945205,WebApp,8,32,1000,4000,1000,yes,0,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,0.6273972603,WebApp,2,8,1000,2000,600,yes,1,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,1.357945205,WebApp,4,16,1000,4000,1000,yes,1,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,2.157945205,WebApp,8,32,1000,4000,1000,yes,1,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,0.5373972603,WebApp,2,8,1000,2000,600,yes,3,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,0.8291780822,WebApp,4,16,1000,1000,1000,yes,3,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,1.449178082,WebApp,8,32,1000,1000,1000,yes,3,Isolated,Windows,A_Europe,no,no,A_no,yes,yes
+Microsoft,0.7569863014,WebApp,2,8,1000,2000,600,yes,0,Isolated,Linux,South America,no,no,A_no,yes,yes
+Microsoft,1.113972603,WebApp,4,16,1000,1000,1000,yes,0,Isolated,Linux,South America,no,no,A_no,yes,yes
+Microsoft,1.888219178,WebApp,8,32,1000,1000,400,yes,0,Isolated,Linux,South America,no,no,A_no,yes,yes
+Microsoft,0.6083550228,WebApp,2,8,1000,2000,600,yes,1,Isolated,Linux,South America,no,yes,A_no,yes,yes
+Microsoft,0.7595878995,WebApp,4,16,1000,1000,400,yes,1,Isolated,Linux,South America,no,yes,A_no,yes,yes
+Microsoft,1.2995879,WebApp,8,32,1000,1000,400,yes,1,Isolated,Linux,South America,no,yes,A_no,yes,yes
+Microsoft,0.5183550228,WebApp,2,8,1000,2000,600,yes,3,Isolated,Linux,South America,no,yes,A_no,yes,yes
+Microsoft,0.5595878995,WebApp,4,16,1000,1000,400,yes,3,Isolated,Linux,South America,no,yes,A_no,yes,yes
+Microsoft,0.9195878995,WebApp,8,32,1000,1000,400,yes,3,Isolated,Linux,South America,no,yes,A_no,yes,yes
+Microsoft,0.4657522831,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,0.9301358447,WebApp,2,7,1000,2000,400,yes,0,Isolated,Windows,South America,no,yes,A_no,no,yes
+Microsoft,1.866892694,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Windows,South America,no,yes,Standard,no,yes
+Microsoft,0.450043379,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Linux,Asia,no,yes,Standard,no,yes
+Microsoft,0.8807283105,WebApp,2,7,1000,2000,400,yes,0,Isolated,Linux,Asia,no,yes,Standard,no,yes
+Microsoft,1.752098174,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Linux,Asia,no,yes,Standard,no,yes
+Microsoft,0.8989474886,WebApp,2,8,1000,2000,600,yes,0,Isolated,Windows,Asia,no,yes,Standard,yes,yes
+Microsoft,1.353878995,WebApp,4,16,1000,1000,400,yes,0,Isolated,Windows,Asia,no,yes,Standard,yes,yes
+Microsoft,2.503878995,WebApp,8,32,1000,1000,400,yes,0,Isolated,Windows,Asia,no,yes,Standard,yes,yes
+Microsoft,0.4933310502,WebApp,2,8,1000,400,1000,yes,1,Isolated,Windows,Asia,no,yes,Standard,yes,yes
+Microsoft,1.012510274,WebApp,4,16,1000,1000,400,yes,1,Isolated,Windows,Asia,no,no,Standard,yes,yes
+Microsoft,1.973195205,WebApp,8,32,1000,2000,400,yes,1,Isolated,Windows,Asia,no,no,Standard,yes,yes
+Microsoft,0.3919623288,WebApp,2,8,1000,400,1000,yes,3,Isolated,Windows,Asia,no,no,Standard,yes,yes
+Microsoft,0.9731952055,WebApp,4,16,1000,2000,400,yes,3,Isolated,Windows,Asia,no,no,Standard,yes,yes
+Microsoft,1.593195205,WebApp,8,32,1000,2000,400,yes,3,Isolated,Windows,Asia,no,no,Standard,yes,yes
+Microsoft,0.4919623288,WebApp,2,8,1000,400,1000,yes,0,Isolated,Linux,Asia,no,no,Standard,yes,yes
+Microsoft,1.183195205,WebApp,4,16,1000,2000,400,yes,0,Isolated,Linux,Asia,no,no,Standard,yes,yes
+Microsoft,2.013195205,WebApp,8,32,1000,2000,400,yes,0,Isolated,Linux,Asia,no,no,Standard,yes,yes
+Microsoft,0.3519623288,WebApp,2,8,1000,400,1000,yes,1,Isolated,Linux,Asia,no,no,Standard,yes,yes
+Microsoft,0.8931952055,WebApp,4,16,1000,2000,400,yes,1,Isolated,Linux,Asia,no,no,Standard,yes,yes
+Microsoft,1.433195205,WebApp,8,32,1000,2000,400,yes,1,Isolated,Linux,Asia,no,no,Standard,yes,yes
+Microsoft,0.2619623288,WebApp,2,8,1000,400,1000,yes,3,Isolated,Linux,Africa,no,no,Standard,yes,yes
+Microsoft,0.7131952055,WebApp,4,16,1000,2000,400,yes,3,Isolated,Linux,Africa,no,no,Standard,yes,yes
+Microsoft,1.073195205,WebApp,8,32,1000,2000,400,yes,3,Isolated,Linux,Africa,no,no,Standard,yes,yes
+Microsoft,0.5438344749,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,1.053423516,WebApp,2,7,1000,2000,400,yes,0,Isolated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,2.072601598,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Windows,US,no,no,Wildcard,no,yes
+Microsoft,0.5238344749,WebApp,1,3.5,1000,1000,400,yes,0,Isolated,Linux,US,no,no,Wildcard,no,yes
+Microsoft,1.013423516,WebApp,2,7,1000,2000,400,yes,0,Isolated,Linux,US,no,no,Wildcard,no,yes
+Microsoft,1.992601598,WebApp,4,14,1000,4000,1000,yes,0,Isolated,Linux,US,no,no,Wildcard,no,yes
+Microsoft,0.6617796804,WebApp,2,8,1000,400,1000,yes,0,Isolated,Windows,US,no,no,Wildcard,yes,yes
+Microsoft,1.602601598,WebApp,4,16,1000,2000,2000,yes,0,Isolated,Windows,US,no,no,Wildcard,yes,yes
+Microsoft,2.854793379,WebApp,8,32,1000,2000,2000,yes,0,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,0.5182180365,WebApp,2,8,1000,400,1000,yes,1,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,1.364793379,WebApp,4,16,1000,2000,2000,yes,1,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,2.184793379,WebApp,8,32,1000,2000,2000,yes,1,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,0.4182180365,WebApp,2,8,1000,400,1000,yes,3,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,1.174793379,WebApp,4,16,1000,2000,2000,yes,3,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,1.794793379,WebApp,8,32,1000,2000,2000,yes,3,Isolated,Windows,Australia,no,no,Wildcard,yes,yes
+Microsoft,0.5282180365,WebApp,2,8,1000,400,1000,yes,0,Isolated,Linux,Australia,no,no,Wildcard,yes,yes
+Microsoft,1.384793379,WebApp,4,16,1000,2000,2000,yes,0,Isolated,Linux,Australia,no,no,Wildcard,yes,yes
+Microsoft,2.214793379,WebApp,8,32,1000,2000,2000,yes,0,Isolated,Linux,Australia,no,no,Wildcard,yes,yes
+Microsoft,0.3782180365,WebApp,2,8,1000,400,1000,yes,1,Isolated,Linux,Australia,no,no,Wildcard,yes,yes
+Microsoft,1.094793379,WebApp,4,16,1000,2000,2000,yes,1,Isolated,Linux,Australia,no,no,Wildcard,yes,yes
+Microsoft,1.600547945,WebApp,8,32,1000,2000,2000,yes,1,Isolated,Linux,Australia,no,no,A_no,yes,yes
+Microsoft,0.2539726027,WebApp,2,8,1000,400,1000,yes,3,Isolated,Linux,Australia,no,no,A_no,yes,yes
+Microsoft,0.8705479452,WebApp,4,16,1000,2000,2000,yes,3,Isolated,Linux,Australia,no,no,A_no,yes,yes
+Microsoft,1.220547945,WebApp,8,32,1000,2000,2000,yes,3,Isolated,Linux,Australia,no,no,A_no,yes,yes

@@ -1,4 +1,4 @@
-# ============== Import libraries =========
+#%% ============== Import libraries =========
 import numpy as np
 import pandas as pd
 import warnings
@@ -18,8 +18,8 @@ vif_features = False  # if only we want to run features with vif < 20
 network = False
 
 # %% ============= Load the Data ============================================================
-
-df = mf.load_data('datasets/paas_data.csv')
+cloudProvider = 'Amazon'
+df = mf.load_data(f'datasets/paas_{cloudProvider}.csv')
 uniqueList = tuple((column,) for column in df)
 for column in df:
     print(df[column].value_counts())
@@ -45,8 +45,7 @@ else:
 
 # %% Map binary categorical columns to numerical
 
-categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'AppService_Domain', 'Regional_redundancy',
-                      'Container_support']
+categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'AppService_Domain', 'Regional_redundancy', 'Container_support']
 df[categorical_binary] = df[categorical_binary].apply(mf.binary_map)
 
 # Map>3 categorical columns to numerical
@@ -131,12 +130,11 @@ print(results.params)
 metrics = pd.read_html(results.summary().tables[0].as_html(), header=0, index_col=0)[0]
 coefficients = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
 
-# ========== Export OLS results =========
+# %%========== Export OLS results =========
 metrics = pd.read_html(results.summary().tables[0].as_html(), header=0, index_col=0)[0]
 coefficients = pd.read_html(results.summary().tables[1].as_html(), header=0, index_col=0)[0]
-metrics.to_csv(f'results/paas_metrics.csv', index=True)
-coefficients.to_csv(f'results/paas_coeff.csv', index=True)
-
+metrics.to_csv(f'results/paas_metrics_{cloudProvider}.csv', index=True)
+coefficients.to_csv(f'results/paas_coeff_{cloudProvider}.csv', index=True)
 # %%
 sm.graphics.influence_plot(results, size=40, criterion='cooks', plot_alpha=0.75, ax=None)
 plt.show()
@@ -147,8 +145,8 @@ coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
-plt.title('Coefficients - PaaS', size=20)
-plt.savefig(f'plots/paas_coeff_tornado.png')
+plt.title(f'Coefficients - PaaS - {cloudProvider}', size=20)
+plt.savefig(f'plots/paas_coeff_tornado_{cloudProvider}.png')
 plt.show()
 # %%
 sns.distplot(results.resid, fit=stats.norm, hist=True)
@@ -156,7 +154,7 @@ plt.show()
 
 # ================= Selection of features by P-value ===========================
 
-coeff_results = mf.load_data('results/paas_coeff.csv')
+coeff_results = mf.load_data(f'results/paas_coeff_{cloudProvider}.csv')
 coeff_results.rename(columns={'Unnamed: 0': 'Feature'}, inplace=True)
 
 significant = coeff_results[coeff_results['P>|t|'] < 0.05]
@@ -186,8 +184,8 @@ coefficients_sign = pd.read_html(results.summary().tables[1].as_html(), header=0
 
 # %% ========== Export OLS results =========
 
-metrics.to_csv(f'results/paas_significant_metrics.csv', index=True)
-coefficients.to_csv(f'results/paas_significant_coeff.csv', index=True)
+metrics.to_csv(f'results/paas_significant_metrics_{cloudProvider}.csv', index=True)
+coefficients.to_csv(f'results/paas_significant_coeff_{cloudProvider}.csv', index=True)
 
 # %% =========================2nd Tornado diagram ======================================
 coeff = results.params
@@ -195,8 +193,8 @@ coeff = coeff.iloc[(coeff.abs() * -1.0).argsort()]
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
 sns.barplot(coeff.values, coeff.index, orient='h', ax=ax, palette="flare", capsize=None)
-plt.title(f'Statistically significant coefficients - PaaS', fontdict=None, loc='center', pad=None)
-plt.savefig(f'plots/paas_significant_coeff_tornado.png')
+plt.title(f'Statistically significant coefficients - PaaS - {cloudProvider}', fontdict=None, loc='center', pad=None)
+plt.savefig(f'plots/paas_significant_coeff_tornado_{cloudProvider}.png')
 plt.show()
 
 # %% ====== Visualizations for evaluation purposes ===========================

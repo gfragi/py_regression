@@ -45,7 +45,9 @@ else:
 
 # %% Map binary categorical columns to numerical
 
-categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'AppService_Domain', 'Regional_redundancy', 'Container_support']
+categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'AppService_Domain', 'Regional_Redudancy', 'Container_support']
+
+# %%
 df[categorical_binary] = df[categorical_binary].apply(mf.binary_map)
 
 # Map>3 categorical columns to numerical
@@ -62,9 +64,9 @@ df.drop(columns=categorical, axis=1, inplace=True)
 # Columns with numerical values to change scale
 col2log = []
 if network:
-    col2log = ['Price', 'CPU', 'RAM', 'STORAGE', 'external_egress', 'internal_egress', 'Term_Length']
+    col2log = ['PaaS_Price', 'CPU', 'RAM', 'STORAGE', 'external_egress', 'internal_egress', 'Term_Length']
 else:
-    col2log = ['Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
+    col2log = ['PaaS_Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
                # 'Autoscaling', 'Scaling_to_zero', 'OS', 'AppService_Domain',
                # 'Regional_redundancy', 'Container_support']
 
@@ -89,13 +91,13 @@ heatmap.set_title(f"Triangle Correlation Heatmap - PaaS", fontdict={'fontsize': 
 plt.savefig('plots/paas_heatmap_triangle.png')
 plt.show()
 
-y = df.Price
-x = df.drop('Price', axis=1)
+y = df.PaaS_Price
+x = df.drop('PaaS_Price', axis=1)
 # x = x_stage.drop('Provider', axis=1)
 
 # %% ===================== Model Evaluation ===========================
-y = df.Price
-x = df.drop('Price', axis=1)
+y = df.PaaS_Price
+x = df.drop('PaaS_Price', axis=1)
 
 mf.model_evaluation(x, y)
 model = linear_model.LinearRegression()
@@ -162,7 +164,7 @@ significant = coeff_results[coeff_results['P>|t|'] < 0.05]
 features_list = significant['Feature'].tolist()
 features_list.remove('const')
 # features_list.remove('AppService_Domain')
-features_list.insert(0, 'Price')
+features_list.insert(0, 'PaaS_Price')
 
 # features_list.insert(0, 'RAM')
 
@@ -171,7 +173,7 @@ df = df[features_list]
 # %%============  2nd Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
 y = df.Price
-x = df.drop('Price', axis=1)
+x = df.drop('PaaS_Price', axis=1)
 
 # mf.ols_regression(x, y)
 x = sm.add_constant(x)

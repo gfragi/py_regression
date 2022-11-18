@@ -1,8 +1,8 @@
-Dep. Variable:,PaaS_Price,R-squared:,0.666
+Dep. Variable:,Price,R-squared:,0.666
 Model:,OLS,Adj. R-squared:,0.648
 Method:,Least Squares,F-statistic:,36.76
-Date:,"Παρ, 18 Νοε 2022",Prob (F-statistic):,9.55e-50
-Time:,00:33:36,Log-Likelihood:,433.64
+Date:,"Fri, 18 Nov 2022",Prob (F-statistic):,9.55e-50
+Time:,10:54:08,Log-Likelihood:,433.64
 No. Observations:,254,AIC:,-839.3
 Df Residuals:,240,BIC:,-789.7
 Df Model:,13,,

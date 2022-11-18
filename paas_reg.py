@@ -1,28 +1,38 @@
 #%% ============== Import libraries =========
+import warnings
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import warnings
-import statsmodels.api as sm
-import matplotlib.pyplot as plt
 import seaborn as sns
+import statsmodels.api as sm
 from pandas.core.dtypes.common import is_numeric_dtype, is_string_dtype
 from scipy import stats
-from yellowbrick.regressor import ResidualsPlot
 from sklearn import linear_model
+from yellowbrick.regressor import ResidualsPlot
 
 import my_functions as mf
 
 warnings.filterwarnings('ignore')  # it is used for some minor warnings in seaborn
 
-vif_features = False  # if only we want to run features with vif < 20
+import statsmodels.formula.api as smf
+
+
+vif_features = True  # if only we want to run features with vif < 20
 network = False
 
+
+
 # %% ============= Load the Data ============================================================
-cloudProvider = 'Amazon'
-df = mf.load_data(f'datasets/paas_{cloudProvider}.csv')
+
+df = mf.load_data(f'datasets/paas_data.csv')
 uniqueList = tuple((column,) for column in df)
 for column in df:
     print(df[column].value_counts())
+
+# # Select provider 
+cloudProvider = 'Microsoft'
+df = df.loc[df['Provider'] == cloudProvider]
 
 # %% ============= Dataframe Checks before regression ============================================================
 
@@ -47,7 +57,6 @@ else:
 
 categorical_binary = ['Autoscaling', 'Scaling_to_zero', 'AppService_Domain', 'Regional_Redudancy', 'Container_support']
 
-# %%
 df[categorical_binary] = df[categorical_binary].apply(mf.binary_map)
 
 # Map>3 categorical columns to numerical
@@ -60,13 +69,13 @@ categorical2numeric = pd.get_dummies(df[categorical], drop_first=True, sparse=Fa
 df = pd.concat([df, categorical2numeric], axis=1)
 df.drop(columns=categorical, axis=1, inplace=True)
 
-# # %% =============== Log transformation ======================================
+# %% =============== Log transformation ======================================
 # Columns with numerical values to change scale
 col2log = []
 if network:
-    col2log = ['PaaS_Price', 'CPU', 'RAM', 'STORAGE', 'external_egress', 'internal_egress', 'Term_Length']
+    col2log = ['Price', 'CPU', 'RAM', 'STORAGE', 'external_egress', 'internal_egress', 'Term_Length']
 else:
-    col2log = ['PaaS_Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
+    col2log = ['Price', 'CPU', 'RAM', 'STORAGE', 'Term_Length']
                # 'Autoscaling', 'Scaling_to_zero', 'OS', 'AppService_Domain',
                # 'Regional_redundancy', 'Container_support']
 
@@ -91,20 +100,20 @@ heatmap.set_title(f"Triangle Correlation Heatmap - PaaS", fontdict={'fontsize': 
 plt.savefig('plots/paas_heatmap_triangle.png')
 plt.show()
 
-y = df.PaaS_Price
-x = df.drop('PaaS_Price', axis=1)
+y = df.Price
+x = df.drop('Price', axis=1)
 # x = x_stage.drop('Provider', axis=1)
 
 # %% ===================== Model Evaluation ===========================
-y = df.PaaS_Price
-x = df.drop('PaaS_Price', axis=1)
+y = df.Price
+x = df.drop('Price', axis=1)
 
 mf.model_evaluation(x, y)
 model = linear_model.LinearRegression()
 
 # %% =================== Calculate VIF Factors =====================
 
-vif = mf.vif_calc(x)
+# vif = mf.vif_calc(x)
 
 # # %%  =================== Drop columns after vif/reg calculation =====================
 # if vif_features:
@@ -126,6 +135,7 @@ vif = mf.vif_calc(x)
 # mf.ols_regression(x, y)
 x = sm.add_constant(x)
 model_sm = sm.OLS(y, x)
+# model_sm = smf.ols(formula='y ~ x', data=df)
 results = model_sm.fit()
 print(results.summary())
 print(results.params)
@@ -164,7 +174,7 @@ significant = coeff_results[coeff_results['P>|t|'] < 0.05]
 features_list = significant['Feature'].tolist()
 features_list.remove('const')
 # features_list.remove('AppService_Domain')
-features_list.insert(0, 'PaaS_Price')
+features_list.insert(0, 'Price')
 
 # features_list.insert(0, 'RAM')
 
@@ -173,11 +183,11 @@ df = df[features_list]
 # %%============  2nd Detailed calculation for statistical metrics with OLS (Ordinary Least Squares) ==============
 
 y = df.Price
-x = df.drop('PaaS_Price', axis=1)
+x = df.drop('Price', axis=1)
 
 # mf.ols_regression(x, y)
 x = sm.add_constant(x)
-model_sm = sm.OLS(y, x)
+model_sm = sm.OLS(y,x)
 results = model_sm.fit()
 print(results.summary())
 print(results.params)
@@ -210,3 +220,5 @@ visualizer = ResidualsPlot(model, hist=False, qqplot=True)
 visualizer.fit(x, y)
 # visualizer.score(x_test, y_test)
 visualizer.show()
+
+# %%

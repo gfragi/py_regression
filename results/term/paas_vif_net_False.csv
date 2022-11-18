@@ -1,0 +1,13 @@
+VIF Factor,features
+18.5,Autoscaling
+1.7,Term_Length
+2.3,AppService_Domain
+4.9,Regional_Redudancy
+1.8,Region_Africa
+2.6,Region_Asia
+2.3,Region_Australia
+2.3,Region_South America
+2.6,Region_US
+1.5,Certificates_Standard
+1.7,Certificates_Wildcard
+1.2,OS_Windows

@@ -1,4 +1,4 @@
-Provider,PaaS_Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
+Provider,Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
 Microsoft,0.06183561644,WebApp,1,1.75,10,400,100,no,0,Dedicated,Linux,US,no,no,A_no,no,yes
 Microsoft,0.06887671233,WebApp,2,3.5,10,300,600,no,0,Dedicated,Linux,US,no,no,A_no,no,yes
 Microsoft,0.071,WebApp,4,7,10,2000,1000,no,0,Dedicated,Linux,US,no,no,A_no,no,yes

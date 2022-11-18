@@ -1,4 +1,4 @@
-Provider,PaaS_Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
+Provider,Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
 Google,0.1787671233,WebApp,1,0.5,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
 Google,0.2787671233,WebApp,2,1,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no
 Google,0.3787671233,WebApp,2,2,50,400,400,no,0,A_Shared,Windows,US,yes,yes,A_no,yes,no

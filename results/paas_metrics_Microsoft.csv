@@ -1,8 +1,8 @@
 Dep. Variable:,Price,R-squared:,0.875
 Model:,OLS,Adj. R-squared:,0.868
 Method:,Least Squares,F-statistic:,116.2
-Date:,"Παρ, 18 Νοε 2022",Prob (F-statistic):,1.12e-109
-Time:,04:35:47,Log-Likelihood:,475.01
+Date:,"Fri, 18 Nov 2022",Prob (F-statistic):,1.12e-109
+Time:,10:49:39,Log-Likelihood:,475.01
 No. Observations:,282,AIC:,-916.0
 Df Residuals:,265,BIC:,-854.1
 Df Model:,16,,

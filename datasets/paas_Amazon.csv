@@ -1,4 +1,4 @@
-Provider,PaaS_Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
+Provider,Price,Deployment Type,CPU,RAM,STORAGE,external_egress,internal_egress,Autoscaling,Term_Length,Instance_Type,OS,Region,Scaling_to_zero,AppService_Domain,Certificates,Regional_Redudancy,Container_support
 Amazon,0.05879863014,WebApp,1,0.5,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
 Amazon,0.08269863014,WebApp,1,2,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no
 Amazon,0.1106986301,WebApp,2,4,10,400,100,yes,0,A_Shared,Windows,US,yes,yes,A_no,no,no

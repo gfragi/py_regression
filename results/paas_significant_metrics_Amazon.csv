@@ -1,9 +1,9 @@
-Dep. Variable:,Price,R-squared:,0.695
-Model:,OLS,Adj. R-squared:,0.688
-Method:,Least Squares,F-statistic:,94.3
-Date:,"Πεμ, 17 Νοε 2022",Prob (F-statistic):,9.2e-188
-Time:,02:05:34,Log-Likelihood:,1114.4
-No. Observations:,806,AIC:,-2189.0
-Df Residuals:,786,BIC:,-2095.0
-Df Model:,19,,
+Dep. Variable:,Price,R-squared:,0.666
+Model:,OLS,Adj. R-squared:,0.648
+Method:,Least Squares,F-statistic:,36.76
+Date:,"Fri, 18 Nov 2022",Prob (F-statistic):,9.55e-50
+Time:,10:54:08,Log-Likelihood:,433.64
+No. Observations:,254,AIC:,-839.3
+Df Residuals:,240,BIC:,-789.7
+Df Model:,13,,
 Covariance Type:,nonrobust,,

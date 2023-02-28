@@ -4,8 +4,8 @@
 .vscode/*
 
 # plots
-plots/
-Results/
+# plots/
+# Results/
 
 # test
 /random_test.py
